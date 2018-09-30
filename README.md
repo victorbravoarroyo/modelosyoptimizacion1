@@ -1,2 +1,6 @@
-# modelosyoptimizacion1
-Github para el TP de Modelos y Optimizacion 1 FIUBA
+# TP Modelos y Optimización 1
+## Integrantes
+| Integrantes          | Padrón |
+|----------------------|--------|
+| Bravo Arroyo, Víctor | 98882  |
+| Romero, Maximiliano  |        |
