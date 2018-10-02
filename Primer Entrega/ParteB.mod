@@ -16,7 +16,7 @@ var Evp >= 0, integer;
 var Eg >= 0, integer;
 var P >= 0, integer;
 
-maximize z: 1000 * Evc + 800 * Eg + 0 * Evp - 700 * P;
+maximize z: 1500 * Evc + 800 * Eg + 0 * Evp - 700 * P;
 
 s.t. predio: V + G <= 8000;
 s.t. ubicacionesVip: V = Vc + Vp;

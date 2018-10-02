@@ -3,11 +3,11 @@ Rows:       11
 Columns:    8 (8 integer, 0 binary)
 Non-zeros:  21
 Status:     INTEGER OPTIMAL
-Objective:  z = 8458100 (MAXimum)
+Objective:  z = 11738100 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 z                  8.4581e+06                             
+     1 z                 1.17381e+07                             
      2 predio                   7992                        8000 
      3 ubicacionesVip
                                    0            -0             = 
