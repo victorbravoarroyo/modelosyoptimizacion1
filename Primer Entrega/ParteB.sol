@@ -1,38 +1,42 @@
 Problem:    ParteB
-Rows:       11
-Columns:    8 (8 integer, 0 binary)
-Non-zeros:  21
+Rows:       12
+Columns:    10 (10 integer, 0 binary)
+Non-zeros:  24
 Status:     INTEGER OPTIMAL
-Objective:  z = 11738100 (MAXimum)
+Objective:  z = 11550000 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 z                 1.17381e+07                             
-     2 predio                   7992                        8000 
+     1 z                   1.155e+07                             
+     2 predio                   8000                        8000 
      3 ubicacionesVip
                                    0            -0             = 
-     4 protocolo                 100           100               
-     5 generales                1332           500               
-     6 paquetes                  333                         800 
-     7 paqueteVip                  0            -0             = 
-     8 paqueteGeneral
+     4 minProtocolo              100           100               
+     5 minGenerales              500           500               
+     6 maxPaquetes               500                         800 
+     7 paquetesTotales
                                    0            -0             = 
-     9 ubicEntrVipProto
+     8 paqueteVip                  0            -0             = 
+     9 paqueteGeneral
                                    0            -0             = 
-    10 ubicEntrVipComun
+    10 ubicEntrVipProto
                                    0            -0             = 
-    11 ubicGeneral                 0            -0             = 
+    11 ubicEntrVipComun
+                                   0            -0             = 
+    12 ubicGeneral                 0            -0             = 
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 V            *           6660             0               
-     2 Vc           *           6560             0               
+     1 V            *           7500             0               
+     2 Vc           *           7400             0               
      3 Vp           *            100             0               
-     4 G            *           1332             0               
-     5 Evc          *           6560             0               
+     4 G            *            500             0               
+     5 Evc          *           7400             0               
      6 Evp          *            100             0               
-     7 Eg           *           2664             0               
-     8 P            *            333             0               
+     7 Eg           *           1000             0               
+     8 P            *            500             0               
+     9 Pv           *            375             0               
+    10 Pg           *            125             0               
 
 Integer feasibility conditions:
 
