@@ -3,11 +3,11 @@ Rows:       125
 Columns:    413 (413 integer, 372 binary)
 Non-zeros:  1886
 Status:     INTEGER OPTIMAL
-Objective:  z = 96 (MAXimum)
+Objective:  z = 88 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 z                          96                             
+     1 z                          88                             
      2 monedasIniciales
                                    3             3             = 
      3 cementoInicial
@@ -69,21 +69,21 @@ Objective:  z = 96 (MAXimum)
     34 soloUnaCartaEra1[7]
                                    0                           1 
     35 soloUnaCartaEra1[8]
-                                   0                           1 
+                                   1                           1 
     36 soloUnaCartaEra1[9]
-                                   0                           1 
+                                   1                           1 
     37 soloUnaCartaEra1[10]
                                    0                           1 
     38 soloUnaCartaEra1[11]
                                    0                           1 
     39 soloUnaCartaEra1[12]
-                                   0                           1 
+                                   1                           1 
     40 soloUnaCartaEra1[13]
-                                   0                           1 
+                                   1                           1 
     41 soloUnaCartaEra1[14]
-                                   0                           1 
+                                   1                           1 
     42 soloUnaCartaEra1[15]
-                                   0                           1 
+                                   1                           1 
     43 soloUnaCartaEra1[16]
                                    0                           1 
     44 soloUnaCartaEra1[17]
@@ -147,21 +147,21 @@ Objective:  z = 96 (MAXimum)
     76 soloUnaCartaEra2[7]
                                    0                           1 
     77 soloUnaCartaEra2[8]
-                                   0                           1 
+                                   1                           1 
     78 soloUnaCartaEra2[9]
-                                   0                           1 
+                                   1                           1 
     79 soloUnaCartaEra2[10]
                                    0                           1 
     80 soloUnaCartaEra2[11]
                                    0                           1 
     81 soloUnaCartaEra2[12]
-                                   0                           1 
+                                   1                           1 
     82 soloUnaCartaEra2[13]
-                                   0                           1 
+                                   1                           1 
     83 soloUnaCartaEra2[14]
-                                   0                           1 
+                                   1                           1 
     84 soloUnaCartaEra2[15]
-                                   0                           1 
+                                   1                           1 
     85 soloUnaCartaEra2[16]
                                    0                           1 
     86 soloUnaCartaEra2[17]
@@ -219,21 +219,21 @@ Objective:  z = 96 (MAXimum)
    115 soloUnaCartaEra3[7]
                                    0                           1 
    116 soloUnaCartaEra3[8]
-                                   0                           1 
+                                   1                           1 
    117 soloUnaCartaEra3[9]
-                                   0                           1 
+                                   1                           1 
    118 soloUnaCartaEra3[10]
                                    0                           1 
    119 soloUnaCartaEra3[11]
                                    0                           1 
    120 soloUnaCartaEra3[12]
-                                   0                           1 
+                                   1                           1 
    121 soloUnaCartaEra3[13]
-                                   0                           1 
+                                   1                           1 
    122 soloUnaCartaEra3[14]
-                                   0                           1 
+                                   1                           1 
    123 soloUnaCartaEra3[15]
-                                   0                           1 
+                                   1                           1 
    124 soloUnaCartaEra3[16]
                                    0                           1 
    125 soloUnaCartaEra3[17]
@@ -286,14 +286,14 @@ Objective:  z = 96 (MAXimum)
     43 Ype[8,1]     *              0             0             1 
     44 Ype[8,2]     *              0             0             1 
     45 Ype[8,3]     *              0             0             1 
-    46 Ype[8,4]     *              0             0             1 
+    46 Ype[8,4]     *              1             0             1 
     47 Ype[8,5]     *              0             0             1 
     48 Ype[8,6]     *              0             0             1 
     49 Ype[9,1]     *              0             0             1 
     50 Ype[9,2]     *              0             0             1 
     51 Ype[9,3]     *              0             0             1 
     52 Ype[9,4]     *              0             0             1 
-    53 Ype[9,5]     *              0             0             1 
+    53 Ype[9,5]     *              1             0             1 
     54 Ype[9,6]     *              0             0             1 
     55 Ype[10,1]    *              0             0             1 
     56 Ype[10,2]    *              0             0             1 
@@ -307,7 +307,7 @@ Objective:  z = 96 (MAXimum)
     64 Ype[11,4]    *              0             0             1 
     65 Ype[11,5]    *              0             0             1 
     66 Ype[11,6]    *              0             0             1 
-    67 Ype[12,1]    *              0             0             1 
+    67 Ype[12,1]    *              1             0             1 
     68 Ype[12,2]    *              0             0             1 
     69 Ype[12,3]    *              0             0             1 
     70 Ype[12,4]    *              0             0             1 
@@ -315,18 +315,18 @@ Objective:  z = 96 (MAXimum)
     72 Ype[12,6]    *              0             0             1 
     73 Ype[13,1]    *              0             0             1 
     74 Ype[13,2]    *              0             0             1 
-    75 Ype[13,3]    *              0             0             1 
+    75 Ype[13,3]    *              1             0             1 
     76 Ype[13,4]    *              0             0             1 
     77 Ype[13,5]    *              0             0             1 
     78 Ype[13,6]    *              0             0             1 
-    79 Ype[14,1]    *              1             0             1 
-    80 Ype[14,2]    *              1             0             1 
-    81 Ype[14,3]    *              1             0             1 
-    82 Ype[14,4]    *              1             0             1 
-    83 Ype[14,5]    *              1             0             1 
+    79 Ype[14,1]    *              0             0             1 
+    80 Ype[14,2]    *              0             0             1 
+    81 Ype[14,3]    *              0             0             1 
+    82 Ype[14,4]    *              0             0             1 
+    83 Ype[14,5]    *              0             0             1 
     84 Ype[14,6]    *              1             0             1 
     85 Ype[15,1]    *              0             0             1 
-    86 Ype[15,2]    *              0             0             1 
+    86 Ype[15,2]    *              1             0             1 
     87 Ype[15,3]    *              0             0             1 
     88 Ype[15,4]    *              0             0             1 
     89 Ype[15,5]    *              0             0             1 
@@ -688,7 +688,7 @@ Objective:  z = 96 (MAXimum)
    409 cementosDisponibles[1,2]
                     *              0             0               
    410 cementosDisponibles[1,3]
-                    *              0             0               
+                    *              1             0               
    411 cementosDisponibles[1,4]
                     *              0             0               
    412 cementosDisponibles[1,5]

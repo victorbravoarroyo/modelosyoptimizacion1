@@ -87,7 +87,7 @@ s.t. eleccionCartaE1T6: sum{i in CartasEraI, j in Turnos : j <= 6}Ype[i,j] = 6;
 s.t. gastoMonedaE1T6: sum{i in CartasEraI}(Ype[i,6] * CostosEraI[i,'MON']) <= monedasDisponibles[1,6];
 s.t. utilizacionCementoE1T6: sum{i in CartasEraI}(Ype[i,6] * CostosEraI[i,'CEM']) <= cementosDisponibles[1,6];
 
-s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos}Ype[1,j] <= 1;
+s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos}Ype[i,j] <= 1;
 
 #ERA II:
 #TURNO 1:
@@ -120,7 +120,7 @@ s.t. mondedasE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMone
 s.t. eleccionCartaE2T6: sum{i in CartasEraII, j in Turnos : j <= 6}Yse[i,j] = 6;
 s.t. gastoMonedaE2T6: sum{i in CartasEraII}(Yse[i,6] * CostosEraII[i,'MON']) <= monedasDisponibles[2,6];
 
-s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos}Ype[1,j] <= 1;
+s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos}Ype[i,j] <= 1;
 
 
 #ERA III:
@@ -154,7 +154,7 @@ s.t. mondedasE3T6: monedasDisponibles[3,6] = monedasDisponibles[3,5] - gastoMone
 s.t. eleccionCartaE3T6: sum{i in CartasEraIII, j in Turnos : j <= 6}Yte[i,j] = 6;
 s.t. gastoMonedaE3T6: sum{i in CartasEraIII}(Yte[i,6] * CostosEraIII[i,'MON']) <= monedasDisponibles[3,6];
 
-s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos}Ype[1,j] <= 1;
+s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos}Ype[i,j] <= 1;
 
 
 #s.t. cantGeometricas: Geometricas;
