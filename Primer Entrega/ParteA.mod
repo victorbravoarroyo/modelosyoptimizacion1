@@ -87,31 +87,7 @@ s.t. eleccionCartaE1T6: sum{i in CartasEraI, j in Turnos : j <= 6}Ype[i,j] = 6;
 s.t. gastoMonedaE1T6: sum{i in CartasEraI}(Ype[i,6] * CostosEraI[i,'MON']) <= monedasDisponibles[1,6];
 s.t. utilizacionCementoE1T6: sum{i in CartasEraI}(Ype[i,6] * CostosEraI[i,'CEM']) <= cementosDisponibles[1,6];
 
-s.t. soloUnaCarta1E1: sum{j in Turnos}Ype[1,j] <= 1;
-s.t. soloUnaCarta2E1: sum{j in Turnos}Ype[2,j] <= 1;
-s.t. soloUnaCarta3E1: sum{j in Turnos}Ype[3,j] <= 1;
-s.t. soloUnaCarta4E1: sum{j in Turnos}Ype[4,j] <= 1;
-s.t. soloUnaCarta5E1: sum{j in Turnos}Ype[5,j] <= 1;
-s.t. soloUnaCarta6E1: sum{j in Turnos}Ype[6,j] <= 1;
-s.t. soloUnaCarta7E1: sum{j in Turnos}Ype[7,j] <= 1;
-s.t. soloUnaCarta8E1: sum{j in Turnos}Ype[8,j] <= 1;
-s.t. soloUnaCarta9E1: sum{j in Turnos}Ype[9,j] <= 1;
-s.t. soloUnaCarta10E1: sum{j in Turnos}Ype[10,j] <= 1;
-s.t. soloUnaCarta11E1: sum{j in Turnos}Ype[11,j] <= 1;
-s.t. soloUnaCarta12E1: sum{j in Turnos}Ype[12,j] <= 1;
-s.t. soloUnaCarta13E1: sum{j in Turnos}Ype[13,j] <= 1;
-s.t. soloUnaCarta14E1: sum{j in Turnos}Ype[14,j] <= 1;
-s.t. soloUnaCarta15E1: sum{j in Turnos}Ype[15,j] <= 1;
-s.t. soloUnaCarta16E1: sum{j in Turnos}Ype[16,j] <= 1;
-s.t. soloUnaCarta17E1: sum{j in Turnos}Ype[17,j] <= 1;
-s.t. soloUnaCarta18E1: sum{j in Turnos}Ype[18,j] <= 1;
-s.t. soloUnaCarta19E1: sum{j in Turnos}Ype[19,j] <= 1;
-s.t. soloUnaCarta20E1: sum{j in Turnos}Ype[20,j] <= 1;
-s.t. soloUnaCarta21E1: sum{j in Turnos}Ype[21,j] <= 1;
-s.t. soloUnaCarta22E1: sum{j in Turnos}Ype[22,j] <= 1;
-s.t. soloUnaCarta23E1: sum{j in Turnos}Ype[23,j] <= 1;
-s.t. soloUnaCarta24E1: sum{j in Turnos}Ype[24,j] <= 1;
-
+s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos}Ype[1,j] <= 1;
 
 #ERA II:
 #TURNO 1:
@@ -144,27 +120,7 @@ s.t. mondedasE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMone
 s.t. eleccionCartaE2T6: sum{i in CartasEraII, j in Turnos : j <= 6}Yse[i,j] = 6;
 s.t. gastoMonedaE2T6: sum{i in CartasEraII}(Yse[i,6] * CostosEraII[i,'MON']) <= monedasDisponibles[2,6];
 
-s.t. soloUnaCarta1E2: sum{j in Turnos}Yse[1,j] <= 1;
-s.t. soloUnaCarta2E2: sum{j in Turnos}Yse[2,j] <= 1;
-s.t. soloUnaCarta3E2: sum{j in Turnos}Yse[3,j] <= 1;
-s.t. soloUnaCarta4E2: sum{j in Turnos}Yse[4,j] <= 1;
-s.t. soloUnaCarta5E2: sum{j in Turnos}Yse[5,j] <= 1;
-s.t. soloUnaCarta6E2: sum{j in Turnos}Yse[6,j] <= 1;
-s.t. soloUnaCarta7E2: sum{j in Turnos}Yse[7,j] <= 1;
-s.t. soloUnaCarta8E2: sum{j in Turnos}Yse[8,j] <= 1;
-s.t. soloUnaCarta9E2: sum{j in Turnos}Yse[9,j] <= 1;
-s.t. soloUnaCarta10E2: sum{j in Turnos}Yse[10,j] <= 1;
-s.t. soloUnaCarta11E2: sum{j in Turnos}Yse[11,j] <= 1;
-s.t. soloUnaCarta12E2: sum{j in Turnos}Yse[12,j] <= 1;
-s.t. soloUnaCarta13E2: sum{j in Turnos}Yse[13,j] <= 1;
-s.t. soloUnaCarta14E2: sum{j in Turnos}Yse[14,j] <= 1;
-s.t. soloUnaCarta15E2: sum{j in Turnos}Yse[15,j] <= 1;
-s.t. soloUnaCarta16E2: sum{j in Turnos}Yse[16,j] <= 1;
-s.t. soloUnaCarta17E2: sum{j in Turnos}Yse[17,j] <= 1;
-s.t. soloUnaCarta18E2: sum{j in Turnos}Yse[18,j] <= 1;
-s.t. soloUnaCarta19E2: sum{j in Turnos}Yse[19,j] <= 1;
-s.t. soloUnaCarta20E2: sum{j in Turnos}Yse[20,j] <= 1;
-s.t. soloUnaCarta21E2: sum{j in Turnos}Yse[21,j] <= 1;
+s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos}Ype[1,j] <= 1;
 
 
 #ERA III:
@@ -198,23 +154,8 @@ s.t. mondedasE3T6: monedasDisponibles[3,6] = monedasDisponibles[3,5] - gastoMone
 s.t. eleccionCartaE3T6: sum{i in CartasEraIII, j in Turnos : j <= 6}Yte[i,j] = 6;
 s.t. gastoMonedaE3T6: sum{i in CartasEraIII}(Yte[i,6] * CostosEraIII[i,'MON']) <= monedasDisponibles[3,6];
 
-s.t. soloUnaCarta1E3: sum{j in Turnos}Yte[1,j] <= 1;
-s.t. soloUnaCarta2E3: sum{j in Turnos}Yte[2,j] <= 1;
-s.t. soloUnaCarta3E3: sum{j in Turnos}Yte[3,j] <= 1;
-s.t. soloUnaCarta4E3: sum{j in Turnos}Yte[4,j] <= 1;
-s.t. soloUnaCarta5E3: sum{j in Turnos}Yte[5,j] <= 1;
-s.t. soloUnaCarta6E3: sum{j in Turnos}Yte[6,j] <= 1;
-s.t. soloUnaCarta7E3: sum{j in Turnos}Yte[7,j] <= 1;
-s.t. soloUnaCarta8E3: sum{j in Turnos}Yte[8,j] <= 1;
-s.t. soloUnaCarta9E3: sum{j in Turnos}Yte[9,j] <= 1;
-s.t. soloUnaCarta10E3: sum{j in Turnos}Yte[10,j] <= 1;
-s.t. soloUnaCarta11E3: sum{j in Turnos}Yte[11,j] <= 1;
-s.t. soloUnaCarta12E3: sum{j in Turnos}Yte[12,j] <= 1;
-s.t. soloUnaCarta13E3: sum{j in Turnos}Yte[13,j] <= 1;
-s.t. soloUnaCarta14E3: sum{j in Turnos}Yte[14,j] <= 1;
-s.t. soloUnaCarta15E3: sum{j in Turnos}Yte[15,j] <= 1;
-s.t. soloUnaCarta16E3: sum{j in Turnos}Yte[16,j] <= 1;
-s.t. soloUnaCarta17E3: sum{j in Turnos}Yte[17,j] <= 1;
+s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos}Ype[1,j] <= 1;
+
 
 #s.t. cantGeometricas: Geometricas;
 #s.t. cantGeometricas: Geometricas;
