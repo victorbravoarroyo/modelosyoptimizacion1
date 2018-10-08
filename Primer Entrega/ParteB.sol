@@ -16,9 +16,9 @@ Objective:  z = 11550000 (MAXimum)
      6 maxPaquetes               500                         800 
      7 paquetesTotales
                                    0            -0             = 
-     8 paqueteVip                  0            -0             = 
+     8 paqueteVip                  0            -0               
      9 paqueteGeneral
-                                   0            -0             = 
+                                   0            -0               
     10 ubicEntrVipProto
                                    0            -0             = 
     11 ubicEntrVipComun
