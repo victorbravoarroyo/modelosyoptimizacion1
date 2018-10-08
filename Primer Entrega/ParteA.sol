@@ -102,36 +102,36 @@ Objective:  z = 88 (MAXimum)
                                    0                           1 
     51 soloUnaCartaEra1[24]
                                    0                           1 
-    52 mondedasE2T1                0            -0             = 
-    53 eleccionCartaE2T1
+    52 gastoMonedaE2T[1]
+                                   0                          -0 
+    53 gastoMonedaE2T[2]
+                                   0                          -0 
+    54 gastoMonedaE2T[3]
+                                   0                          -0 
+    55 gastoMonedaE2T[4]
+                                   0                          -0 
+    56 gastoMonedaE2T[5]
+                                   0                          -0 
+    57 gastoMonedaE2T[6]
+                                   0                          -0 
+    58 mondedasE2T1                0            -0             = 
+    59 eleccionCartaE2T[1]
                                    1             1             = 
-    54 gastoMonedaE2T1
-                                   0                          -0 
-    55 mondedasE2T2                0            -0             = 
-    56 eleccionCartaE2T2
+    60 eleccionCartaE2T[2]
                                    2             2             = 
-    57 gastoMonedaE2T2
-                                   0                          -0 
-    58 mondedasE2T3                0            -0             = 
-    59 eleccionCartaE2T3
+    61 eleccionCartaE2T[3]
                                    3             3             = 
-    60 gastoMonedaE2T3
-                                   0                          -0 
-    61 mondedasE2T4                0            -0             = 
-    62 eleccionCartaE2T4
+    62 eleccionCartaE2T[4]
                                    4             4             = 
-    63 gastoMonedaE2T4
-                                   0                          -0 
-    64 mondedasE2T5                0            -0             = 
-    65 eleccionCartaE2T5
+    63 eleccionCartaE2T[5]
                                    5             5             = 
-    66 gastoMonedaE2T5
-                                   0                          -0 
-    67 mondedasE2T6                0            -0             = 
-    68 eleccionCartaE2T6
+    64 eleccionCartaE2T[6]
                                    6             6             = 
-    69 gastoMonedaE2T6
-                                   0                          -0 
+    65 mondedasE2T2                0            -0             = 
+    66 mondedasE2T3                0            -0             = 
+    67 mondedasE2T4                0            -0             = 
+    68 mondedasE2T5                0            -0             = 
+    69 mondedasE2T6                0            -0             = 
     70 soloUnaCartaEra2[1]
                                    0                           1 
     71 soloUnaCartaEra2[2]

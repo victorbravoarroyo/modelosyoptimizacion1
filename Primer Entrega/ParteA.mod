@@ -90,35 +90,27 @@ s.t. utilizacionCementoE1T6: sum{i in CartasEraI}(Ype[i,6] * CostosEraI[i,'CEM']
 s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos}Ype[i,j] <= 1;
 
 #ERA II:
+
+s.t. gastoMonedaE2T{j in Turnos}: sum{i in CartasEraII}(Yse[i,j] * CostosEraII[i,'MON']) <= monedasDisponibles[2,j];
+s.t. eleccionCartaE2T{k in Turnos}: sum{i in CartasEraII, j in Turnos : j <= k}Yse[i,j] = k;
+
 #TURNO 1:
 s.t. mondedasE2T1: monedasDisponibles[2,1] = monedasDisponibles[1,6] - gastoMonedas[1,6];
-s.t. eleccionCartaE2T1: sum{i in CartasEraII}Yse[i,1] = 1;
-s.t. gastoMonedaE2T1: sum{i in CartasEraII}(Yse[i,1] * CostosEraII[i,'MON']) <= monedasDisponibles[2,1];
 
 #TURNO 2:
 s.t. mondedasE2T2: monedasDisponibles[2,2] = monedasDisponibles[2,1] - gastoMonedas[2,1];
-s.t. eleccionCartaE2T2: sum{i in CartasEraII, j in Turnos : j <= 2}Yse[i,j] = 2;
-s.t. gastoMonedaE2T2: sum{i in CartasEraII}(Yse[i,2] * CostosEraII[i,'MON']) <= monedasDisponibles[2,2];
 
 #TURNO 3:
 s.t. mondedasE2T3: monedasDisponibles[2,3] = monedasDisponibles[2,2] - gastoMonedas[2,2];
-s.t. eleccionCartaE2T3: sum{i in CartasEraII, j in Turnos : j <= 3}Yse[i,j] = 3;
-s.t. gastoMonedaE2T3: sum{i in CartasEraII}(Yse[i,3] * CostosEraII[i,'MON']) <= monedasDisponibles[2,3];
 
 #TURNO 4:
 s.t. mondedasE2T4: monedasDisponibles[2,4] = monedasDisponibles[2,3] - gastoMonedas[2,3];
-s.t. eleccionCartaE2T4: sum{i in CartasEraII, j in Turnos : j <= 4}Yse[i,j] = 4;
-s.t. gastoMonedaE2T4: sum{i in CartasEraII}(Yse[i,4] * CostosEraII[i,'MON']) <= monedasDisponibles[2,4];
 
 #TURNO 5:
 s.t. mondedasE2T5: monedasDisponibles[2,5] = monedasDisponibles[2,4] - gastoMonedas[2,4];
-s.t. eleccionCartaE2T5: sum{i in CartasEraII, j in Turnos : j <= 5}Yse[i,j] = 5;
-s.t. gastoMonedaE2T5: sum{i in CartasEraII}(Yse[i,5] * CostosEraII[i,'MON']) <= monedasDisponibles[2,5];
 
 #TURNO 6:
 s.t. mondedasE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMonedas[2,5];
-s.t. eleccionCartaE2T6: sum{i in CartasEraII, j in Turnos : j <= 6}Yse[i,j] = 6;
-s.t. gastoMonedaE2T6: sum{i in CartasEraII}(Yse[i,6] * CostosEraII[i,'MON']) <= monedasDisponibles[2,6];
 
 s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos}Ype[i,j] <= 1;
 
