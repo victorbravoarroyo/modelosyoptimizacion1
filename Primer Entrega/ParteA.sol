@@ -3,11 +3,11 @@ Rows:       125
 Columns:    413 (413 integer, 372 binary)
 Non-zeros:  1886
 Status:     INTEGER OPTIMAL
-Objective:  z = 88 (MAXimum)
+Objective:  z = 58 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 z                          88                             
+     1 z                          58                             
      2 monedasIniciales
                                    3             3             = 
      3 cementoInicial
@@ -114,19 +114,19 @@ Objective:  z = 88 (MAXimum)
                                    0                          -0 
     57 gastoMonedaE2T[6]
                                    0                          -0 
-    58 mondedasE2T1                0            -0             = 
-    59 eleccionCartaE2T[1]
+    58 eleccionCartaE2T[1]
                                    1             1             = 
-    60 eleccionCartaE2T[2]
+    59 eleccionCartaE2T[2]
                                    2             2             = 
-    61 eleccionCartaE2T[3]
+    60 eleccionCartaE2T[3]
                                    3             3             = 
-    62 eleccionCartaE2T[4]
+    61 eleccionCartaE2T[4]
                                    4             4             = 
-    63 eleccionCartaE2T[5]
+    62 eleccionCartaE2T[5]
                                    5             5             = 
-    64 eleccionCartaE2T[6]
+    63 eleccionCartaE2T[6]
                                    6             6             = 
+    64 mondedasE2T1                0            -0             = 
     65 mondedasE2T2                0            -0             = 
     66 mondedasE2T3                0            -0             = 
     67 mondedasE2T4                0            -0             = 
@@ -141,27 +141,27 @@ Objective:  z = 88 (MAXimum)
     73 soloUnaCartaEra2[4]
                                    0                           1 
     74 soloUnaCartaEra2[5]
-                                   0                           1 
+                                   1                           1 
     75 soloUnaCartaEra2[6]
                                    0                           1 
     76 soloUnaCartaEra2[7]
-                                   0                           1 
+                                   1                           1 
     77 soloUnaCartaEra2[8]
                                    1                           1 
     78 soloUnaCartaEra2[9]
                                    1                           1 
     79 soloUnaCartaEra2[10]
-                                   0                           1 
+                                   1                           1 
     80 soloUnaCartaEra2[11]
-                                   0                           1 
+                                   1                           1 
     81 soloUnaCartaEra2[12]
-                                   1                           1 
+                                   0                           1 
     82 soloUnaCartaEra2[13]
-                                   1                           1 
+                                   0                           1 
     83 soloUnaCartaEra2[14]
-                                   1                           1 
+                                   0                           1 
     84 soloUnaCartaEra2[15]
-                                   1                           1 
+                                   0                           1 
     85 soloUnaCartaEra2[16]
                                    0                           1 
     86 soloUnaCartaEra2[17]
@@ -205,39 +205,39 @@ Objective:  z = 88 (MAXimum)
    108 gastoMonedaE3T6
                                    0                          -0 
    109 soloUnaCartaEra3[1]
-                                   0                           1 
+                                   1                           1 
    110 soloUnaCartaEra3[2]
-                                   0                           1 
+                                   1                           1 
    111 soloUnaCartaEra3[3]
-                                   0                           1 
+                                   1                           1 
    112 soloUnaCartaEra3[4]
-                                   0                           1 
+                                   1                           1 
    113 soloUnaCartaEra3[5]
-                                   0                           1 
+                                   1                           1 
    114 soloUnaCartaEra3[6]
                                    0                           1 
    115 soloUnaCartaEra3[7]
                                    0                           1 
    116 soloUnaCartaEra3[8]
-                                   1                           1 
+                                   0                           1 
    117 soloUnaCartaEra3[9]
-                                   1                           1 
+                                   0                           1 
    118 soloUnaCartaEra3[10]
                                    0                           1 
    119 soloUnaCartaEra3[11]
                                    0                           1 
    120 soloUnaCartaEra3[12]
-                                   1                           1 
+                                   0                           1 
    121 soloUnaCartaEra3[13]
-                                   1                           1 
+                                   0                           1 
    122 soloUnaCartaEra3[14]
-                                   1                           1 
+                                   0                           1 
    123 soloUnaCartaEra3[15]
-                                   1                           1 
+                                   0                           1 
    124 soloUnaCartaEra3[16]
                                    0                           1 
    125 soloUnaCartaEra3[17]
-                                   0                           1 
+                                   1                           1 
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -409,7 +409,7 @@ Objective:  z = 88 (MAXimum)
    166 Yse[4,4]     *              0             0             1 
    167 Yse[4,5]     *              0             0             1 
    168 Yse[4,6]     *              0             0             1 
-   169 Yse[5,1]     *              0             0             1 
+   169 Yse[5,1]     *              1             0             1 
    170 Yse[5,2]     *              0             0             1 
    171 Yse[5,3]     *              0             0             1 
    172 Yse[5,4]     *              0             0             1 
@@ -423,30 +423,30 @@ Objective:  z = 88 (MAXimum)
    180 Yse[6,6]     *              0             0             1 
    181 Yse[7,1]     *              0             0             1 
    182 Yse[7,2]     *              0             0             1 
-   183 Yse[7,3]     *              0             0             1 
+   183 Yse[7,3]     *              1             0             1 
    184 Yse[7,4]     *              0             0             1 
    185 Yse[7,5]     *              0             0             1 
    186 Yse[7,6]     *              0             0             1 
-   187 Yse[8,1]     *              1             0             1 
-   188 Yse[8,2]     *              1             0             1 
-   189 Yse[8,3]     *              1             0             1 
+   187 Yse[8,1]     *              0             0             1 
+   188 Yse[8,2]     *              0             0             1 
+   189 Yse[8,3]     *              0             0             1 
    190 Yse[8,4]     *              1             0             1 
-   191 Yse[8,5]     *              1             0             1 
-   192 Yse[8,6]     *              1             0             1 
+   191 Yse[8,5]     *              0             0             1 
+   192 Yse[8,6]     *              0             0             1 
    193 Yse[9,1]     *              0             0             1 
    194 Yse[9,2]     *              0             0             1 
    195 Yse[9,3]     *              0             0             1 
    196 Yse[9,4]     *              0             0             1 
-   197 Yse[9,5]     *              0             0             1 
+   197 Yse[9,5]     *              1             0             1 
    198 Yse[9,6]     *              0             0             1 
    199 Yse[10,1]    *              0             0             1 
    200 Yse[10,2]    *              0             0             1 
    201 Yse[10,3]    *              0             0             1 
    202 Yse[10,4]    *              0             0             1 
    203 Yse[10,5]    *              0             0             1 
-   204 Yse[10,6]    *              0             0             1 
+   204 Yse[10,6]    *              1             0             1 
    205 Yse[11,1]    *              0             0             1 
-   206 Yse[11,2]    *              0             0             1 
+   206 Yse[11,2]    *              1             0             1 
    207 Yse[11,3]    *              0             0             1 
    208 Yse[11,4]    *              0             0             1 
    209 Yse[11,5]    *              0             0             1 
@@ -512,34 +512,34 @@ Objective:  z = 88 (MAXimum)
    269 Yse[21,5]    *              0             0             1 
    270 Yse[21,6]    *              0             0             1 
    271 Yte[1,1]     *              1             0             1 
-   272 Yte[1,2]     *              1             0             1 
-   273 Yte[1,3]     *              1             0             1 
-   274 Yte[1,4]     *              1             0             1 
-   275 Yte[1,5]     *              1             0             1 
-   276 Yte[1,6]     *              1             0             1 
+   272 Yte[1,2]     *              0             0             1 
+   273 Yte[1,3]     *              0             0             1 
+   274 Yte[1,4]     *              0             0             1 
+   275 Yte[1,5]     *              0             0             1 
+   276 Yte[1,6]     *              0             0             1 
    277 Yte[2,1]     *              0             0             1 
-   278 Yte[2,2]     *              0             0             1 
+   278 Yte[2,2]     *              1             0             1 
    279 Yte[2,3]     *              0             0             1 
    280 Yte[2,4]     *              0             0             1 
    281 Yte[2,5]     *              0             0             1 
    282 Yte[2,6]     *              0             0             1 
    283 Yte[3,1]     *              0             0             1 
    284 Yte[3,2]     *              0             0             1 
-   285 Yte[3,3]     *              0             0             1 
+   285 Yte[3,3]     *              1             0             1 
    286 Yte[3,4]     *              0             0             1 
    287 Yte[3,5]     *              0             0             1 
    288 Yte[3,6]     *              0             0             1 
    289 Yte[4,1]     *              0             0             1 
    290 Yte[4,2]     *              0             0             1 
    291 Yte[4,3]     *              0             0             1 
-   292 Yte[4,4]     *              0             0             1 
+   292 Yte[4,4]     *              1             0             1 
    293 Yte[4,5]     *              0             0             1 
    294 Yte[4,6]     *              0             0             1 
    295 Yte[5,1]     *              0             0             1 
    296 Yte[5,2]     *              0             0             1 
    297 Yte[5,3]     *              0             0             1 
    298 Yte[5,4]     *              0             0             1 
-   299 Yte[5,5]     *              0             0             1 
+   299 Yte[5,5]     *              1             0             1 
    300 Yte[5,6]     *              0             0             1 
    301 Yte[6,1]     *              0             0             1 
    302 Yte[6,2]     *              0             0             1 
@@ -612,7 +612,7 @@ Objective:  z = 88 (MAXimum)
    369 Yte[17,3]    *              0             0             1 
    370 Yte[17,4]    *              0             0             1 
    371 Yte[17,5]    *              0             0             1 
-   372 Yte[17,6]    *              0             0             1 
+   372 Yte[17,6]    *              1             0             1 
    373 monedasDisponibles[1,1]
                     *              3             0               
    374 monedasDisponibles[1,2]
