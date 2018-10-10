@@ -1,7 +1,7 @@
 Problem:    ParteA
 Rows:       125
 Columns:    413 (413 integer, 372 binary)
-Non-zeros:  1886
+Non-zeros:  1887
 Status:     INTEGER OPTIMAL
 Objective:  z = 58 (MAXimum)
 

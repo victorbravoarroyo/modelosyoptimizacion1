@@ -7,7 +7,7 @@ set TiposDeCosto;
 set TiposDeEspecialidad;
 
 #set TiposDeCosto := MON CEM TEL CER PAP MAD LAD ORO;
-#set TiposDeEspecialidad := 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO' 'SIM';
+#set TiposDeEspecialidad := 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO' 'GEO' 'RUE' 'ESC';
 
 var Ype{i in CartasEraI, j in Turnos} >= 0, binary;
 var Yse{i in CartasEraII, j in Turnos} >= 0, binary;
@@ -58,7 +58,7 @@ s.t. utilizacionCementoE1T1: sum{i in CartasEraI}(Ype[i,1] * CostosEraI[i,'CEM']
 
 #TURNO 2:
 s.t. mondedasE1T2: monedasDisponibles[1,2] = monedasDisponibles[1,1] - gastoMonedas[1,1];
-s.t. cementoDisp: cementosDisponibles[1,2] = cementosDisponibles[1,1] + 1*Ype[2,1];
+s.t. cementoDisp: cementosDisponibles[1,2] = cementosDisponibles[1,1] + sum{i in CartasEraI}(EspecialidadesEraI[i,'CEM']*Ype[i,1]);
 s.t. eleccionCartaE1T2: sum{i in CartasEraI, j in Turnos : j <= 2}Ype[i,j] = 2;
 s.t. gastoMonedaE1T2: sum{i in CartasEraI}(Ype[i,2] * CostosEraI[i,'MON']) <= monedasDisponibles[1,2];
 s.t. utilizacionCementoE1T2: sum{i in CartasEraI}(Ype[i,2] * CostosEraI[i,'CEM']) <= cementosDisponibles[1,2];
@@ -156,4 +156,4 @@ s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos}Yte[i,j] <= 1;
 #RECOLECCION DE PUNTOS:
 
 
-end; 
+end;
