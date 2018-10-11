@@ -47,9 +47,9 @@ Objective:  z = 97 (MAXimum)
     20 soloUnaCartaEra1[8]
                                    0                           1 
     21 soloUnaCartaEra1[9]
-                                   0                           1 
+                                   1                           1 
     22 soloUnaCartaEra1[10]
-                                   0                           1 
+                                   1                           1 
     23 soloUnaCartaEra1[11]
                                    0                           1 
     24 soloUnaCartaEra1[12]
@@ -67,9 +67,9 @@ Objective:  z = 97 (MAXimum)
     30 soloUnaCartaEra1[18]
                                    1                           1 
     31 soloUnaCartaEra1[19]
-                                   1                           1 
+                                   0                           1 
     32 soloUnaCartaEra1[20]
-                                   1                           1 
+                                   0                           1 
     33 soloUnaCartaEra1[21]
                                    0                           1 
     34 soloUnaCartaEra1[22]
@@ -81,291 +81,291 @@ Objective:  z = 97 (MAXimum)
     37 utilizMonedas[1,1]
                                   -3                          -0 
     38 utilizMonedas[1,2]
-                                  -1                          -0 
+                                  -3                          -0 
     39 utilizMonedas[1,3]
-                                  -4                          -0 
+                                  -3                          -0 
     40 utilizMonedas[1,4]
-                                  -2                          -0 
+                                  -3                          -0 
     41 utilizMonedas[1,5]
-                                   0                          -0 
+                                  -3                          -0 
     42 utilizMonedas[1,6]
-                                   0                          -0 
+                                  -3                          -0 
     43 utilizMonedas[2,1]
                                   -3                          -0 
     44 utilizMonedas[2,2]
-                                  -1                          -0 
+                                  -3                          -0 
     45 utilizMonedas[2,3]
-                                  -4                          -0 
+                                  -3                          -0 
     46 utilizMonedas[2,4]
-                                  -2                          -0 
+                                  -3                          -0 
     47 utilizMonedas[2,5]
-                                   0                          -0 
+                                  -3                          -0 
     48 utilizMonedas[2,6]
-                                   0                          -0 
+                                  -3                          -0 
     49 utilizMonedas[3,1]
                                   -3                          -0 
     50 utilizMonedas[3,2]
-                                  -1                          -0 
+                                  -3                          -0 
     51 utilizMonedas[3,3]
-                                  -4                          -0 
+                                  -3                          -0 
     52 utilizMonedas[3,4]
-                                  -2                          -0 
+                                  -3                          -0 
     53 utilizMonedas[3,5]
-                                   0                          -0 
+                                  -3                          -0 
     54 utilizMonedas[3,6]
-                                   0                          -0 
+                                  -3                          -0 
     55 utilizMonedas[4,1]
                                   -3                          -0 
     56 utilizMonedas[4,2]
-                                  -1                          -0 
+                                  -3                          -0 
     57 utilizMonedas[4,3]
-                                  -4                          -0 
+                                  -3                          -0 
     58 utilizMonedas[4,4]
-                                  -2                          -0 
+                                  -3                          -0 
     59 utilizMonedas[4,5]
-                                   0                          -0 
+                                  -3                          -0 
     60 utilizMonedas[4,6]
-                                   0                          -0 
+                                  -3                          -0 
     61 utilizMonedas[5,1]
                                   -3                          -0 
     62 utilizMonedas[5,2]
-                                  -1                          -0 
+                                  -3                          -0 
     63 utilizMonedas[5,3]
-                                  -4                          -0 
+                                  -3                          -0 
     64 utilizMonedas[5,4]
-                                  -2                          -0 
+                                  -3                          -0 
     65 utilizMonedas[5,5]
-                                   0                          -0 
+                                  -3                          -0 
     66 utilizMonedas[5,6]
-                                   0                          -0 
+                                  -3                          -0 
     67 utilizMonedas[6,1]
                                   -3                          -0 
     68 utilizMonedas[6,2]
-                                  -1                          -0 
+                                  -3                          -0 
     69 utilizMonedas[6,3]
-                                  -4                          -0 
+                                  -3                          -0 
     70 utilizMonedas[6,4]
-                                  -2                          -0 
+                                  -3                          -0 
     71 utilizMonedas[6,5]
-                                   0                          -0 
+                                  -3                          -0 
     72 utilizMonedas[6,6]
-                                   0                          -0 
+                                  -3                          -0 
     73 utilizMonedas[7,1]
                                   -3                          -0 
     74 utilizMonedas[7,2]
-                                  -1                          -0 
+                                  -3                          -0 
     75 utilizMonedas[7,3]
-                                  -4                          -0 
+                                  -3                          -0 
     76 utilizMonedas[7,4]
-                                  -2                          -0 
+                                  -3                          -0 
     77 utilizMonedas[7,5]
-                                   0                          -0 
+                                  -3                          -0 
     78 utilizMonedas[7,6]
-                                   0                          -0 
+                                  -3                          -0 
     79 utilizMonedas[8,1]
                                   -3                          -0 
     80 utilizMonedas[8,2]
-                                  -1                          -0 
+                                  -3                          -0 
     81 utilizMonedas[8,3]
-                                  -4                          -0 
+                                  -3                          -0 
     82 utilizMonedas[8,4]
-                                  -2                          -0 
+                                  -3                          -0 
     83 utilizMonedas[8,5]
-                                   0                          -0 
+                                  -3                          -0 
     84 utilizMonedas[8,6]
-                                   0                          -0 
+                                  -3                          -0 
     85 utilizMonedas[9,1]
                                   -3                          -0 
     86 utilizMonedas[9,2]
-                                  -1                          -0 
+                                  -3                          -0 
     87 utilizMonedas[9,3]
-                                  -4                          -0 
+                                  -3                          -0 
     88 utilizMonedas[9,4]
-                                  -2                          -0 
+                                  -3                          -0 
     89 utilizMonedas[9,5]
-                                   0                          -0 
+                                  -3                          -0 
     90 utilizMonedas[9,6]
-                                   0                          -0 
+                                  -3                          -0 
     91 utilizMonedas[10,1]
                                   -3                          -0 
     92 utilizMonedas[10,2]
-                                  -1                          -0 
+                                  -3                          -0 
     93 utilizMonedas[10,3]
-                                  -4                          -0 
+                                  -3                          -0 
     94 utilizMonedas[10,4]
-                                  -2                          -0 
+                                  -3                          -0 
     95 utilizMonedas[10,5]
-                                   0                          -0 
+                                  -3                          -0 
     96 utilizMonedas[10,6]
-                                   0                          -0 
+                                  -3                          -0 
     97 utilizMonedas[11,1]
                                   -3                          -0 
     98 utilizMonedas[11,2]
-                                  -1                          -0 
+                                  -3                          -0 
     99 utilizMonedas[11,3]
-                                  -4                          -0 
+                                  -3                          -0 
    100 utilizMonedas[11,4]
-                                  -2                          -0 
+                                  -3                          -0 
    101 utilizMonedas[11,5]
-                                   0                          -0 
+                                  -3                          -0 
    102 utilizMonedas[11,6]
-                                   0                          -0 
+                                  -3                          -0 
    103 utilizMonedas[12,1]
                                   -3                          -0 
    104 utilizMonedas[12,2]
-                                  -1                          -0 
+                                  -3                          -0 
    105 utilizMonedas[12,3]
-                                  -4                          -0 
+                                  -3                          -0 
    106 utilizMonedas[12,4]
-                                  -2                          -0 
+                                  -3                          -0 
    107 utilizMonedas[12,5]
-                                   0                          -0 
+                                  -3                          -0 
    108 utilizMonedas[12,6]
-                                   0                          -0 
+                                  -3                          -0 
    109 utilizMonedas[13,1]
                                   -3                          -0 
    110 utilizMonedas[13,2]
-                                  -1                          -0 
+                                  -3                          -0 
    111 utilizMonedas[13,3]
-                                  -4                          -0 
+                                  -3                          -0 
    112 utilizMonedas[13,4]
-                                  -2                          -0 
+                                  -3                          -0 
    113 utilizMonedas[13,5]
-                                   0                          -0 
+                                  -3                          -0 
    114 utilizMonedas[13,6]
-                                   0                          -0 
+                                  -3                          -0 
    115 utilizMonedas[14,1]
                                   -3                          -0 
    116 utilizMonedas[14,2]
-                                  -1                          -0 
+                                  -3                          -0 
    117 utilizMonedas[14,3]
-                                  -4                          -0 
+                                  -3                          -0 
    118 utilizMonedas[14,4]
-                                  -2                          -0 
+                                  -3                          -0 
    119 utilizMonedas[14,5]
-                                   0                          -0 
+                                  -3                          -0 
    120 utilizMonedas[14,6]
-                                   0                          -0 
+                                  -3                          -0 
    121 utilizMonedas[15,1]
                                   -3                          -0 
    122 utilizMonedas[15,2]
-                                  -1                          -0 
+                                  -3                          -0 
    123 utilizMonedas[15,3]
-                                  -4                          -0 
+                                  -3                          -0 
    124 utilizMonedas[15,4]
-                                  -2                          -0 
+                                  -3                          -0 
    125 utilizMonedas[15,5]
-                                   0                          -0 
+                                  -3                          -0 
    126 utilizMonedas[15,6]
-                                   0                          -0 
+                                  -3                          -0 
    127 utilizMonedas[16,1]
                                   -3                          -0 
    128 utilizMonedas[16,2]
-                                  -1                          -0 
+                                  -3                          -0 
    129 utilizMonedas[16,3]
-                                  -4                          -0 
+                                  -3                          -0 
    130 utilizMonedas[16,4]
-                                  -2                          -0 
+                                  -3                          -0 
    131 utilizMonedas[16,5]
-                                   0                          -0 
+                                  -3                          -0 
    132 utilizMonedas[16,6]
-                                   0                          -0 
+                                  -3                          -0 
    133 utilizMonedas[17,1]
                                   -3                          -0 
    134 utilizMonedas[17,2]
-                                  -1                          -0 
+                                  -3                          -0 
    135 utilizMonedas[17,3]
-                                  -4                          -0 
+                                  -3                          -0 
    136 utilizMonedas[17,4]
-                                  -2                          -0 
+                                  -3                          -0 
    137 utilizMonedas[17,5]
-                                   0                          -0 
+                                  -3                          -0 
    138 utilizMonedas[17,6]
-                                   0                          -0 
+                                  -3                          -0 
    139 utilizMonedas[18,1]
                                   -3                          -0 
    140 utilizMonedas[18,2]
-                                  -1                          -0 
+                                  -3                          -0 
    141 utilizMonedas[18,3]
-                                  -4                          -0 
+                                  -3                          -0 
    142 utilizMonedas[18,4]
-                                  -2                          -0 
+                                  -3                          -0 
    143 utilizMonedas[18,5]
-                                   0                          -0 
+                                  -3                          -0 
    144 utilizMonedas[18,6]
-                                   0                          -0 
+                                  -3                          -0 
    145 utilizMonedas[19,1]
                                   -3                          -0 
    146 utilizMonedas[19,2]
-                                  -1                          -0 
+                                  -3                          -0 
    147 utilizMonedas[19,3]
-                                  -4                          -0 
+                                  -3                          -0 
    148 utilizMonedas[19,4]
-                                  -2                          -0 
+                                  -3                          -0 
    149 utilizMonedas[19,5]
-                                   0                          -0 
+                                  -3                          -0 
    150 utilizMonedas[19,6]
-                                   0                          -0 
+                                  -3                          -0 
    151 utilizMonedas[20,1]
                                   -3                          -0 
    152 utilizMonedas[20,2]
-                                  -1                          -0 
+                                  -3                          -0 
    153 utilizMonedas[20,3]
-                                  -4                          -0 
+                                  -3                          -0 
    154 utilizMonedas[20,4]
-                                  -2                          -0 
+                                  -3                          -0 
    155 utilizMonedas[20,5]
-                                   0                          -0 
+                                  -3                          -0 
    156 utilizMonedas[20,6]
-                                   0                          -0 
+                                  -3                          -0 
    157 utilizMonedas[21,1]
                                   -3                          -0 
    158 utilizMonedas[21,2]
-                                  -1                          -0 
+                                  -3                          -0 
    159 utilizMonedas[21,3]
-                                  -4                          -0 
+                                  -3                          -0 
    160 utilizMonedas[21,4]
-                                  -2                          -0 
+                                  -3                          -0 
    161 utilizMonedas[21,5]
-                                   0                          -0 
+                                  -3                          -0 
    162 utilizMonedas[21,6]
-                                   0                          -0 
+                                  -3                          -0 
    163 utilizMonedas[22,1]
                                   -3                          -0 
    164 utilizMonedas[22,2]
-                                  -1                          -0 
+                                  -3                          -0 
    165 utilizMonedas[22,3]
-                                  -4                          -0 
+                                  -3                          -0 
    166 utilizMonedas[22,4]
-                                  -2                          -0 
+                                  -3                          -0 
    167 utilizMonedas[22,5]
-                                   0                          -0 
+                                  -3                          -0 
    168 utilizMonedas[22,6]
-                                   0                          -0 
+                                  -3                          -0 
    169 utilizMonedas[23,1]
                                   -3                          -0 
    170 utilizMonedas[23,2]
-                                  -1                          -0 
+                                  -3                          -0 
    171 utilizMonedas[23,3]
-                                  -4                          -0 
+                                  -3                          -0 
    172 utilizMonedas[23,4]
-                                  -2                          -0 
+                                  -3                          -0 
    173 utilizMonedas[23,5]
-                                   0                          -0 
+                                  -3                          -0 
    174 utilizMonedas[23,6]
-                                   0                          -0 
+                                  -3                          -0 
    175 utilizMonedas[24,1]
                                   -3                          -0 
    176 utilizMonedas[24,2]
-                                  -1                          -0 
+                                  -3                          -0 
    177 utilizMonedas[24,3]
-                                  -4                          -0 
+                                  -3                          -0 
    178 utilizMonedas[24,4]
-                                  -2                          -0 
+                                  -3                          -0 
    179 utilizMonedas[24,5]
-                                   0                          -0 
+                                  -3                          -0 
    180 utilizMonedas[24,6]
-                                   0                          -0 
+                                  -3                          -0 
    181 monedasUsadasE1T[1]
                                    0            -0             = 
    182 monedasUsadasE1T[2]
@@ -399,7 +399,7 @@ Objective:  z = 97 (MAXimum)
    196 utilizRec[1,TEL]
                                    0                          -0 
    197 utilizRec[1,CER]
-                                  -1                          -0 
+                                   0                          -0 
    198 utilizRec[1,PAP]
                                    0                          -0 
    199 utilizRec[1,MAD]
@@ -413,7 +413,7 @@ Objective:  z = 97 (MAXimum)
    203 utilizRec[2,TEL]
                                    0                          -0 
    204 utilizRec[2,CER]
-                                  -1                          -0 
+                                   0                          -0 
    205 utilizRec[2,PAP]
                                    0                          -0 
    206 utilizRec[2,MAD]
@@ -427,7 +427,7 @@ Objective:  z = 97 (MAXimum)
    210 utilizRec[3,TEL]
                                    0                          -0 
    211 utilizRec[3,CER]
-                                  -1                          -0 
+                                   0                          -0 
    212 utilizRec[3,PAP]
                                    0                          -0 
    213 utilizRec[3,MAD]
@@ -441,7 +441,7 @@ Objective:  z = 97 (MAXimum)
    217 utilizRec[4,TEL]
                                    0                          -0 
    218 utilizRec[4,CER]
-                                  -1                          -0 
+                                   0                          -0 
    219 utilizRec[4,PAP]
                                    0                          -0 
    220 utilizRec[4,MAD]
@@ -455,7 +455,7 @@ Objective:  z = 97 (MAXimum)
    224 utilizRec[5,TEL]
                                    0                          -0 
    225 utilizRec[5,CER]
-                                  -1                          -0 
+                                   0                          -0 
    226 utilizRec[5,PAP]
                                    0                          -0 
    227 utilizRec[5,MAD]
@@ -469,7 +469,7 @@ Objective:  z = 97 (MAXimum)
    231 utilizRec[6,TEL]
                                    0                          -0 
    232 utilizRec[6,CER]
-                                  -1                          -0 
+                                   0                          -0 
    233 utilizRec[6,PAP]
                                    0                          -0 
    234 utilizRec[6,MAD]
@@ -483,7 +483,7 @@ Objective:  z = 97 (MAXimum)
    238 utilizRec[7,TEL]
                                    0                          -0 
    239 utilizRec[7,CER]
-                                  -1                          -0 
+                                   0                          -0 
    240 utilizRec[7,PAP]
                                    0                          -0 
    241 utilizRec[7,MAD]
@@ -497,7 +497,7 @@ Objective:  z = 97 (MAXimum)
    245 utilizRec[8,TEL]
                                    0                          -0 
    246 utilizRec[8,CER]
-                                  -1                          -0 
+                                   0                          -0 
    247 utilizRec[8,PAP]
                                    0                          -0 
    248 utilizRec[8,MAD]
@@ -511,7 +511,7 @@ Objective:  z = 97 (MAXimum)
    252 utilizRec[9,TEL]
                                    0                          -0 
    253 utilizRec[9,CER]
-                                  -1                          -0 
+                                   0                          -0 
    254 utilizRec[9,PAP]
                                    0                          -0 
    255 utilizRec[9,MAD]
@@ -525,7 +525,7 @@ Objective:  z = 97 (MAXimum)
    259 utilizRec[10,TEL]
                                    0                          -0 
    260 utilizRec[10,CER]
-                                  -1                          -0 
+                                   0                          -0 
    261 utilizRec[10,PAP]
                                    0                          -0 
    262 utilizRec[10,MAD]
@@ -539,7 +539,7 @@ Objective:  z = 97 (MAXimum)
    266 utilizRec[11,TEL]
                                    0                          -0 
    267 utilizRec[11,CER]
-                                  -1                          -0 
+                                   0                          -0 
    268 utilizRec[11,PAP]
                                    0                          -0 
    269 utilizRec[11,MAD]
@@ -553,7 +553,7 @@ Objective:  z = 97 (MAXimum)
    273 utilizRec[12,TEL]
                                    0                          -0 
    274 utilizRec[12,CER]
-                                  -1                          -0 
+                                   0                          -0 
    275 utilizRec[12,PAP]
                                    0                          -0 
    276 utilizRec[12,MAD]
@@ -567,7 +567,7 @@ Objective:  z = 97 (MAXimum)
    280 utilizRec[13,TEL]
                                    0                          -0 
    281 utilizRec[13,CER]
-                                  -1                          -0 
+                                   0                          -0 
    282 utilizRec[13,PAP]
                                    0                          -0 
    283 utilizRec[13,MAD]
@@ -581,7 +581,7 @@ Objective:  z = 97 (MAXimum)
    287 utilizRec[14,TEL]
                                    0                          -0 
    288 utilizRec[14,CER]
-                                  -1                          -0 
+                                   0                          -0 
    289 utilizRec[14,PAP]
                                    0                          -0 
    290 utilizRec[14,MAD]
@@ -595,7 +595,7 @@ Objective:  z = 97 (MAXimum)
    294 utilizRec[15,TEL]
                                    0                          -0 
    295 utilizRec[15,CER]
-                                  -1                          -0 
+                                   0                          -0 
    296 utilizRec[15,PAP]
                                    0                          -0 
    297 utilizRec[15,MAD]
@@ -609,7 +609,7 @@ Objective:  z = 97 (MAXimum)
    301 utilizRec[16,TEL]
                                    0                          -0 
    302 utilizRec[16,CER]
-                                  -1                          -0 
+                                   0                          -0 
    303 utilizRec[16,PAP]
                                    0                          -0 
    304 utilizRec[16,MAD]
@@ -637,7 +637,7 @@ Objective:  z = 97 (MAXimum)
    315 utilizRec[18,TEL]
                                    0                          -0 
    316 utilizRec[18,CER]
-                                  -1                          -0 
+                                   0                          -0 
    317 utilizRec[18,PAP]
                                    0                          -0 
    318 utilizRec[18,MAD]
@@ -651,7 +651,7 @@ Objective:  z = 97 (MAXimum)
    322 utilizRec[19,TEL]
                                    0                          -0 
    323 utilizRec[19,CER]
-                                  -1                          -0 
+                                   0                          -0 
    324 utilizRec[19,PAP]
                                    0                          -0 
    325 utilizRec[19,MAD]
@@ -665,7 +665,7 @@ Objective:  z = 97 (MAXimum)
    329 utilizRec[20,TEL]
                                    0                          -0 
    330 utilizRec[20,CER]
-                                  -1                          -0 
+                                   0                          -0 
    331 utilizRec[20,PAP]
                                    0                          -0 
    332 utilizRec[20,MAD]
@@ -679,7 +679,7 @@ Objective:  z = 97 (MAXimum)
    336 utilizRec[21,TEL]
                                    0                          -0 
    337 utilizRec[21,CER]
-                                  -1                          -0 
+                                   0                          -0 
    338 utilizRec[21,PAP]
                                    0                          -0 
    339 utilizRec[21,MAD]
@@ -693,7 +693,7 @@ Objective:  z = 97 (MAXimum)
    343 utilizRec[22,TEL]
                                    0                          -0 
    344 utilizRec[22,CER]
-                                  -1                          -0 
+                                   0                          -0 
    345 utilizRec[22,PAP]
                                    0                          -0 
    346 utilizRec[22,MAD]
@@ -707,7 +707,7 @@ Objective:  z = 97 (MAXimum)
    350 utilizRec[23,TEL]
                                    0                          -0 
    351 utilizRec[23,CER]
-                                  -1                          -0 
+                                   0                          -0 
    352 utilizRec[23,PAP]
                                    0                          -0 
    353 utilizRec[23,MAD]
@@ -721,7 +721,7 @@ Objective:  z = 97 (MAXimum)
    357 utilizRec[24,TEL]
                                    0                          -0 
    358 utilizRec[24,CER]
-                                  -1                          -0 
+                                   0                          -0 
    359 utilizRec[24,PAP]
                                    0                          -0 
    360 utilizRec[24,MAD]
@@ -943,7 +943,7 @@ Objective:  z = 97 (MAXimum)
    468 utilizRecE1T2[1,CER]
                                    0                          -0 
    469 utilizRecE1T2[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    470 utilizRecE1T2[1,MAD]
                                    0                          -0 
    471 utilizRecE1T2[1,LAD]
@@ -957,7 +957,7 @@ Objective:  z = 97 (MAXimum)
    475 utilizRecE1T2[2,CER]
                                    0                          -0 
    476 utilizRecE1T2[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    477 utilizRecE1T2[2,MAD]
                                    0                          -0 
    478 utilizRecE1T2[2,LAD]
@@ -971,7 +971,7 @@ Objective:  z = 97 (MAXimum)
    482 utilizRecE1T2[3,CER]
                                    0                          -0 
    483 utilizRecE1T2[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    484 utilizRecE1T2[3,MAD]
                                    0                          -0 
    485 utilizRecE1T2[3,LAD]
@@ -985,7 +985,7 @@ Objective:  z = 97 (MAXimum)
    489 utilizRecE1T2[4,CER]
                                    0                          -0 
    490 utilizRecE1T2[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    491 utilizRecE1T2[4,MAD]
                                    0                          -0 
    492 utilizRecE1T2[4,LAD]
@@ -999,7 +999,7 @@ Objective:  z = 97 (MAXimum)
    496 utilizRecE1T2[5,CER]
                                    0                          -0 
    497 utilizRecE1T2[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    498 utilizRecE1T2[5,MAD]
                                    0                          -0 
    499 utilizRecE1T2[5,LAD]
@@ -1013,7 +1013,7 @@ Objective:  z = 97 (MAXimum)
    503 utilizRecE1T2[6,CER]
                                    0                          -0 
    504 utilizRecE1T2[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    505 utilizRecE1T2[6,MAD]
                                    0                          -0 
    506 utilizRecE1T2[6,LAD]
@@ -1027,7 +1027,7 @@ Objective:  z = 97 (MAXimum)
    510 utilizRecE1T2[7,CER]
                                    0                          -0 
    511 utilizRecE1T2[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    512 utilizRecE1T2[7,MAD]
                                    0                          -0 
    513 utilizRecE1T2[7,LAD]
@@ -1041,7 +1041,7 @@ Objective:  z = 97 (MAXimum)
    517 utilizRecE1T2[8,CER]
                                    0                          -0 
    518 utilizRecE1T2[8,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    519 utilizRecE1T2[8,MAD]
                                    0                          -0 
    520 utilizRecE1T2[8,LAD]
@@ -1055,7 +1055,7 @@ Objective:  z = 97 (MAXimum)
    524 utilizRecE1T2[9,CER]
                                    0                          -0 
    525 utilizRecE1T2[9,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    526 utilizRecE1T2[9,MAD]
                                    0                          -0 
    527 utilizRecE1T2[9,LAD]
@@ -1069,7 +1069,7 @@ Objective:  z = 97 (MAXimum)
    531 utilizRecE1T2[10,CER]
                                    0                          -0 
    532 utilizRecE1T2[10,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    533 utilizRecE1T2[10,MAD]
                                    0                          -0 
    534 utilizRecE1T2[10,LAD]
@@ -1083,7 +1083,7 @@ Objective:  z = 97 (MAXimum)
    538 utilizRecE1T2[11,CER]
                                    0                          -0 
    539 utilizRecE1T2[11,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    540 utilizRecE1T2[11,MAD]
                                    0                          -0 
    541 utilizRecE1T2[11,LAD]
@@ -1097,7 +1097,7 @@ Objective:  z = 97 (MAXimum)
    545 utilizRecE1T2[12,CER]
                                    0                          -0 
    546 utilizRecE1T2[12,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    547 utilizRecE1T2[12,MAD]
                                    0                          -0 
    548 utilizRecE1T2[12,LAD]
@@ -1111,7 +1111,7 @@ Objective:  z = 97 (MAXimum)
    552 utilizRecE1T2[13,CER]
                                    0                          -0 
    553 utilizRecE1T2[13,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    554 utilizRecE1T2[13,MAD]
                                    0                          -0 
    555 utilizRecE1T2[13,LAD]
@@ -1125,7 +1125,7 @@ Objective:  z = 97 (MAXimum)
    559 utilizRecE1T2[14,CER]
                                    0                          -0 
    560 utilizRecE1T2[14,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    561 utilizRecE1T2[14,MAD]
                                    0                          -0 
    562 utilizRecE1T2[14,LAD]
@@ -1139,7 +1139,7 @@ Objective:  z = 97 (MAXimum)
    566 utilizRecE1T2[15,CER]
                                    0                          -0 
    567 utilizRecE1T2[15,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    568 utilizRecE1T2[15,MAD]
                                    0                          -0 
    569 utilizRecE1T2[15,LAD]
@@ -1153,7 +1153,7 @@ Objective:  z = 97 (MAXimum)
    573 utilizRecE1T2[16,CER]
                                    0                          -0 
    574 utilizRecE1T2[16,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    575 utilizRecE1T2[16,MAD]
                                    0                          -0 
    576 utilizRecE1T2[16,LAD]
@@ -1167,7 +1167,7 @@ Objective:  z = 97 (MAXimum)
    580 utilizRecE1T2[17,CER]
                                    0                          -0 
    581 utilizRecE1T2[17,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    582 utilizRecE1T2[17,MAD]
                                    0                          -0 
    583 utilizRecE1T2[17,LAD]
@@ -1181,7 +1181,7 @@ Objective:  z = 97 (MAXimum)
    587 utilizRecE1T2[18,CER]
                                    0                          -0 
    588 utilizRecE1T2[18,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    589 utilizRecE1T2[18,MAD]
                                    0                          -0 
    590 utilizRecE1T2[18,LAD]
@@ -1195,7 +1195,7 @@ Objective:  z = 97 (MAXimum)
    594 utilizRecE1T2[19,CER]
                                    0                          -0 
    595 utilizRecE1T2[19,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    596 utilizRecE1T2[19,MAD]
                                    0                          -0 
    597 utilizRecE1T2[19,LAD]
@@ -1209,7 +1209,7 @@ Objective:  z = 97 (MAXimum)
    601 utilizRecE1T2[20,CER]
                                    0                          -0 
    602 utilizRecE1T2[20,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    603 utilizRecE1T2[20,MAD]
                                    0                          -0 
    604 utilizRecE1T2[20,LAD]
@@ -1223,7 +1223,7 @@ Objective:  z = 97 (MAXimum)
    608 utilizRecE1T2[21,CER]
                                    0                          -0 
    609 utilizRecE1T2[21,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    610 utilizRecE1T2[21,MAD]
                                    0                          -0 
    611 utilizRecE1T2[21,LAD]
@@ -1237,7 +1237,7 @@ Objective:  z = 97 (MAXimum)
    615 utilizRecE1T2[22,CER]
                                    0                          -0 
    616 utilizRecE1T2[22,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    617 utilizRecE1T2[22,MAD]
                                    0                          -0 
    618 utilizRecE1T2[22,LAD]
@@ -1251,7 +1251,7 @@ Objective:  z = 97 (MAXimum)
    622 utilizRecE1T2[23,CER]
                                    0                          -0 
    623 utilizRecE1T2[23,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    624 utilizRecE1T2[23,MAD]
                                    0                          -0 
    625 utilizRecE1T2[23,LAD]
@@ -1265,7 +1265,7 @@ Objective:  z = 97 (MAXimum)
    629 utilizRecE1T2[24,CER]
                                    0                          -0 
    630 utilizRecE1T2[24,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    631 utilizRecE1T2[24,MAD]
                                    0                          -0 
    632 utilizRecE1T2[24,LAD]
@@ -1483,11 +1483,11 @@ Objective:  z = 97 (MAXimum)
    738 utilizRecE1T3[1,CEM]
                                   -1                          -0 
    739 utilizRecE1T3[1,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    740 utilizRecE1T3[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
    741 utilizRecE1T3[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    742 utilizRecE1T3[1,MAD]
                                    0                          -0 
    743 utilizRecE1T3[1,LAD]
@@ -1497,11 +1497,11 @@ Objective:  z = 97 (MAXimum)
    745 utilizRecE1T3[2,CEM]
                                   -1                          -0 
    746 utilizRecE1T3[2,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    747 utilizRecE1T3[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
    748 utilizRecE1T3[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    749 utilizRecE1T3[2,MAD]
                                    0                          -0 
    750 utilizRecE1T3[2,LAD]
@@ -1511,11 +1511,11 @@ Objective:  z = 97 (MAXimum)
    752 utilizRecE1T3[3,CEM]
                                   -1                          -0 
    753 utilizRecE1T3[3,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    754 utilizRecE1T3[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
    755 utilizRecE1T3[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    756 utilizRecE1T3[3,MAD]
                                    0                          -0 
    757 utilizRecE1T3[3,LAD]
@@ -1525,11 +1525,11 @@ Objective:  z = 97 (MAXimum)
    759 utilizRecE1T3[4,CEM]
                                   -1                          -0 
    760 utilizRecE1T3[4,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    761 utilizRecE1T3[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
    762 utilizRecE1T3[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    763 utilizRecE1T3[4,MAD]
                                    0                          -0 
    764 utilizRecE1T3[4,LAD]
@@ -1539,11 +1539,11 @@ Objective:  z = 97 (MAXimum)
    766 utilizRecE1T3[5,CEM]
                                   -1                          -0 
    767 utilizRecE1T3[5,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    768 utilizRecE1T3[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
    769 utilizRecE1T3[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    770 utilizRecE1T3[5,MAD]
                                    0                          -0 
    771 utilizRecE1T3[5,LAD]
@@ -1553,11 +1553,11 @@ Objective:  z = 97 (MAXimum)
    773 utilizRecE1T3[6,CEM]
                                   -1                          -0 
    774 utilizRecE1T3[6,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    775 utilizRecE1T3[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
    776 utilizRecE1T3[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    777 utilizRecE1T3[6,MAD]
                                    0                          -0 
    778 utilizRecE1T3[6,LAD]
@@ -1567,11 +1567,11 @@ Objective:  z = 97 (MAXimum)
    780 utilizRecE1T3[7,CEM]
                                   -1                          -0 
    781 utilizRecE1T3[7,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    782 utilizRecE1T3[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
    783 utilizRecE1T3[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    784 utilizRecE1T3[7,MAD]
                                    0                          -0 
    785 utilizRecE1T3[7,LAD]
@@ -1581,11 +1581,11 @@ Objective:  z = 97 (MAXimum)
    787 utilizRecE1T3[8,CEM]
                                   -1                          -0 
    788 utilizRecE1T3[8,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    789 utilizRecE1T3[8,CER]
-                                   0                          -0 
+                                  -1                          -0 
    790 utilizRecE1T3[8,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    791 utilizRecE1T3[8,MAD]
                                    0                          -0 
    792 utilizRecE1T3[8,LAD]
@@ -1595,11 +1595,11 @@ Objective:  z = 97 (MAXimum)
    794 utilizRecE1T3[9,CEM]
                                   -1                          -0 
    795 utilizRecE1T3[9,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    796 utilizRecE1T3[9,CER]
-                                   0                          -0 
+                                  -1                          -0 
    797 utilizRecE1T3[9,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    798 utilizRecE1T3[9,MAD]
                                    0                          -0 
    799 utilizRecE1T3[9,LAD]
@@ -1609,11 +1609,11 @@ Objective:  z = 97 (MAXimum)
    801 utilizRecE1T3[10,CEM]
                                   -1                          -0 
    802 utilizRecE1T3[10,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    803 utilizRecE1T3[10,CER]
-                                   0                          -0 
+                                  -1                          -0 
    804 utilizRecE1T3[10,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    805 utilizRecE1T3[10,MAD]
                                    0                          -0 
    806 utilizRecE1T3[10,LAD]
@@ -1623,11 +1623,11 @@ Objective:  z = 97 (MAXimum)
    808 utilizRecE1T3[11,CEM]
                                   -1                          -0 
    809 utilizRecE1T3[11,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    810 utilizRecE1T3[11,CER]
-                                   0                          -0 
+                                  -1                          -0 
    811 utilizRecE1T3[11,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    812 utilizRecE1T3[11,MAD]
                                    0                          -0 
    813 utilizRecE1T3[11,LAD]
@@ -1637,11 +1637,11 @@ Objective:  z = 97 (MAXimum)
    815 utilizRecE1T3[12,CEM]
                                   -1                          -0 
    816 utilizRecE1T3[12,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    817 utilizRecE1T3[12,CER]
-                                   0                          -0 
+                                  -1                          -0 
    818 utilizRecE1T3[12,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    819 utilizRecE1T3[12,MAD]
                                    0                          -0 
    820 utilizRecE1T3[12,LAD]
@@ -1649,13 +1649,13 @@ Objective:  z = 97 (MAXimum)
    821 utilizRecE1T3[12,ORO]
                                    0                          -0 
    822 utilizRecE1T3[13,CEM]
-                                  -1                          -0 
+                                   0                          -0 
    823 utilizRecE1T3[13,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    824 utilizRecE1T3[13,CER]
-                                   0                          -0 
+                                  -1                          -0 
    825 utilizRecE1T3[13,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    826 utilizRecE1T3[13,MAD]
                                    0                          -0 
    827 utilizRecE1T3[13,LAD]
@@ -1665,11 +1665,11 @@ Objective:  z = 97 (MAXimum)
    829 utilizRecE1T3[14,CEM]
                                   -1                          -0 
    830 utilizRecE1T3[14,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    831 utilizRecE1T3[14,CER]
-                                   0                          -0 
+                                  -1                          -0 
    832 utilizRecE1T3[14,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    833 utilizRecE1T3[14,MAD]
                                    0                          -0 
    834 utilizRecE1T3[14,LAD]
@@ -1679,11 +1679,11 @@ Objective:  z = 97 (MAXimum)
    836 utilizRecE1T3[15,CEM]
                                   -1                          -0 
    837 utilizRecE1T3[15,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    838 utilizRecE1T3[15,CER]
-                                   0                          -0 
+                                  -1                          -0 
    839 utilizRecE1T3[15,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    840 utilizRecE1T3[15,MAD]
                                    0                          -0 
    841 utilizRecE1T3[15,LAD]
@@ -1695,9 +1695,9 @@ Objective:  z = 97 (MAXimum)
    844 utilizRecE1T3[16,TEL]
                                    0                          -0 
    845 utilizRecE1T3[16,CER]
-                                   0                          -0 
+                                  -1                          -0 
    846 utilizRecE1T3[16,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    847 utilizRecE1T3[16,MAD]
                                    0                          -0 
    848 utilizRecE1T3[16,LAD]
@@ -1707,11 +1707,11 @@ Objective:  z = 97 (MAXimum)
    850 utilizRecE1T3[17,CEM]
                                   -1                          -0 
    851 utilizRecE1T3[17,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    852 utilizRecE1T3[17,CER]
-                                   0                          -0 
+                                  -1                          -0 
    853 utilizRecE1T3[17,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    854 utilizRecE1T3[17,MAD]
                                    0                          -0 
    855 utilizRecE1T3[17,LAD]
@@ -1721,11 +1721,11 @@ Objective:  z = 97 (MAXimum)
    857 utilizRecE1T3[18,CEM]
                                   -1                          -0 
    858 utilizRecE1T3[18,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    859 utilizRecE1T3[18,CER]
-                                   0                          -0 
+                                  -1                          -0 
    860 utilizRecE1T3[18,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    861 utilizRecE1T3[18,MAD]
                                    0                          -0 
    862 utilizRecE1T3[18,LAD]
@@ -1735,11 +1735,11 @@ Objective:  z = 97 (MAXimum)
    864 utilizRecE1T3[19,CEM]
                                   -1                          -0 
    865 utilizRecE1T3[19,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    866 utilizRecE1T3[19,CER]
-                                   0                          -0 
+                                  -1                          -0 
    867 utilizRecE1T3[19,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    868 utilizRecE1T3[19,MAD]
                                    0                          -0 
    869 utilizRecE1T3[19,LAD]
@@ -1749,11 +1749,11 @@ Objective:  z = 97 (MAXimum)
    871 utilizRecE1T3[20,CEM]
                                   -1                          -0 
    872 utilizRecE1T3[20,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    873 utilizRecE1T3[20,CER]
-                                   0                          -0 
+                                  -1                          -0 
    874 utilizRecE1T3[20,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    875 utilizRecE1T3[20,MAD]
                                    0                          -0 
    876 utilizRecE1T3[20,LAD]
@@ -1763,11 +1763,11 @@ Objective:  z = 97 (MAXimum)
    878 utilizRecE1T3[21,CEM]
                                   -1                          -0 
    879 utilizRecE1T3[21,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    880 utilizRecE1T3[21,CER]
-                                   0                          -0 
+                                  -1                          -0 
    881 utilizRecE1T3[21,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    882 utilizRecE1T3[21,MAD]
                                    0                          -0 
    883 utilizRecE1T3[21,LAD]
@@ -1777,11 +1777,11 @@ Objective:  z = 97 (MAXimum)
    885 utilizRecE1T3[22,CEM]
                                   -1                          -0 
    886 utilizRecE1T3[22,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    887 utilizRecE1T3[22,CER]
-                                   0                          -0 
+                                  -1                          -0 
    888 utilizRecE1T3[22,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    889 utilizRecE1T3[22,MAD]
                                    0                          -0 
    890 utilizRecE1T3[22,LAD]
@@ -1791,11 +1791,11 @@ Objective:  z = 97 (MAXimum)
    892 utilizRecE1T3[23,CEM]
                                   -1                          -0 
    893 utilizRecE1T3[23,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    894 utilizRecE1T3[23,CER]
-                                   0                          -0 
+                                  -1                          -0 
    895 utilizRecE1T3[23,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    896 utilizRecE1T3[23,MAD]
                                    0                          -0 
    897 utilizRecE1T3[23,LAD]
@@ -1805,11 +1805,11 @@ Objective:  z = 97 (MAXimum)
    899 utilizRecE1T3[24,CEM]
                                   -1                          -0 
    900 utilizRecE1T3[24,TEL]
-                                  -1                          -0 
+                                   0                          -0 
    901 utilizRecE1T3[24,CER]
-                                   0                          -0 
+                                  -1                          -0 
    902 utilizRecE1T3[24,PAP]
-                                   0                          -0 
+                                  -1                          -0 
    903 utilizRecE1T3[24,MAD]
                                    0                          -0 
    904 utilizRecE1T3[24,LAD]
@@ -2029,7 +2029,7 @@ Objective:  z = 97 (MAXimum)
   1011 utilizRecE1T4[1,TEL]
                                    0                          -0 
   1012 utilizRecE1T4[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1013 utilizRecE1T4[1,PAP]
                                   -1                          -0 
   1014 utilizRecE1T4[1,MAD]
@@ -2043,7 +2043,7 @@ Objective:  z = 97 (MAXimum)
   1018 utilizRecE1T4[2,TEL]
                                    0                          -0 
   1019 utilizRecE1T4[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1020 utilizRecE1T4[2,PAP]
                                   -1                          -0 
   1021 utilizRecE1T4[2,MAD]
@@ -2057,7 +2057,7 @@ Objective:  z = 97 (MAXimum)
   1025 utilizRecE1T4[3,TEL]
                                    0                          -0 
   1026 utilizRecE1T4[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1027 utilizRecE1T4[3,PAP]
                                   -1                          -0 
   1028 utilizRecE1T4[3,MAD]
@@ -2071,7 +2071,7 @@ Objective:  z = 97 (MAXimum)
   1032 utilizRecE1T4[4,TEL]
                                    0                          -0 
   1033 utilizRecE1T4[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1034 utilizRecE1T4[4,PAP]
                                   -1                          -0 
   1035 utilizRecE1T4[4,MAD]
@@ -2085,7 +2085,7 @@ Objective:  z = 97 (MAXimum)
   1039 utilizRecE1T4[5,TEL]
                                    0                          -0 
   1040 utilizRecE1T4[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1041 utilizRecE1T4[5,PAP]
                                   -1                          -0 
   1042 utilizRecE1T4[5,MAD]
@@ -2099,7 +2099,7 @@ Objective:  z = 97 (MAXimum)
   1046 utilizRecE1T4[6,TEL]
                                    0                          -0 
   1047 utilizRecE1T4[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1048 utilizRecE1T4[6,PAP]
                                   -1                          -0 
   1049 utilizRecE1T4[6,MAD]
@@ -2113,7 +2113,7 @@ Objective:  z = 97 (MAXimum)
   1053 utilizRecE1T4[7,TEL]
                                    0                          -0 
   1054 utilizRecE1T4[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1055 utilizRecE1T4[7,PAP]
                                   -1                          -0 
   1056 utilizRecE1T4[7,MAD]
@@ -2127,7 +2127,7 @@ Objective:  z = 97 (MAXimum)
   1060 utilizRecE1T4[8,TEL]
                                    0                          -0 
   1061 utilizRecE1T4[8,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1062 utilizRecE1T4[8,PAP]
                                   -1                          -0 
   1063 utilizRecE1T4[8,MAD]
@@ -2141,7 +2141,7 @@ Objective:  z = 97 (MAXimum)
   1067 utilizRecE1T4[9,TEL]
                                    0                          -0 
   1068 utilizRecE1T4[9,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1069 utilizRecE1T4[9,PAP]
                                   -1                          -0 
   1070 utilizRecE1T4[9,MAD]
@@ -2155,7 +2155,7 @@ Objective:  z = 97 (MAXimum)
   1074 utilizRecE1T4[10,TEL]
                                    0                          -0 
   1075 utilizRecE1T4[10,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1076 utilizRecE1T4[10,PAP]
                                   -1                          -0 
   1077 utilizRecE1T4[10,MAD]
@@ -2169,7 +2169,7 @@ Objective:  z = 97 (MAXimum)
   1081 utilizRecE1T4[11,TEL]
                                    0                          -0 
   1082 utilizRecE1T4[11,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1083 utilizRecE1T4[11,PAP]
                                   -1                          -0 
   1084 utilizRecE1T4[11,MAD]
@@ -2183,7 +2183,7 @@ Objective:  z = 97 (MAXimum)
   1088 utilizRecE1T4[12,TEL]
                                    0                          -0 
   1089 utilizRecE1T4[12,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1090 utilizRecE1T4[12,PAP]
                                   -1                          -0 
   1091 utilizRecE1T4[12,MAD]
@@ -2197,7 +2197,7 @@ Objective:  z = 97 (MAXimum)
   1095 utilizRecE1T4[13,TEL]
                                    0                          -0 
   1096 utilizRecE1T4[13,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1097 utilizRecE1T4[13,PAP]
                                   -1                          -0 
   1098 utilizRecE1T4[13,MAD]
@@ -2211,7 +2211,7 @@ Objective:  z = 97 (MAXimum)
   1102 utilizRecE1T4[14,TEL]
                                    0                          -0 
   1103 utilizRecE1T4[14,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1104 utilizRecE1T4[14,PAP]
                                   -1                          -0 
   1105 utilizRecE1T4[14,MAD]
@@ -2225,7 +2225,7 @@ Objective:  z = 97 (MAXimum)
   1109 utilizRecE1T4[15,TEL]
                                    0                          -0 
   1110 utilizRecE1T4[15,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1111 utilizRecE1T4[15,PAP]
                                   -1                          -0 
   1112 utilizRecE1T4[15,MAD]
@@ -2239,7 +2239,7 @@ Objective:  z = 97 (MAXimum)
   1116 utilizRecE1T4[16,TEL]
                                    0                          -0 
   1117 utilizRecE1T4[16,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1118 utilizRecE1T4[16,PAP]
                                   -1                          -0 
   1119 utilizRecE1T4[16,MAD]
@@ -2267,9 +2267,9 @@ Objective:  z = 97 (MAXimum)
   1130 utilizRecE1T4[18,TEL]
                                    0                          -0 
   1131 utilizRecE1T4[18,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1132 utilizRecE1T4[18,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1133 utilizRecE1T4[18,MAD]
                                    0                          -0 
   1134 utilizRecE1T4[18,LAD]
@@ -2281,7 +2281,7 @@ Objective:  z = 97 (MAXimum)
   1137 utilizRecE1T4[19,TEL]
                                    0                          -0 
   1138 utilizRecE1T4[19,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1139 utilizRecE1T4[19,PAP]
                                   -1                          -0 
   1140 utilizRecE1T4[19,MAD]
@@ -2295,7 +2295,7 @@ Objective:  z = 97 (MAXimum)
   1144 utilizRecE1T4[20,TEL]
                                    0                          -0 
   1145 utilizRecE1T4[20,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1146 utilizRecE1T4[20,PAP]
                                   -1                          -0 
   1147 utilizRecE1T4[20,MAD]
@@ -2309,7 +2309,7 @@ Objective:  z = 97 (MAXimum)
   1151 utilizRecE1T4[21,TEL]
                                    0                          -0 
   1152 utilizRecE1T4[21,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1153 utilizRecE1T4[21,PAP]
                                   -1                          -0 
   1154 utilizRecE1T4[21,MAD]
@@ -2323,7 +2323,7 @@ Objective:  z = 97 (MAXimum)
   1158 utilizRecE1T4[22,TEL]
                                    0                          -0 
   1159 utilizRecE1T4[22,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1160 utilizRecE1T4[22,PAP]
                                   -1                          -0 
   1161 utilizRecE1T4[22,MAD]
@@ -2337,7 +2337,7 @@ Objective:  z = 97 (MAXimum)
   1165 utilizRecE1T4[23,TEL]
                                    0                          -0 
   1166 utilizRecE1T4[23,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1167 utilizRecE1T4[23,PAP]
                                   -1                          -0 
   1168 utilizRecE1T4[23,MAD]
@@ -2351,7 +2351,7 @@ Objective:  z = 97 (MAXimum)
   1172 utilizRecE1T4[24,TEL]
                                    0                          -0 
   1173 utilizRecE1T4[24,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1174 utilizRecE1T4[24,PAP]
                                   -1                          -0 
   1175 utilizRecE1T4[24,MAD]
@@ -2573,9 +2573,9 @@ Objective:  z = 97 (MAXimum)
   1283 utilizRecE1T5[1,TEL]
                                    0                          -0 
   1284 utilizRecE1T5[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1285 utilizRecE1T5[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1286 utilizRecE1T5[1,MAD]
                                    0                          -0 
   1287 utilizRecE1T5[1,LAD]
@@ -2587,9 +2587,9 @@ Objective:  z = 97 (MAXimum)
   1290 utilizRecE1T5[2,TEL]
                                    0                          -0 
   1291 utilizRecE1T5[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1292 utilizRecE1T5[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1293 utilizRecE1T5[2,MAD]
                                    0                          -0 
   1294 utilizRecE1T5[2,LAD]
@@ -2601,9 +2601,9 @@ Objective:  z = 97 (MAXimum)
   1297 utilizRecE1T5[3,TEL]
                                    0                          -0 
   1298 utilizRecE1T5[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1299 utilizRecE1T5[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1300 utilizRecE1T5[3,MAD]
                                    0                          -0 
   1301 utilizRecE1T5[3,LAD]
@@ -2615,9 +2615,9 @@ Objective:  z = 97 (MAXimum)
   1304 utilizRecE1T5[4,TEL]
                                    0                          -0 
   1305 utilizRecE1T5[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1306 utilizRecE1T5[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1307 utilizRecE1T5[4,MAD]
                                    0                          -0 
   1308 utilizRecE1T5[4,LAD]
@@ -2629,9 +2629,9 @@ Objective:  z = 97 (MAXimum)
   1311 utilizRecE1T5[5,TEL]
                                    0                          -0 
   1312 utilizRecE1T5[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1313 utilizRecE1T5[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1314 utilizRecE1T5[5,MAD]
                                    0                          -0 
   1315 utilizRecE1T5[5,LAD]
@@ -2643,9 +2643,9 @@ Objective:  z = 97 (MAXimum)
   1318 utilizRecE1T5[6,TEL]
                                    0                          -0 
   1319 utilizRecE1T5[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1320 utilizRecE1T5[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1321 utilizRecE1T5[6,MAD]
                                    0                          -0 
   1322 utilizRecE1T5[6,LAD]
@@ -2657,9 +2657,9 @@ Objective:  z = 97 (MAXimum)
   1325 utilizRecE1T5[7,TEL]
                                    0                          -0 
   1326 utilizRecE1T5[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1327 utilizRecE1T5[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1328 utilizRecE1T5[7,MAD]
                                    0                          -0 
   1329 utilizRecE1T5[7,LAD]
@@ -2671,9 +2671,9 @@ Objective:  z = 97 (MAXimum)
   1332 utilizRecE1T5[8,TEL]
                                    0                          -0 
   1333 utilizRecE1T5[8,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1334 utilizRecE1T5[8,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1335 utilizRecE1T5[8,MAD]
                                    0                          -0 
   1336 utilizRecE1T5[8,LAD]
@@ -2685,9 +2685,9 @@ Objective:  z = 97 (MAXimum)
   1339 utilizRecE1T5[9,TEL]
                                    0                          -0 
   1340 utilizRecE1T5[9,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1341 utilizRecE1T5[9,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1342 utilizRecE1T5[9,MAD]
                                    0                          -0 
   1343 utilizRecE1T5[9,LAD]
@@ -2699,9 +2699,9 @@ Objective:  z = 97 (MAXimum)
   1346 utilizRecE1T5[10,TEL]
                                    0                          -0 
   1347 utilizRecE1T5[10,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1348 utilizRecE1T5[10,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1349 utilizRecE1T5[10,MAD]
                                    0                          -0 
   1350 utilizRecE1T5[10,LAD]
@@ -2713,9 +2713,9 @@ Objective:  z = 97 (MAXimum)
   1353 utilizRecE1T5[11,TEL]
                                    0                          -0 
   1354 utilizRecE1T5[11,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1355 utilizRecE1T5[11,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1356 utilizRecE1T5[11,MAD]
                                    0                          -0 
   1357 utilizRecE1T5[11,LAD]
@@ -2727,9 +2727,9 @@ Objective:  z = 97 (MAXimum)
   1360 utilizRecE1T5[12,TEL]
                                    0                          -0 
   1361 utilizRecE1T5[12,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1362 utilizRecE1T5[12,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1363 utilizRecE1T5[12,MAD]
                                    0                          -0 
   1364 utilizRecE1T5[12,LAD]
@@ -2737,13 +2737,13 @@ Objective:  z = 97 (MAXimum)
   1365 utilizRecE1T5[12,ORO]
                                    0                          -0 
   1366 utilizRecE1T5[13,CEM]
-                                   0                          -0 
+                                  -1                          -0 
   1367 utilizRecE1T5[13,TEL]
                                    0                          -0 
   1368 utilizRecE1T5[13,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1369 utilizRecE1T5[13,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1370 utilizRecE1T5[13,MAD]
                                    0                          -0 
   1371 utilizRecE1T5[13,LAD]
@@ -2755,9 +2755,9 @@ Objective:  z = 97 (MAXimum)
   1374 utilizRecE1T5[14,TEL]
                                    0                          -0 
   1375 utilizRecE1T5[14,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1376 utilizRecE1T5[14,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1377 utilizRecE1T5[14,MAD]
                                    0                          -0 
   1378 utilizRecE1T5[14,LAD]
@@ -2769,9 +2769,9 @@ Objective:  z = 97 (MAXimum)
   1381 utilizRecE1T5[15,TEL]
                                    0                          -0 
   1382 utilizRecE1T5[15,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1383 utilizRecE1T5[15,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1384 utilizRecE1T5[15,MAD]
                                    0                          -0 
   1385 utilizRecE1T5[15,LAD]
@@ -2783,9 +2783,9 @@ Objective:  z = 97 (MAXimum)
   1388 utilizRecE1T5[16,TEL]
                                    0                          -0 
   1389 utilizRecE1T5[16,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1390 utilizRecE1T5[16,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1391 utilizRecE1T5[16,MAD]
                                    0                          -0 
   1392 utilizRecE1T5[16,LAD]
@@ -2797,9 +2797,9 @@ Objective:  z = 97 (MAXimum)
   1395 utilizRecE1T5[17,TEL]
                                    0                          -0 
   1396 utilizRecE1T5[17,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1397 utilizRecE1T5[17,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1398 utilizRecE1T5[17,MAD]
                                    0                          -0 
   1399 utilizRecE1T5[17,LAD]
@@ -2811,7 +2811,7 @@ Objective:  z = 97 (MAXimum)
   1402 utilizRecE1T5[18,TEL]
                                    0                          -0 
   1403 utilizRecE1T5[18,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1404 utilizRecE1T5[18,PAP]
                                    0                          -0 
   1405 utilizRecE1T5[18,MAD]
@@ -2825,9 +2825,9 @@ Objective:  z = 97 (MAXimum)
   1409 utilizRecE1T5[19,TEL]
                                    0                          -0 
   1410 utilizRecE1T5[19,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1411 utilizRecE1T5[19,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1412 utilizRecE1T5[19,MAD]
                                    0                          -0 
   1413 utilizRecE1T5[19,LAD]
@@ -2839,9 +2839,9 @@ Objective:  z = 97 (MAXimum)
   1416 utilizRecE1T5[20,TEL]
                                    0                          -0 
   1417 utilizRecE1T5[20,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1418 utilizRecE1T5[20,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1419 utilizRecE1T5[20,MAD]
                                    0                          -0 
   1420 utilizRecE1T5[20,LAD]
@@ -2853,9 +2853,9 @@ Objective:  z = 97 (MAXimum)
   1423 utilizRecE1T5[21,TEL]
                                    0                          -0 
   1424 utilizRecE1T5[21,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1425 utilizRecE1T5[21,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1426 utilizRecE1T5[21,MAD]
                                    0                          -0 
   1427 utilizRecE1T5[21,LAD]
@@ -2867,9 +2867,9 @@ Objective:  z = 97 (MAXimum)
   1430 utilizRecE1T5[22,TEL]
                                    0                          -0 
   1431 utilizRecE1T5[22,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1432 utilizRecE1T5[22,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1433 utilizRecE1T5[22,MAD]
                                    0                          -0 
   1434 utilizRecE1T5[22,LAD]
@@ -2881,9 +2881,9 @@ Objective:  z = 97 (MAXimum)
   1437 utilizRecE1T5[23,TEL]
                                    0                          -0 
   1438 utilizRecE1T5[23,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1439 utilizRecE1T5[23,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1440 utilizRecE1T5[23,MAD]
                                    0                          -0 
   1441 utilizRecE1T5[23,LAD]
@@ -2895,9 +2895,9 @@ Objective:  z = 97 (MAXimum)
   1444 utilizRecE1T5[24,TEL]
                                    0                          -0 
   1445 utilizRecE1T5[24,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1446 utilizRecE1T5[24,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1447 utilizRecE1T5[24,MAD]
                                    0                          -0 
   1448 utilizRecE1T5[24,LAD]
@@ -3115,11 +3115,11 @@ Objective:  z = 97 (MAXimum)
   1554 utilizRecE1T6[1,CEM]
                                   -1                          -0 
   1555 utilizRecE1T6[1,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1556 utilizRecE1T6[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1557 utilizRecE1T6[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1558 utilizRecE1T6[1,MAD]
                                    0                          -0 
   1559 utilizRecE1T6[1,LAD]
@@ -3129,11 +3129,11 @@ Objective:  z = 97 (MAXimum)
   1561 utilizRecE1T6[2,CEM]
                                   -1                          -0 
   1562 utilizRecE1T6[2,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1563 utilizRecE1T6[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1564 utilizRecE1T6[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1565 utilizRecE1T6[2,MAD]
                                    0                          -0 
   1566 utilizRecE1T6[2,LAD]
@@ -3143,11 +3143,11 @@ Objective:  z = 97 (MAXimum)
   1568 utilizRecE1T6[3,CEM]
                                   -1                          -0 
   1569 utilizRecE1T6[3,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1570 utilizRecE1T6[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1571 utilizRecE1T6[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1572 utilizRecE1T6[3,MAD]
                                    0                          -0 
   1573 utilizRecE1T6[3,LAD]
@@ -3157,11 +3157,11 @@ Objective:  z = 97 (MAXimum)
   1575 utilizRecE1T6[4,CEM]
                                   -1                          -0 
   1576 utilizRecE1T6[4,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1577 utilizRecE1T6[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1578 utilizRecE1T6[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1579 utilizRecE1T6[4,MAD]
                                    0                          -0 
   1580 utilizRecE1T6[4,LAD]
@@ -3171,11 +3171,11 @@ Objective:  z = 97 (MAXimum)
   1582 utilizRecE1T6[5,CEM]
                                   -1                          -0 
   1583 utilizRecE1T6[5,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1584 utilizRecE1T6[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1585 utilizRecE1T6[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1586 utilizRecE1T6[5,MAD]
                                    0                          -0 
   1587 utilizRecE1T6[5,LAD]
@@ -3185,11 +3185,11 @@ Objective:  z = 97 (MAXimum)
   1589 utilizRecE1T6[6,CEM]
                                   -1                          -0 
   1590 utilizRecE1T6[6,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1591 utilizRecE1T6[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1592 utilizRecE1T6[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1593 utilizRecE1T6[6,MAD]
                                    0                          -0 
   1594 utilizRecE1T6[6,LAD]
@@ -3199,11 +3199,11 @@ Objective:  z = 97 (MAXimum)
   1596 utilizRecE1T6[7,CEM]
                                   -1                          -0 
   1597 utilizRecE1T6[7,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1598 utilizRecE1T6[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1599 utilizRecE1T6[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1600 utilizRecE1T6[7,MAD]
                                    0                          -0 
   1601 utilizRecE1T6[7,LAD]
@@ -3213,11 +3213,11 @@ Objective:  z = 97 (MAXimum)
   1603 utilizRecE1T6[8,CEM]
                                   -1                          -0 
   1604 utilizRecE1T6[8,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1605 utilizRecE1T6[8,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1606 utilizRecE1T6[8,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1607 utilizRecE1T6[8,MAD]
                                    0                          -0 
   1608 utilizRecE1T6[8,LAD]
@@ -3227,11 +3227,11 @@ Objective:  z = 97 (MAXimum)
   1610 utilizRecE1T6[9,CEM]
                                   -1                          -0 
   1611 utilizRecE1T6[9,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1612 utilizRecE1T6[9,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1613 utilizRecE1T6[9,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1614 utilizRecE1T6[9,MAD]
                                    0                          -0 
   1615 utilizRecE1T6[9,LAD]
@@ -3241,11 +3241,11 @@ Objective:  z = 97 (MAXimum)
   1617 utilizRecE1T6[10,CEM]
                                   -1                          -0 
   1618 utilizRecE1T6[10,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1619 utilizRecE1T6[10,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1620 utilizRecE1T6[10,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1621 utilizRecE1T6[10,MAD]
                                    0                          -0 
   1622 utilizRecE1T6[10,LAD]
@@ -3255,11 +3255,11 @@ Objective:  z = 97 (MAXimum)
   1624 utilizRecE1T6[11,CEM]
                                   -1                          -0 
   1625 utilizRecE1T6[11,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1626 utilizRecE1T6[11,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1627 utilizRecE1T6[11,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1628 utilizRecE1T6[11,MAD]
                                    0                          -0 
   1629 utilizRecE1T6[11,LAD]
@@ -3269,11 +3269,11 @@ Objective:  z = 97 (MAXimum)
   1631 utilizRecE1T6[12,CEM]
                                   -1                          -0 
   1632 utilizRecE1T6[12,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1633 utilizRecE1T6[12,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1634 utilizRecE1T6[12,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1635 utilizRecE1T6[12,MAD]
                                    0                          -0 
   1636 utilizRecE1T6[12,LAD]
@@ -3283,11 +3283,11 @@ Objective:  z = 97 (MAXimum)
   1638 utilizRecE1T6[13,CEM]
                                   -1                          -0 
   1639 utilizRecE1T6[13,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1640 utilizRecE1T6[13,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1641 utilizRecE1T6[13,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1642 utilizRecE1T6[13,MAD]
                                    0                          -0 
   1643 utilizRecE1T6[13,LAD]
@@ -3297,11 +3297,11 @@ Objective:  z = 97 (MAXimum)
   1645 utilizRecE1T6[14,CEM]
                                   -1                          -0 
   1646 utilizRecE1T6[14,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1647 utilizRecE1T6[14,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1648 utilizRecE1T6[14,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1649 utilizRecE1T6[14,MAD]
                                    0                          -0 
   1650 utilizRecE1T6[14,LAD]
@@ -3311,11 +3311,11 @@ Objective:  z = 97 (MAXimum)
   1652 utilizRecE1T6[15,CEM]
                                   -1                          -0 
   1653 utilizRecE1T6[15,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1654 utilizRecE1T6[15,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1655 utilizRecE1T6[15,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1656 utilizRecE1T6[15,MAD]
                                    0                          -0 
   1657 utilizRecE1T6[15,LAD]
@@ -3327,9 +3327,9 @@ Objective:  z = 97 (MAXimum)
   1660 utilizRecE1T6[16,TEL]
                                    0                          -0 
   1661 utilizRecE1T6[16,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1662 utilizRecE1T6[16,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1663 utilizRecE1T6[16,MAD]
                                    0                          -0 
   1664 utilizRecE1T6[16,LAD]
@@ -3339,11 +3339,11 @@ Objective:  z = 97 (MAXimum)
   1666 utilizRecE1T6[17,CEM]
                                   -1                          -0 
   1667 utilizRecE1T6[17,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1668 utilizRecE1T6[17,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1669 utilizRecE1T6[17,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1670 utilizRecE1T6[17,MAD]
                                    0                          -0 
   1671 utilizRecE1T6[17,LAD]
@@ -3353,11 +3353,11 @@ Objective:  z = 97 (MAXimum)
   1673 utilizRecE1T6[18,CEM]
                                   -1                          -0 
   1674 utilizRecE1T6[18,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1675 utilizRecE1T6[18,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1676 utilizRecE1T6[18,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1677 utilizRecE1T6[18,MAD]
                                    0                          -0 
   1678 utilizRecE1T6[18,LAD]
@@ -3367,11 +3367,11 @@ Objective:  z = 97 (MAXimum)
   1680 utilizRecE1T6[19,CEM]
                                   -1                          -0 
   1681 utilizRecE1T6[19,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1682 utilizRecE1T6[19,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1683 utilizRecE1T6[19,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1684 utilizRecE1T6[19,MAD]
                                    0                          -0 
   1685 utilizRecE1T6[19,LAD]
@@ -3381,11 +3381,11 @@ Objective:  z = 97 (MAXimum)
   1687 utilizRecE1T6[20,CEM]
                                   -1                          -0 
   1688 utilizRecE1T6[20,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1689 utilizRecE1T6[20,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1690 utilizRecE1T6[20,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1691 utilizRecE1T6[20,MAD]
                                    0                          -0 
   1692 utilizRecE1T6[20,LAD]
@@ -3395,11 +3395,11 @@ Objective:  z = 97 (MAXimum)
   1694 utilizRecE1T6[21,CEM]
                                   -1                          -0 
   1695 utilizRecE1T6[21,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1696 utilizRecE1T6[21,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1697 utilizRecE1T6[21,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1698 utilizRecE1T6[21,MAD]
                                    0                          -0 
   1699 utilizRecE1T6[21,LAD]
@@ -3409,11 +3409,11 @@ Objective:  z = 97 (MAXimum)
   1701 utilizRecE1T6[22,CEM]
                                   -1                          -0 
   1702 utilizRecE1T6[22,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1703 utilizRecE1T6[22,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1704 utilizRecE1T6[22,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1705 utilizRecE1T6[22,MAD]
                                    0                          -0 
   1706 utilizRecE1T6[22,LAD]
@@ -3423,11 +3423,11 @@ Objective:  z = 97 (MAXimum)
   1708 utilizRecE1T6[23,CEM]
                                   -1                          -0 
   1709 utilizRecE1T6[23,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1710 utilizRecE1T6[23,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1711 utilizRecE1T6[23,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1712 utilizRecE1T6[23,MAD]
                                    0                          -0 
   1713 utilizRecE1T6[23,LAD]
@@ -3437,11 +3437,11 @@ Objective:  z = 97 (MAXimum)
   1715 utilizRecE1T6[24,CEM]
                                   -1                          -0 
   1716 utilizRecE1T6[24,TEL]
-                                   0                          -0 
+                                  -1                          -0 
   1717 utilizRecE1T6[24,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1718 utilizRecE1T6[24,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1719 utilizRecE1T6[24,MAD]
                                    0                          -0 
   1720 utilizRecE1T6[24,LAD]
@@ -3697,9 +3697,9 @@ Objective:  z = 97 (MAXimum)
   1845 soloUnaCartaEra2[21]
                                    0                           1 
   1846 utilizMonedasE2[1,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1847 utilizMonedasE2[1,2]
-                                   0                          -0 
+                                  -1                          -0 
   1848 utilizMonedasE2[1,3]
                                    0                          -0 
   1849 utilizMonedasE2[1,4]
@@ -3709,9 +3709,9 @@ Objective:  z = 97 (MAXimum)
   1851 utilizMonedasE2[1,6]
                                    0                          -0 
   1852 utilizMonedasE2[2,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1853 utilizMonedasE2[2,2]
-                                   0                          -0 
+                                  -1                          -0 
   1854 utilizMonedasE2[2,3]
                                    0                          -0 
   1855 utilizMonedasE2[2,4]
@@ -3721,9 +3721,9 @@ Objective:  z = 97 (MAXimum)
   1857 utilizMonedasE2[2,6]
                                    0                          -0 
   1858 utilizMonedasE2[3,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1859 utilizMonedasE2[3,2]
-                                   0                          -0 
+                                  -1                          -0 
   1860 utilizMonedasE2[3,3]
                                    0                          -0 
   1861 utilizMonedasE2[3,4]
@@ -3733,9 +3733,9 @@ Objective:  z = 97 (MAXimum)
   1863 utilizMonedasE2[3,6]
                                    0                          -0 
   1864 utilizMonedasE2[4,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1865 utilizMonedasE2[4,2]
-                                   0                          -0 
+                                  -1                          -0 
   1866 utilizMonedasE2[4,3]
                                    0                          -0 
   1867 utilizMonedasE2[4,4]
@@ -3745,9 +3745,9 @@ Objective:  z = 97 (MAXimum)
   1869 utilizMonedasE2[4,6]
                                    0                          -0 
   1870 utilizMonedasE2[5,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1871 utilizMonedasE2[5,2]
-                                   0                          -0 
+                                  -1                          -0 
   1872 utilizMonedasE2[5,3]
                                    0                          -0 
   1873 utilizMonedasE2[5,4]
@@ -3757,9 +3757,9 @@ Objective:  z = 97 (MAXimum)
   1875 utilizMonedasE2[5,6]
                                    0                          -0 
   1876 utilizMonedasE2[6,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1877 utilizMonedasE2[6,2]
-                                   0                          -0 
+                                  -1                          -0 
   1878 utilizMonedasE2[6,3]
                                    0                          -0 
   1879 utilizMonedasE2[6,4]
@@ -3769,9 +3769,9 @@ Objective:  z = 97 (MAXimum)
   1881 utilizMonedasE2[6,6]
                                    0                          -0 
   1882 utilizMonedasE2[7,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1883 utilizMonedasE2[7,2]
-                                   0                          -0 
+                                  -1                          -0 
   1884 utilizMonedasE2[7,3]
                                    0                          -0 
   1885 utilizMonedasE2[7,4]
@@ -3781,9 +3781,9 @@ Objective:  z = 97 (MAXimum)
   1887 utilizMonedasE2[7,6]
                                    0                          -0 
   1888 utilizMonedasE2[8,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1889 utilizMonedasE2[8,2]
-                                   0                          -0 
+                                  -1                          -0 
   1890 utilizMonedasE2[8,3]
                                    0                          -0 
   1891 utilizMonedasE2[8,4]
@@ -3793,9 +3793,9 @@ Objective:  z = 97 (MAXimum)
   1893 utilizMonedasE2[8,6]
                                    0                          -0 
   1894 utilizMonedasE2[9,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1895 utilizMonedasE2[9,2]
-                                   0                          -0 
+                                  -1                          -0 
   1896 utilizMonedasE2[9,3]
                                    0                          -0 
   1897 utilizMonedasE2[9,4]
@@ -3805,9 +3805,9 @@ Objective:  z = 97 (MAXimum)
   1899 utilizMonedasE2[9,6]
                                    0                          -0 
   1900 utilizMonedasE2[10,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1901 utilizMonedasE2[10,2]
-                                   0                          -0 
+                                  -1                          -0 
   1902 utilizMonedasE2[10,3]
                                    0                          -0 
   1903 utilizMonedasE2[10,4]
@@ -3817,9 +3817,9 @@ Objective:  z = 97 (MAXimum)
   1905 utilizMonedasE2[10,6]
                                    0                          -0 
   1906 utilizMonedasE2[11,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1907 utilizMonedasE2[11,2]
-                                   0                          -0 
+                                  -1                          -0 
   1908 utilizMonedasE2[11,3]
                                    0                          -0 
   1909 utilizMonedasE2[11,4]
@@ -3829,9 +3829,9 @@ Objective:  z = 97 (MAXimum)
   1911 utilizMonedasE2[11,6]
                                    0                          -0 
   1912 utilizMonedasE2[12,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1913 utilizMonedasE2[12,2]
-                                   0                          -0 
+                                  -1                          -0 
   1914 utilizMonedasE2[12,3]
                                    0                          -0 
   1915 utilizMonedasE2[12,4]
@@ -3841,9 +3841,9 @@ Objective:  z = 97 (MAXimum)
   1917 utilizMonedasE2[12,6]
                                    0                          -0 
   1918 utilizMonedasE2[13,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1919 utilizMonedasE2[13,2]
-                                   0                          -0 
+                                  -1                          -0 
   1920 utilizMonedasE2[13,3]
                                    0                          -0 
   1921 utilizMonedasE2[13,4]
@@ -3853,9 +3853,9 @@ Objective:  z = 97 (MAXimum)
   1923 utilizMonedasE2[13,6]
                                    0                          -0 
   1924 utilizMonedasE2[14,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1925 utilizMonedasE2[14,2]
-                                   0                          -0 
+                                  -1                          -0 
   1926 utilizMonedasE2[14,3]
                                    0                          -0 
   1927 utilizMonedasE2[14,4]
@@ -3865,9 +3865,9 @@ Objective:  z = 97 (MAXimum)
   1929 utilizMonedasE2[14,6]
                                    0                          -0 
   1930 utilizMonedasE2[15,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1931 utilizMonedasE2[15,2]
-                                   0                          -0 
+                                  -1                          -0 
   1932 utilizMonedasE2[15,3]
                                    0                          -0 
   1933 utilizMonedasE2[15,4]
@@ -3877,9 +3877,9 @@ Objective:  z = 97 (MAXimum)
   1935 utilizMonedasE2[15,6]
                                    0                          -0 
   1936 utilizMonedasE2[16,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1937 utilizMonedasE2[16,2]
-                                   0                          -0 
+                                  -1                          -0 
   1938 utilizMonedasE2[16,3]
                                    0                          -0 
   1939 utilizMonedasE2[16,4]
@@ -3889,9 +3889,9 @@ Objective:  z = 97 (MAXimum)
   1941 utilizMonedasE2[16,6]
                                    0                          -0 
   1942 utilizMonedasE2[17,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1943 utilizMonedasE2[17,2]
-                                   0                          -0 
+                                  -1                          -0 
   1944 utilizMonedasE2[17,3]
                                    0                          -0 
   1945 utilizMonedasE2[17,4]
@@ -3901,9 +3901,9 @@ Objective:  z = 97 (MAXimum)
   1947 utilizMonedasE2[17,6]
                                    0                          -0 
   1948 utilizMonedasE2[18,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1949 utilizMonedasE2[18,2]
-                                   0                          -0 
+                                  -1                          -0 
   1950 utilizMonedasE2[18,3]
                                    0                          -0 
   1951 utilizMonedasE2[18,4]
@@ -3913,9 +3913,9 @@ Objective:  z = 97 (MAXimum)
   1953 utilizMonedasE2[18,6]
                                    0                          -0 
   1954 utilizMonedasE2[19,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1955 utilizMonedasE2[19,2]
-                                   0                          -0 
+                                  -1                          -0 
   1956 utilizMonedasE2[19,3]
                                    0                          -0 
   1957 utilizMonedasE2[19,4]
@@ -3925,9 +3925,9 @@ Objective:  z = 97 (MAXimum)
   1959 utilizMonedasE2[19,6]
                                    0                          -0 
   1960 utilizMonedasE2[20,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1961 utilizMonedasE2[20,2]
-                                   0                          -0 
+                                  -1                          -0 
   1962 utilizMonedasE2[20,3]
                                    0                          -0 
   1963 utilizMonedasE2[20,4]
@@ -3937,9 +3937,9 @@ Objective:  z = 97 (MAXimum)
   1965 utilizMonedasE2[20,6]
                                    0                          -0 
   1966 utilizMonedasE2[21,1]
-                                  -3                          -0 
+                                  -1                          -0 
   1967 utilizMonedasE2[21,2]
-                                   0                          -0 
+                                  -1                          -0 
   1968 utilizMonedasE2[21,3]
                                    0                          -0 
   1969 utilizMonedasE2[21,4]
@@ -3961,13 +3961,13 @@ Objective:  z = 97 (MAXimum)
   1977 monedasUsadasE2T[6]
                                    0            -0             = 
   1978 utilizRecE2T[1,CEM]
-                                   0                          -0 
+                                  -1                          -0 
   1979 utilizRecE2T[1,TEL]
                                    0                          -0 
   1980 utilizRecE2T[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1981 utilizRecE2T[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1982 utilizRecE2T[1,MAD]
                                    0                          -0 
   1983 utilizRecE2T[1,LAD]
@@ -3975,11 +3975,11 @@ Objective:  z = 97 (MAXimum)
   1984 utilizRecE2T[1,ORO]
                                    0                          -0 
   1985 utilizRecE2T[2,CEM]
-                                  -1                          -0 
+                                   0                          -0 
   1986 utilizRecE2T[2,TEL]
                                    0                          -0 
   1987 utilizRecE2T[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1988 utilizRecE2T[2,PAP]
                                    0                          -0 
   1989 utilizRecE2T[2,MAD]
@@ -3993,9 +3993,9 @@ Objective:  z = 97 (MAXimum)
   1993 utilizRecE2T[3,TEL]
                                    0                          -0 
   1994 utilizRecE2T[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   1995 utilizRecE2T[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   1996 utilizRecE2T[3,MAD]
                                    0                          -0 
   1997 utilizRecE2T[3,LAD]
@@ -4007,9 +4007,9 @@ Objective:  z = 97 (MAXimum)
   2000 utilizRecE2T[4,TEL]
                                    0                          -0 
   2001 utilizRecE2T[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2002 utilizRecE2T[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2003 utilizRecE2T[4,MAD]
                                    0                          -0 
   2004 utilizRecE2T[4,LAD]
@@ -4021,9 +4021,9 @@ Objective:  z = 97 (MAXimum)
   2007 utilizRecE2T[5,TEL]
                                    0                          -0 
   2008 utilizRecE2T[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2009 utilizRecE2T[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2010 utilizRecE2T[5,MAD]
                                    0                          -0 
   2011 utilizRecE2T[5,LAD]
@@ -4035,9 +4035,9 @@ Objective:  z = 97 (MAXimum)
   2014 utilizRecE2T[6,TEL]
                                    0                          -0 
   2015 utilizRecE2T[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2016 utilizRecE2T[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2017 utilizRecE2T[6,MAD]
                                    0                          -0 
   2018 utilizRecE2T[6,LAD]
@@ -4049,11 +4049,11 @@ Objective:  z = 97 (MAXimum)
   2021 AqueductE2T[1,TEL]
                                -5000                          -0 
   2022 AqueductE2T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2023 AqueductE2T[1,PAP]
                                -5001                          -0 
   2024 AqueductE2T[1,MAD]
-                               -5001                          -0 
+                               -5000                          -0 
   2025 AqueductE2T[1,LAD]
                                -5000                          -0 
   2026 AqueductE2T[1,ORO]
@@ -4063,23 +4063,23 @@ Objective:  z = 97 (MAXimum)
   2028 AqueductE2T[2,TEL]
                                -5000                          -0 
   2029 AqueductE2T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2030 AqueductE2T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2031 AqueductE2T[2,MAD]
-                               -5000                          -0 
+                               -5001                          -0 
   2032 AqueductE2T[2,LAD]
                                -5000                          -0 
   2033 AqueductE2T[2,ORO]
                                -5000                          -0 
   2034 AqueductE2T[3,CEM]
-                               -4998                          -0 
+                               -5001                          -0 
   2035 AqueductE2T[3,TEL]
                                -5000                          -0 
   2036 AqueductE2T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2037 AqueductE2T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2038 AqueductE2T[3,MAD]
                                -5000                          -0 
   2039 AqueductE2T[3,LAD]
@@ -4091,9 +4091,9 @@ Objective:  z = 97 (MAXimum)
   2042 AqueductE2T[4,TEL]
                                -5000                          -0 
   2043 AqueductE2T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2044 AqueductE2T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2045 AqueductE2T[4,MAD]
                                -5000                          -0 
   2046 AqueductE2T[4,LAD]
@@ -4101,13 +4101,13 @@ Objective:  z = 97 (MAXimum)
   2047 AqueductE2T[4,ORO]
                                -5000                          -0 
   2048 AqueductE2T[5,CEM]
-                               -5001                          -0 
+                               -4998                          -0 
   2049 AqueductE2T[5,TEL]
                                -5000                          -0 
   2050 AqueductE2T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2051 AqueductE2T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2052 AqueductE2T[5,MAD]
                                -5000                          -0 
   2053 AqueductE2T[5,LAD]
@@ -4119,9 +4119,9 @@ Objective:  z = 97 (MAXimum)
   2056 AqueductE2T[6,TEL]
                                -5000                          -0 
   2057 AqueductE2T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2058 AqueductE2T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2059 AqueductE2T[6,MAD]
                                -5000                          -0 
   2060 AqueductE2T[6,LAD]
@@ -4133,11 +4133,11 @@ Objective:  z = 97 (MAXimum)
   2063 TempleE2T[1,TEL]
                                    0                          -0 
   2064 TempleE2T[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2065 TempleE2T[1,PAP]
                                   -1                          -0 
   2066 TempleE2T[1,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2067 TempleE2T[1,LAD]
                                    0                          -0 
   2068 TempleE2T[1,ORO]
@@ -4147,11 +4147,11 @@ Objective:  z = 97 (MAXimum)
   2070 TempleE2T[2,TEL]
                                    0                          -0 
   2071 TempleE2T[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2072 TempleE2T[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2073 TempleE2T[2,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2074 TempleE2T[2,LAD]
                                    0                          -0 
   2075 TempleE2T[2,ORO]
@@ -4161,9 +4161,9 @@ Objective:  z = 97 (MAXimum)
   2077 TempleE2T[3,TEL]
                                    0                          -0 
   2078 TempleE2T[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2079 TempleE2T[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2080 TempleE2T[3,MAD]
                                    0                          -0 
   2081 TempleE2T[3,LAD]
@@ -4175,9 +4175,9 @@ Objective:  z = 97 (MAXimum)
   2084 TempleE2T[4,TEL]
                                    0                          -0 
   2085 TempleE2T[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2086 TempleE2T[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2087 TempleE2T[4,MAD]
                                    0                          -0 
   2088 TempleE2T[4,LAD]
@@ -4189,9 +4189,9 @@ Objective:  z = 97 (MAXimum)
   2091 TempleE2T[5,TEL]
                                    0                          -0 
   2092 TempleE2T[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2093 TempleE2T[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2094 TempleE2T[5,MAD]
                                    0                          -0 
   2095 TempleE2T[5,LAD]
@@ -4203,9 +4203,9 @@ Objective:  z = 97 (MAXimum)
   2098 TempleE2T[6,TEL]
                                    0                          -0 
   2099 TempleE2T[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2100 TempleE2T[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2101 TempleE2T[6,MAD]
                                    0                          -0 
   2102 TempleE2T[6,LAD]
@@ -4217,11 +4217,11 @@ Objective:  z = 97 (MAXimum)
   2105 StatueE2T[1,TEL]
                                    0                          -0 
   2106 StatueE2T[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2107 StatueE2T[1,PAP]
                                   -1                          -0 
   2108 StatueE2T[1,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2109 StatueE2T[1,LAD]
                                    0                          -0 
   2110 StatueE2T[1,ORO]
@@ -4231,11 +4231,11 @@ Objective:  z = 97 (MAXimum)
   2112 StatueE2T[2,TEL]
                                    0                          -0 
   2113 StatueE2T[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2114 StatueE2T[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2115 StatueE2T[2,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2116 StatueE2T[2,LAD]
                                    0                          -0 
   2117 StatueE2T[2,ORO]
@@ -4245,9 +4245,9 @@ Objective:  z = 97 (MAXimum)
   2119 StatueE2T[3,TEL]
                                    0                          -0 
   2120 StatueE2T[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2121 StatueE2T[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2122 StatueE2T[3,MAD]
                                    0                          -0 
   2123 StatueE2T[3,LAD]
@@ -4259,9 +4259,9 @@ Objective:  z = 97 (MAXimum)
   2126 StatueE2T[4,TEL]
                                    0                          -0 
   2127 StatueE2T[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2128 StatueE2T[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2129 StatueE2T[4,MAD]
                                    0                          -0 
   2130 StatueE2T[4,LAD]
@@ -4273,9 +4273,9 @@ Objective:  z = 97 (MAXimum)
   2133 StatueE2T[5,TEL]
                                    0                          -0 
   2134 StatueE2T[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2135 StatueE2T[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2136 StatueE2T[5,MAD]
                                    0                          -0 
   2137 StatueE2T[5,LAD]
@@ -4287,9 +4287,9 @@ Objective:  z = 97 (MAXimum)
   2140 StatueE2T[6,TEL]
                                    0                          -0 
   2141 StatueE2T[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2142 StatueE2T[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2143 StatueE2T[6,MAD]
                                    0                          -0 
   2144 StatueE2T[6,LAD]
@@ -4301,11 +4301,11 @@ Objective:  z = 97 (MAXimum)
   2147 CourthouseE2T[1,TEL]
                                -5000                          -0 
   2148 CourthouseE2T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2149 CourthouseE2T[1,PAP]
                                -5001                          -0 
   2150 CourthouseE2T[1,MAD]
-                               -5001                          -0 
+                               -5000                          -0 
   2151 CourthouseE2T[1,LAD]
                                -5000                          -0 
   2152 CourthouseE2T[1,ORO]
@@ -4313,15 +4313,15 @@ Objective:  z = 97 (MAXimum)
   2153 CourthouseE2T[2,CEM]
                                -5001                          -0 
   2154 CourthouseE2T[2,TEL]
-                               -4999                          -0 
+                               -5000                          -0 
   2155 CourthouseE2T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2156 CourthouseE2T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2157 CourthouseE2T[2,MAD]
-                               -5000                          -0 
+                               -5001                          -0 
   2158 CourthouseE2T[2,LAD]
-                               -4998                          -0 
+                               -5000                          -0 
   2159 CourthouseE2T[2,ORO]
                                -5000                          -0 
   2160 CourthouseE2T[3,CEM]
@@ -4329,9 +4329,9 @@ Objective:  z = 97 (MAXimum)
   2161 CourthouseE2T[3,TEL]
                                -5000                          -0 
   2162 CourthouseE2T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2163 CourthouseE2T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2164 CourthouseE2T[3,MAD]
                                -5000                          -0 
   2165 CourthouseE2T[3,LAD]
@@ -4341,15 +4341,15 @@ Objective:  z = 97 (MAXimum)
   2167 CourthouseE2T[4,CEM]
                                -5001                          -0 
   2168 CourthouseE2T[4,TEL]
-                               -5000                          -0 
+                               -4999                          -0 
   2169 CourthouseE2T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2170 CourthouseE2T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2171 CourthouseE2T[4,MAD]
                                -5000                          -0 
   2172 CourthouseE2T[4,LAD]
-                               -5000                          -0 
+                               -4998                          -0 
   2173 CourthouseE2T[4,ORO]
                                -5000                          -0 
   2174 CourthouseE2T[5,CEM]
@@ -4357,9 +4357,9 @@ Objective:  z = 97 (MAXimum)
   2175 CourthouseE2T[5,TEL]
                                -5000                          -0 
   2176 CourthouseE2T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2177 CourthouseE2T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2178 CourthouseE2T[5,MAD]
                                -5000                          -0 
   2179 CourthouseE2T[5,LAD]
@@ -4371,9 +4371,9 @@ Objective:  z = 97 (MAXimum)
   2182 CourthouseE2T[6,TEL]
                                -5000                          -0 
   2183 CourthouseE2T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2184 CourthouseE2T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2185 CourthouseE2T[6,MAD]
                                -5000                          -0 
   2186 CourthouseE2T[6,LAD]
@@ -4385,11 +4385,11 @@ Objective:  z = 97 (MAXimum)
   2189 DispensaryE2T[1,TEL]
                                -5000                          -0 
   2190 DispensaryE2T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2191 DispensaryE2T[1,PAP]
                                -5001                          -0 
   2192 DispensaryE2T[1,MAD]
-                               -5001                          -0 
+                               -5000                          -0 
   2193 DispensaryE2T[1,LAD]
                                -5000                          -0 
   2194 DispensaryE2T[1,ORO]
@@ -4399,11 +4399,11 @@ Objective:  z = 97 (MAXimum)
   2196 DispensaryE2T[2,TEL]
                                -5000                          -0 
   2197 DispensaryE2T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2198 DispensaryE2T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2199 DispensaryE2T[2,MAD]
-                               -5000                          -0 
+                               -5001                          -0 
   2200 DispensaryE2T[2,LAD]
                                -5000                          -0 
   2201 DispensaryE2T[2,ORO]
@@ -4413,9 +4413,9 @@ Objective:  z = 97 (MAXimum)
   2203 DispensaryE2T[3,TEL]
                                -5000                          -0 
   2204 DispensaryE2T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2205 DispensaryE2T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2206 DispensaryE2T[3,MAD]
                                -5000                          -0 
   2207 DispensaryE2T[3,LAD]
@@ -4427,9 +4427,9 @@ Objective:  z = 97 (MAXimum)
   2210 DispensaryE2T[4,TEL]
                                -5000                          -0 
   2211 DispensaryE2T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2212 DispensaryE2T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2213 DispensaryE2T[4,MAD]
                                -5000                          -0 
   2214 DispensaryE2T[4,LAD]
@@ -4437,43 +4437,43 @@ Objective:  z = 97 (MAXimum)
   2215 DispensaryE2T[4,ORO]
                                -5000                          -0 
   2216 DispensaryE2T[5,CEM]
-                               -5000                          -0 
+                               -5001                          -0 
   2217 DispensaryE2T[5,TEL]
                                -5000                          -0 
   2218 DispensaryE2T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2219 DispensaryE2T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2220 DispensaryE2T[5,MAD]
                                -5000                          -0 
   2221 DispensaryE2T[5,LAD]
                                -5000                          -0 
   2222 DispensaryE2T[5,ORO]
-                               -4998                          -0 
+                               -5000                          -0 
   2223 DispensaryE2T[6,CEM]
-                               -5001                          -0 
+                               -5000                          -0 
   2224 DispensaryE2T[6,TEL]
                                -5000                          -0 
   2225 DispensaryE2T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2226 DispensaryE2T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2227 DispensaryE2T[6,MAD]
                                -5000                          -0 
   2228 DispensaryE2T[6,LAD]
                                -5000                          -0 
   2229 DispensaryE2T[6,ORO]
-                               -5000                          -0 
+                               -4998                          -0 
   2230 LaboratoryE2T[1,CEM]
                                -5001                          -0 
   2231 LaboratoryE2T[1,TEL]
                                -5000                          -0 
   2232 LaboratoryE2T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2233 LaboratoryE2T[1,PAP]
                                -5001                          -0 
   2234 LaboratoryE2T[1,MAD]
-                               -5001                          -0 
+                               -5000                          -0 
   2235 LaboratoryE2T[1,LAD]
                                -5000                          -0 
   2236 LaboratoryE2T[1,ORO]
@@ -4483,11 +4483,11 @@ Objective:  z = 97 (MAXimum)
   2238 LaboratoryE2T[2,TEL]
                                -5000                          -0 
   2239 LaboratoryE2T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2240 LaboratoryE2T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2241 LaboratoryE2T[2,MAD]
-                               -5000                          -0 
+                               -5001                          -0 
   2242 LaboratoryE2T[2,LAD]
                                -5000                          -0 
   2243 LaboratoryE2T[2,ORO]
@@ -4497,13 +4497,13 @@ Objective:  z = 97 (MAXimum)
   2245 LaboratoryE2T[3,TEL]
                                -5000                          -0 
   2246 LaboratoryE2T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2247 LaboratoryE2T[3,PAP]
                                -5000                          -0 
   2248 LaboratoryE2T[3,MAD]
                                -5000                          -0 
   2249 LaboratoryE2T[3,LAD]
-                               -5000                          -0 
+                               -4998                          -0 
   2250 LaboratoryE2T[3,ORO]
                                -5000                          -0 
   2251 LaboratoryE2T[4,CEM]
@@ -4511,9 +4511,9 @@ Objective:  z = 97 (MAXimum)
   2252 LaboratoryE2T[4,TEL]
                                -5000                          -0 
   2253 LaboratoryE2T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2254 LaboratoryE2T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2255 LaboratoryE2T[4,MAD]
                                -5000                          -0 
   2256 LaboratoryE2T[4,LAD]
@@ -4525,9 +4525,9 @@ Objective:  z = 97 (MAXimum)
   2259 LaboratoryE2T[5,TEL]
                                -5000                          -0 
   2260 LaboratoryE2T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2261 LaboratoryE2T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2262 LaboratoryE2T[5,MAD]
                                -5000                          -0 
   2263 LaboratoryE2T[5,LAD]
@@ -4539,25 +4539,25 @@ Objective:  z = 97 (MAXimum)
   2266 LaboratoryE2T[6,TEL]
                                -5000                          -0 
   2267 LaboratoryE2T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2268 LaboratoryE2T[6,PAP]
-                               -4999                          -0 
+                               -5001                          -0 
   2269 LaboratoryE2T[6,MAD]
                                -5000                          -0 
   2270 LaboratoryE2T[6,LAD]
-                               -4998                          -0 
+                               -5000                          -0 
   2271 LaboratoryE2T[6,ORO]
                                -5000                          -0 
   2272 LibraryE2T[1,CEM]
-                               -5001                          -0 
+                               -4999                          -0 
   2273 LibraryE2T[1,TEL]
-                               -5000                          -0 
+                               -4999                          -0 
   2274 LibraryE2T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2275 LibraryE2T[1,PAP]
                                -5001                          -0 
   2276 LibraryE2T[1,MAD]
-                               -5001                          -0 
+                               -5000                          -0 
   2277 LibraryE2T[1,LAD]
                                -5000                          -0 
   2278 LibraryE2T[1,ORO]
@@ -4567,11 +4567,11 @@ Objective:  z = 97 (MAXimum)
   2280 LibraryE2T[2,TEL]
                                -5000                          -0 
   2281 LibraryE2T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2282 LibraryE2T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2283 LibraryE2T[2,MAD]
-                               -5000                          -0 
+                               -5001                          -0 
   2284 LibraryE2T[2,LAD]
                                -5000                          -0 
   2285 LibraryE2T[2,ORO]
@@ -4581,9 +4581,9 @@ Objective:  z = 97 (MAXimum)
   2287 LibraryE2T[3,TEL]
                                -5000                          -0 
   2288 LibraryE2T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2289 LibraryE2T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2290 LibraryE2T[3,MAD]
                                -5000                          -0 
   2291 LibraryE2T[3,LAD]
@@ -4591,13 +4591,13 @@ Objective:  z = 97 (MAXimum)
   2292 LibraryE2T[3,ORO]
                                -5000                          -0 
   2293 LibraryE2T[4,CEM]
-                               -4999                          -0 
+                               -5001                          -0 
   2294 LibraryE2T[4,TEL]
-                               -4999                          -0 
+                               -5000                          -0 
   2295 LibraryE2T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2296 LibraryE2T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2297 LibraryE2T[4,MAD]
                                -5000                          -0 
   2298 LibraryE2T[4,LAD]
@@ -4609,9 +4609,9 @@ Objective:  z = 97 (MAXimum)
   2301 LibraryE2T[5,TEL]
                                -5000                          -0 
   2302 LibraryE2T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2303 LibraryE2T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2304 LibraryE2T[5,MAD]
                                -5000                          -0 
   2305 LibraryE2T[5,LAD]
@@ -4623,9 +4623,9 @@ Objective:  z = 97 (MAXimum)
   2308 LibraryE2T[6,TEL]
                                -5000                          -0 
   2309 LibraryE2T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   2310 LibraryE2T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   2311 LibraryE2T[6,MAD]
                                -5000                          -0 
   2312 LibraryE2T[6,LAD]
@@ -4651,11 +4651,11 @@ Objective:  z = 97 (MAXimum)
   2322 utilizRecE2T1[1,TEL]
                                    0                          -0 
   2323 utilizRecE2T1[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2324 utilizRecE2T1[1,PAP]
                                   -1                          -0 
   2325 utilizRecE2T1[1,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2326 utilizRecE2T1[1,LAD]
                                    0                          -0 
   2327 utilizRecE2T1[1,ORO]
@@ -4665,11 +4665,11 @@ Objective:  z = 97 (MAXimum)
   2329 utilizRecE2T1[2,TEL]
                                    0                          -0 
   2330 utilizRecE2T1[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2331 utilizRecE2T1[2,PAP]
                                   -1                          -0 
   2332 utilizRecE2T1[2,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2333 utilizRecE2T1[2,LAD]
                                    0                          -0 
   2334 utilizRecE2T1[2,ORO]
@@ -4679,11 +4679,11 @@ Objective:  z = 97 (MAXimum)
   2336 utilizRecE2T1[3,TEL]
                                    0                          -0 
   2337 utilizRecE2T1[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2338 utilizRecE2T1[3,PAP]
                                   -1                          -0 
   2339 utilizRecE2T1[3,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2340 utilizRecE2T1[3,LAD]
                                    0                          -0 
   2341 utilizRecE2T1[3,ORO]
@@ -4693,11 +4693,11 @@ Objective:  z = 97 (MAXimum)
   2343 utilizRecE2T1[4,TEL]
                                    0                          -0 
   2344 utilizRecE2T1[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2345 utilizRecE2T1[4,PAP]
                                   -1                          -0 
   2346 utilizRecE2T1[4,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2347 utilizRecE2T1[4,LAD]
                                    0                          -0 
   2348 utilizRecE2T1[4,ORO]
@@ -4707,11 +4707,11 @@ Objective:  z = 97 (MAXimum)
   2350 utilizRecE2T1[5,TEL]
                                    0                          -0 
   2351 utilizRecE2T1[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2352 utilizRecE2T1[5,PAP]
                                   -1                          -0 
   2353 utilizRecE2T1[5,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2354 utilizRecE2T1[5,LAD]
                                    0                          -0 
   2355 utilizRecE2T1[5,ORO]
@@ -4721,11 +4721,11 @@ Objective:  z = 97 (MAXimum)
   2357 utilizRecE2T1[6,TEL]
                                    0                          -0 
   2358 utilizRecE2T1[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2359 utilizRecE2T1[6,PAP]
                                   -1                          -0 
   2360 utilizRecE2T1[6,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2361 utilizRecE2T1[6,LAD]
                                    0                          -0 
   2362 utilizRecE2T1[6,ORO]
@@ -4735,11 +4735,11 @@ Objective:  z = 97 (MAXimum)
   2364 utilizRecE2T1[7,TEL]
                                    0                          -0 
   2365 utilizRecE2T1[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2366 utilizRecE2T1[7,PAP]
                                   -1                          -0 
   2367 utilizRecE2T1[7,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2368 utilizRecE2T1[7,LAD]
                                    0                          -0 
   2369 utilizRecE2T1[7,ORO]
@@ -4749,7 +4749,7 @@ Objective:  z = 97 (MAXimum)
   2371 utiliRecMarE2T1[1,CEM]
                                   -1                          -0 
   2372 utiliRecMarE2T1[1,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2373 utiliRecMarE2T1[1,LAD]
                                    0                          -0 
   2374 utiliRecMarE2T1[1,ORO]
@@ -4757,7 +4757,7 @@ Objective:  z = 97 (MAXimum)
   2375 utiliRecMarE2T1[2,CEM]
                                   -1                          -0 
   2376 utiliRecMarE2T1[2,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2377 utiliRecMarE2T1[2,LAD]
                                    0                          -0 
   2378 utiliRecMarE2T1[2,ORO]
@@ -4765,7 +4765,7 @@ Objective:  z = 97 (MAXimum)
   2379 utiliRecMarE2T1[3,CEM]
                                   -1                          -0 
   2380 utiliRecMarE2T1[3,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2381 utiliRecMarE2T1[3,LAD]
                                    0                          -0 
   2382 utiliRecMarE2T1[3,ORO]
@@ -4773,7 +4773,7 @@ Objective:  z = 97 (MAXimum)
   2383 utiliRecMarE2T1[4,CEM]
                                   -1                          -0 
   2384 utiliRecMarE2T1[4,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2385 utiliRecMarE2T1[4,LAD]
                                    0                          -0 
   2386 utiliRecMarE2T1[4,ORO]
@@ -4781,7 +4781,7 @@ Objective:  z = 97 (MAXimum)
   2387 utiliRecMarE2T1[5,CEM]
                                   -1                          -0 
   2388 utiliRecMarE2T1[5,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2389 utiliRecMarE2T1[5,LAD]
                                    0                          -0 
   2390 utiliRecMarE2T1[5,ORO]
@@ -4789,7 +4789,7 @@ Objective:  z = 97 (MAXimum)
   2391 utiliRecMarE2T1[6,CEM]
                                   -1                          -0 
   2392 utiliRecMarE2T1[6,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2393 utiliRecMarE2T1[6,LAD]
                                    0                          -0 
   2394 utiliRecMarE2T1[6,ORO]
@@ -4797,7 +4797,7 @@ Objective:  z = 97 (MAXimum)
   2395 utiliRecMarE2T1[7,CEM]
                                   -1                          -0 
   2396 utiliRecMarE2T1[7,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2397 utiliRecMarE2T1[7,LAD]
                                    0                          -0 
   2398 utiliRecMarE2T1[7,ORO]
@@ -4805,7 +4805,7 @@ Objective:  z = 97 (MAXimum)
   2399 utiliRecMarE2T1[8,CEM]
                                   -1                          -0 
   2400 utiliRecMarE2T1[8,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2401 utiliRecMarE2T1[8,LAD]
                                    0                          -0 
   2402 utiliRecMarE2T1[8,ORO]
@@ -4813,7 +4813,7 @@ Objective:  z = 97 (MAXimum)
   2403 utiliRecMarE2T1[9,CEM]
                                   -1                          -0 
   2404 utiliRecMarE2T1[9,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2405 utiliRecMarE2T1[9,LAD]
                                    0                          -0 
   2406 utiliRecMarE2T1[9,ORO]
@@ -4821,7 +4821,7 @@ Objective:  z = 97 (MAXimum)
   2407 utiliRecMarE2T1[10,CEM]
                                   -1                          -0 
   2408 utiliRecMarE2T1[10,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2409 utiliRecMarE2T1[10,LAD]
                                    0                          -0 
   2410 utiliRecMarE2T1[10,ORO]
@@ -4829,7 +4829,7 @@ Objective:  z = 97 (MAXimum)
   2411 utiliRecMarE2T1[11,CEM]
                                   -1                          -0 
   2412 utiliRecMarE2T1[11,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2413 utiliRecMarE2T1[11,LAD]
                                    0                          -0 
   2414 utiliRecMarE2T1[11,ORO]
@@ -4837,7 +4837,7 @@ Objective:  z = 97 (MAXimum)
   2415 utiliRecMarE2T1[12,CEM]
                                   -1                          -0 
   2416 utiliRecMarE2T1[12,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2417 utiliRecMarE2T1[12,LAD]
                                    0                          -0 
   2418 utiliRecMarE2T1[12,ORO]
@@ -4845,7 +4845,7 @@ Objective:  z = 97 (MAXimum)
   2419 utiliRecMarE2T1[13,CEM]
                                   -1                          -0 
   2420 utiliRecMarE2T1[13,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2421 utiliRecMarE2T1[13,LAD]
                                    0                          -0 
   2422 utiliRecMarE2T1[13,ORO]
@@ -4853,7 +4853,7 @@ Objective:  z = 97 (MAXimum)
   2423 utiliRecMarE2T1[14,CEM]
                                   -1                          -0 
   2424 utiliRecMarE2T1[14,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2425 utiliRecMarE2T1[14,LAD]
                                    0                          -0 
   2426 utiliRecMarE2T1[14,ORO]
@@ -4861,7 +4861,7 @@ Objective:  z = 97 (MAXimum)
   2427 utiliRecMarE2T1[15,CEM]
                                   -1                          -0 
   2428 utiliRecMarE2T1[15,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2429 utiliRecMarE2T1[15,LAD]
                                    0                          -0 
   2430 utiliRecMarE2T1[15,ORO]
@@ -4869,7 +4869,7 @@ Objective:  z = 97 (MAXimum)
   2431 utiliRecMarE2T1[16,CEM]
                                   -1                          -0 
   2432 utiliRecMarE2T1[16,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2433 utiliRecMarE2T1[16,LAD]
                                    0                          -0 
   2434 utiliRecMarE2T1[16,ORO]
@@ -4877,7 +4877,7 @@ Objective:  z = 97 (MAXimum)
   2435 utiliRecMarE2T1[17,CEM]
                                   -1                          -0 
   2436 utiliRecMarE2T1[17,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2437 utiliRecMarE2T1[17,LAD]
                                    0                          -0 
   2438 utiliRecMarE2T1[17,ORO]
@@ -4885,7 +4885,7 @@ Objective:  z = 97 (MAXimum)
   2439 utiliRecMarE2T1[18,CEM]
                                   -1                          -0 
   2440 utiliRecMarE2T1[18,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2441 utiliRecMarE2T1[18,LAD]
                                    0                          -0 
   2442 utiliRecMarE2T1[18,ORO]
@@ -4893,7 +4893,7 @@ Objective:  z = 97 (MAXimum)
   2443 utiliRecMarE2T1[19,CEM]
                                   -1                          -0 
   2444 utiliRecMarE2T1[19,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2445 utiliRecMarE2T1[19,LAD]
                                    0                          -0 
   2446 utiliRecMarE2T1[19,ORO]
@@ -4901,7 +4901,7 @@ Objective:  z = 97 (MAXimum)
   2447 utiliRecMarE2T1[20,CEM]
                                   -1                          -0 
   2448 utiliRecMarE2T1[20,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2449 utiliRecMarE2T1[20,LAD]
                                    0                          -0 
   2450 utiliRecMarE2T1[20,ORO]
@@ -4909,7 +4909,7 @@ Objective:  z = 97 (MAXimum)
   2451 utiliRecMarE2T1[21,CEM]
                                   -1                          -0 
   2452 utiliRecMarE2T1[21,MAD]
-                                  -1                          -0 
+                                   0                          -0 
   2453 utiliRecMarE2T1[21,LAD]
                                    0                          -0 
   2454 utiliRecMarE2T1[21,ORO]
@@ -4933,11 +4933,11 @@ Objective:  z = 97 (MAXimum)
   2463 utilizRecE2T2[1,TEL]
                                    0                          -0 
   2464 utilizRecE2T2[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2465 utilizRecE2T2[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2466 utilizRecE2T2[1,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2467 utilizRecE2T2[1,LAD]
                                    0                          -0 
   2468 utilizRecE2T2[1,ORO]
@@ -4947,11 +4947,11 @@ Objective:  z = 97 (MAXimum)
   2470 utilizRecE2T2[2,TEL]
                                    0                          -0 
   2471 utilizRecE2T2[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2472 utilizRecE2T2[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2473 utilizRecE2T2[2,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2474 utilizRecE2T2[2,LAD]
                                    0                          -0 
   2475 utilizRecE2T2[2,ORO]
@@ -4961,11 +4961,11 @@ Objective:  z = 97 (MAXimum)
   2477 utilizRecE2T2[3,TEL]
                                    0                          -0 
   2478 utilizRecE2T2[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2479 utilizRecE2T2[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2480 utilizRecE2T2[3,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2481 utilizRecE2T2[3,LAD]
                                    0                          -0 
   2482 utilizRecE2T2[3,ORO]
@@ -4975,11 +4975,11 @@ Objective:  z = 97 (MAXimum)
   2484 utilizRecE2T2[4,TEL]
                                    0                          -0 
   2485 utilizRecE2T2[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2486 utilizRecE2T2[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2487 utilizRecE2T2[4,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2488 utilizRecE2T2[4,LAD]
                                    0                          -0 
   2489 utilizRecE2T2[4,ORO]
@@ -4989,11 +4989,11 @@ Objective:  z = 97 (MAXimum)
   2491 utilizRecE2T2[5,TEL]
                                    0                          -0 
   2492 utilizRecE2T2[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2493 utilizRecE2T2[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2494 utilizRecE2T2[5,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2495 utilizRecE2T2[5,LAD]
                                    0                          -0 
   2496 utilizRecE2T2[5,ORO]
@@ -5003,11 +5003,11 @@ Objective:  z = 97 (MAXimum)
   2498 utilizRecE2T2[6,TEL]
                                    0                          -0 
   2499 utilizRecE2T2[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2500 utilizRecE2T2[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2501 utilizRecE2T2[6,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2502 utilizRecE2T2[6,LAD]
                                    0                          -0 
   2503 utilizRecE2T2[6,ORO]
@@ -5017,11 +5017,11 @@ Objective:  z = 97 (MAXimum)
   2505 utilizRecE2T2[7,TEL]
                                    0                          -0 
   2506 utilizRecE2T2[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2507 utilizRecE2T2[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2508 utilizRecE2T2[7,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2509 utilizRecE2T2[7,LAD]
                                    0                          -0 
   2510 utilizRecE2T2[7,ORO]
@@ -5031,7 +5031,7 @@ Objective:  z = 97 (MAXimum)
   2512 utiliRecMarE2T2[1,CEM]
                                   -1                          -0 
   2513 utiliRecMarE2T2[1,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2514 utiliRecMarE2T2[1,LAD]
                                    0                          -0 
   2515 utiliRecMarE2T2[1,ORO]
@@ -5039,7 +5039,7 @@ Objective:  z = 97 (MAXimum)
   2516 utiliRecMarE2T2[2,CEM]
                                   -1                          -0 
   2517 utiliRecMarE2T2[2,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2518 utiliRecMarE2T2[2,LAD]
                                    0                          -0 
   2519 utiliRecMarE2T2[2,ORO]
@@ -5047,7 +5047,7 @@ Objective:  z = 97 (MAXimum)
   2520 utiliRecMarE2T2[3,CEM]
                                   -1                          -0 
   2521 utiliRecMarE2T2[3,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2522 utiliRecMarE2T2[3,LAD]
                                    0                          -0 
   2523 utiliRecMarE2T2[3,ORO]
@@ -5055,7 +5055,7 @@ Objective:  z = 97 (MAXimum)
   2524 utiliRecMarE2T2[4,CEM]
                                   -1                          -0 
   2525 utiliRecMarE2T2[4,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2526 utiliRecMarE2T2[4,LAD]
                                    0                          -0 
   2527 utiliRecMarE2T2[4,ORO]
@@ -5063,7 +5063,7 @@ Objective:  z = 97 (MAXimum)
   2528 utiliRecMarE2T2[5,CEM]
                                   -1                          -0 
   2529 utiliRecMarE2T2[5,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2530 utiliRecMarE2T2[5,LAD]
                                    0                          -0 
   2531 utiliRecMarE2T2[5,ORO]
@@ -5071,7 +5071,7 @@ Objective:  z = 97 (MAXimum)
   2532 utiliRecMarE2T2[6,CEM]
                                   -1                          -0 
   2533 utiliRecMarE2T2[6,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2534 utiliRecMarE2T2[6,LAD]
                                    0                          -0 
   2535 utiliRecMarE2T2[6,ORO]
@@ -5079,7 +5079,7 @@ Objective:  z = 97 (MAXimum)
   2536 utiliRecMarE2T2[7,CEM]
                                   -1                          -0 
   2537 utiliRecMarE2T2[7,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2538 utiliRecMarE2T2[7,LAD]
                                    0                          -0 
   2539 utiliRecMarE2T2[7,ORO]
@@ -5087,7 +5087,7 @@ Objective:  z = 97 (MAXimum)
   2540 utiliRecMarE2T2[8,CEM]
                                   -1                          -0 
   2541 utiliRecMarE2T2[8,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2542 utiliRecMarE2T2[8,LAD]
                                    0                          -0 
   2543 utiliRecMarE2T2[8,ORO]
@@ -5095,7 +5095,7 @@ Objective:  z = 97 (MAXimum)
   2544 utiliRecMarE2T2[9,CEM]
                                   -1                          -0 
   2545 utiliRecMarE2T2[9,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2546 utiliRecMarE2T2[9,LAD]
                                    0                          -0 
   2547 utiliRecMarE2T2[9,ORO]
@@ -5103,7 +5103,7 @@ Objective:  z = 97 (MAXimum)
   2548 utiliRecMarE2T2[10,CEM]
                                   -1                          -0 
   2549 utiliRecMarE2T2[10,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2550 utiliRecMarE2T2[10,LAD]
                                    0                          -0 
   2551 utiliRecMarE2T2[10,ORO]
@@ -5111,7 +5111,7 @@ Objective:  z = 97 (MAXimum)
   2552 utiliRecMarE2T2[11,CEM]
                                   -1                          -0 
   2553 utiliRecMarE2T2[11,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2554 utiliRecMarE2T2[11,LAD]
                                    0                          -0 
   2555 utiliRecMarE2T2[11,ORO]
@@ -5119,7 +5119,7 @@ Objective:  z = 97 (MAXimum)
   2556 utiliRecMarE2T2[12,CEM]
                                   -1                          -0 
   2557 utiliRecMarE2T2[12,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2558 utiliRecMarE2T2[12,LAD]
                                    0                          -0 
   2559 utiliRecMarE2T2[12,ORO]
@@ -5127,7 +5127,7 @@ Objective:  z = 97 (MAXimum)
   2560 utiliRecMarE2T2[13,CEM]
                                   -1                          -0 
   2561 utiliRecMarE2T2[13,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2562 utiliRecMarE2T2[13,LAD]
                                    0                          -0 
   2563 utiliRecMarE2T2[13,ORO]
@@ -5135,7 +5135,7 @@ Objective:  z = 97 (MAXimum)
   2564 utiliRecMarE2T2[14,CEM]
                                   -1                          -0 
   2565 utiliRecMarE2T2[14,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2566 utiliRecMarE2T2[14,LAD]
                                    0                          -0 
   2567 utiliRecMarE2T2[14,ORO]
@@ -5143,7 +5143,7 @@ Objective:  z = 97 (MAXimum)
   2568 utiliRecMarE2T2[15,CEM]
                                   -1                          -0 
   2569 utiliRecMarE2T2[15,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2570 utiliRecMarE2T2[15,LAD]
                                    0                          -0 
   2571 utiliRecMarE2T2[15,ORO]
@@ -5151,7 +5151,7 @@ Objective:  z = 97 (MAXimum)
   2572 utiliRecMarE2T2[16,CEM]
                                   -1                          -0 
   2573 utiliRecMarE2T2[16,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2574 utiliRecMarE2T2[16,LAD]
                                    0                          -0 
   2575 utiliRecMarE2T2[16,ORO]
@@ -5159,7 +5159,7 @@ Objective:  z = 97 (MAXimum)
   2576 utiliRecMarE2T2[17,CEM]
                                   -1                          -0 
   2577 utiliRecMarE2T2[17,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2578 utiliRecMarE2T2[17,LAD]
                                    0                          -0 
   2579 utiliRecMarE2T2[17,ORO]
@@ -5167,7 +5167,7 @@ Objective:  z = 97 (MAXimum)
   2580 utiliRecMarE2T2[18,CEM]
                                   -1                          -0 
   2581 utiliRecMarE2T2[18,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2582 utiliRecMarE2T2[18,LAD]
                                    0                          -0 
   2583 utiliRecMarE2T2[18,ORO]
@@ -5175,7 +5175,7 @@ Objective:  z = 97 (MAXimum)
   2584 utiliRecMarE2T2[19,CEM]
                                   -1                          -0 
   2585 utiliRecMarE2T2[19,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2586 utiliRecMarE2T2[19,LAD]
                                    0                          -0 
   2587 utiliRecMarE2T2[19,ORO]
@@ -5183,7 +5183,7 @@ Objective:  z = 97 (MAXimum)
   2588 utiliRecMarE2T2[20,CEM]
                                   -1                          -0 
   2589 utiliRecMarE2T2[20,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2590 utiliRecMarE2T2[20,LAD]
                                    0                          -0 
   2591 utiliRecMarE2T2[20,ORO]
@@ -5191,7 +5191,7 @@ Objective:  z = 97 (MAXimum)
   2592 utiliRecMarE2T2[21,CEM]
                                   -1                          -0 
   2593 utiliRecMarE2T2[21,MAD]
-                                   0                          -0 
+                                  -1                          -0 
   2594 utiliRecMarE2T2[21,LAD]
                                    0                          -0 
   2595 utiliRecMarE2T2[21,ORO]
@@ -5215,9 +5215,9 @@ Objective:  z = 97 (MAXimum)
   2604 utilizRecE2T3[1,TEL]
                                    0                          -0 
   2605 utilizRecE2T3[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2606 utilizRecE2T3[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2607 utilizRecE2T3[1,MAD]
                                    0                          -0 
   2608 utilizRecE2T3[1,LAD]
@@ -5229,9 +5229,9 @@ Objective:  z = 97 (MAXimum)
   2611 utilizRecE2T3[2,TEL]
                                    0                          -0 
   2612 utilizRecE2T3[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2613 utilizRecE2T3[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2614 utilizRecE2T3[2,MAD]
                                    0                          -0 
   2615 utilizRecE2T3[2,LAD]
@@ -5243,9 +5243,9 @@ Objective:  z = 97 (MAXimum)
   2618 utilizRecE2T3[3,TEL]
                                    0                          -0 
   2619 utilizRecE2T3[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2620 utilizRecE2T3[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2621 utilizRecE2T3[3,MAD]
                                    0                          -0 
   2622 utilizRecE2T3[3,LAD]
@@ -5257,9 +5257,9 @@ Objective:  z = 97 (MAXimum)
   2625 utilizRecE2T3[4,TEL]
                                    0                          -0 
   2626 utilizRecE2T3[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2627 utilizRecE2T3[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2628 utilizRecE2T3[4,MAD]
                                    0                          -0 
   2629 utilizRecE2T3[4,LAD]
@@ -5271,9 +5271,9 @@ Objective:  z = 97 (MAXimum)
   2632 utilizRecE2T3[5,TEL]
                                    0                          -0 
   2633 utilizRecE2T3[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2634 utilizRecE2T3[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2635 utilizRecE2T3[5,MAD]
                                    0                          -0 
   2636 utilizRecE2T3[5,LAD]
@@ -5285,9 +5285,9 @@ Objective:  z = 97 (MAXimum)
   2639 utilizRecE2T3[6,TEL]
                                    0                          -0 
   2640 utilizRecE2T3[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2641 utilizRecE2T3[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2642 utilizRecE2T3[6,MAD]
                                    0                          -0 
   2643 utilizRecE2T3[6,LAD]
@@ -5299,9 +5299,9 @@ Objective:  z = 97 (MAXimum)
   2646 utilizRecE2T3[7,TEL]
                                    0                          -0 
   2647 utilizRecE2T3[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2648 utilizRecE2T3[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2649 utilizRecE2T3[7,MAD]
                                    0                          -0 
   2650 utilizRecE2T3[7,LAD]
@@ -5497,9 +5497,9 @@ Objective:  z = 97 (MAXimum)
   2745 utilizRecE2T4[1,TEL]
                                    0                          -0 
   2746 utilizRecE2T4[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2747 utilizRecE2T4[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2748 utilizRecE2T4[1,MAD]
                                    0                          -0 
   2749 utilizRecE2T4[1,LAD]
@@ -5511,9 +5511,9 @@ Objective:  z = 97 (MAXimum)
   2752 utilizRecE2T4[2,TEL]
                                    0                          -0 
   2753 utilizRecE2T4[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2754 utilizRecE2T4[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2755 utilizRecE2T4[2,MAD]
                                    0                          -0 
   2756 utilizRecE2T4[2,LAD]
@@ -5525,9 +5525,9 @@ Objective:  z = 97 (MAXimum)
   2759 utilizRecE2T4[3,TEL]
                                    0                          -0 
   2760 utilizRecE2T4[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2761 utilizRecE2T4[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2762 utilizRecE2T4[3,MAD]
                                    0                          -0 
   2763 utilizRecE2T4[3,LAD]
@@ -5539,9 +5539,9 @@ Objective:  z = 97 (MAXimum)
   2766 utilizRecE2T4[4,TEL]
                                    0                          -0 
   2767 utilizRecE2T4[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2768 utilizRecE2T4[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2769 utilizRecE2T4[4,MAD]
                                    0                          -0 
   2770 utilizRecE2T4[4,LAD]
@@ -5553,9 +5553,9 @@ Objective:  z = 97 (MAXimum)
   2773 utilizRecE2T4[5,TEL]
                                    0                          -0 
   2774 utilizRecE2T4[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2775 utilizRecE2T4[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2776 utilizRecE2T4[5,MAD]
                                    0                          -0 
   2777 utilizRecE2T4[5,LAD]
@@ -5567,9 +5567,9 @@ Objective:  z = 97 (MAXimum)
   2780 utilizRecE2T4[6,TEL]
                                    0                          -0 
   2781 utilizRecE2T4[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2782 utilizRecE2T4[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2783 utilizRecE2T4[6,MAD]
                                    0                          -0 
   2784 utilizRecE2T4[6,LAD]
@@ -5581,9 +5581,9 @@ Objective:  z = 97 (MAXimum)
   2787 utilizRecE2T4[7,TEL]
                                    0                          -0 
   2788 utilizRecE2T4[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2789 utilizRecE2T4[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2790 utilizRecE2T4[7,MAD]
                                    0                          -0 
   2791 utilizRecE2T4[7,LAD]
@@ -5779,9 +5779,9 @@ Objective:  z = 97 (MAXimum)
   2886 utilizRecE2T5[1,TEL]
                                    0                          -0 
   2887 utilizRecE2T5[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2888 utilizRecE2T5[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2889 utilizRecE2T5[1,MAD]
                                    0                          -0 
   2890 utilizRecE2T5[1,LAD]
@@ -5793,9 +5793,9 @@ Objective:  z = 97 (MAXimum)
   2893 utilizRecE2T5[2,TEL]
                                    0                          -0 
   2894 utilizRecE2T5[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2895 utilizRecE2T5[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2896 utilizRecE2T5[2,MAD]
                                    0                          -0 
   2897 utilizRecE2T5[2,LAD]
@@ -5807,9 +5807,9 @@ Objective:  z = 97 (MAXimum)
   2900 utilizRecE2T5[3,TEL]
                                    0                          -0 
   2901 utilizRecE2T5[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2902 utilizRecE2T5[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2903 utilizRecE2T5[3,MAD]
                                    0                          -0 
   2904 utilizRecE2T5[3,LAD]
@@ -5821,9 +5821,9 @@ Objective:  z = 97 (MAXimum)
   2907 utilizRecE2T5[4,TEL]
                                    0                          -0 
   2908 utilizRecE2T5[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2909 utilizRecE2T5[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2910 utilizRecE2T5[4,MAD]
                                    0                          -0 
   2911 utilizRecE2T5[4,LAD]
@@ -5835,9 +5835,9 @@ Objective:  z = 97 (MAXimum)
   2914 utilizRecE2T5[5,TEL]
                                    0                          -0 
   2915 utilizRecE2T5[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2916 utilizRecE2T5[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2917 utilizRecE2T5[5,MAD]
                                    0                          -0 
   2918 utilizRecE2T5[5,LAD]
@@ -5849,9 +5849,9 @@ Objective:  z = 97 (MAXimum)
   2921 utilizRecE2T5[6,TEL]
                                    0                          -0 
   2922 utilizRecE2T5[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2923 utilizRecE2T5[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2924 utilizRecE2T5[6,MAD]
                                    0                          -0 
   2925 utilizRecE2T5[6,LAD]
@@ -5863,9 +5863,9 @@ Objective:  z = 97 (MAXimum)
   2928 utilizRecE2T5[7,TEL]
                                    0                          -0 
   2929 utilizRecE2T5[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   2930 utilizRecE2T5[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   2931 utilizRecE2T5[7,MAD]
                                    0                          -0 
   2932 utilizRecE2T5[7,LAD]
@@ -6061,9 +6061,9 @@ Objective:  z = 97 (MAXimum)
   3027 utilizRecE2T6[1,TEL]
                                    0                          -0 
   3028 utilizRecE2T6[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3029 utilizRecE2T6[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3030 utilizRecE2T6[1,MAD]
                                    0                          -0 
   3031 utilizRecE2T6[1,LAD]
@@ -6075,9 +6075,9 @@ Objective:  z = 97 (MAXimum)
   3034 utilizRecE2T6[2,TEL]
                                    0                          -0 
   3035 utilizRecE2T6[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3036 utilizRecE2T6[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3037 utilizRecE2T6[2,MAD]
                                    0                          -0 
   3038 utilizRecE2T6[2,LAD]
@@ -6089,9 +6089,9 @@ Objective:  z = 97 (MAXimum)
   3041 utilizRecE2T6[3,TEL]
                                    0                          -0 
   3042 utilizRecE2T6[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3043 utilizRecE2T6[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3044 utilizRecE2T6[3,MAD]
                                    0                          -0 
   3045 utilizRecE2T6[3,LAD]
@@ -6103,9 +6103,9 @@ Objective:  z = 97 (MAXimum)
   3048 utilizRecE2T6[4,TEL]
                                    0                          -0 
   3049 utilizRecE2T6[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3050 utilizRecE2T6[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3051 utilizRecE2T6[4,MAD]
                                    0                          -0 
   3052 utilizRecE2T6[4,LAD]
@@ -6117,9 +6117,9 @@ Objective:  z = 97 (MAXimum)
   3055 utilizRecE2T6[5,TEL]
                                    0                          -0 
   3056 utilizRecE2T6[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3057 utilizRecE2T6[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3058 utilizRecE2T6[5,MAD]
                                    0                          -0 
   3059 utilizRecE2T6[5,LAD]
@@ -6131,9 +6131,9 @@ Objective:  z = 97 (MAXimum)
   3062 utilizRecE2T6[6,TEL]
                                    0                          -0 
   3063 utilizRecE2T6[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3064 utilizRecE2T6[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3065 utilizRecE2T6[6,MAD]
                                    0                          -0 
   3066 utilizRecE2T6[6,LAD]
@@ -6145,9 +6145,9 @@ Objective:  z = 97 (MAXimum)
   3069 utilizRecE2T6[7,TEL]
                                    0                          -0 
   3070 utilizRecE2T6[7,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3071 utilizRecE2T6[7,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3072 utilizRecE2T6[7,MAD]
                                    0                          -0 
   3073 utilizRecE2T6[7,LAD]
@@ -6591,9 +6591,9 @@ Objective:  z = 97 (MAXimum)
   3292 SenateE3T[1,TEL]
                                -5000                          -0 
   3293 SenateE3T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3294 SenateE3T[1,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3295 SenateE3T[1,MAD]
                                -5000                          -0 
   3296 SenateE3T[1,LAD]
@@ -6605,9 +6605,9 @@ Objective:  z = 97 (MAXimum)
   3299 SenateE3T[2,TEL]
                                -5000                          -0 
   3300 SenateE3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3301 SenateE3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3302 SenateE3T[2,MAD]
                                -5000                          -0 
   3303 SenateE3T[2,LAD]
@@ -6619,9 +6619,9 @@ Objective:  z = 97 (MAXimum)
   3306 SenateE3T[3,TEL]
                                -5000                          -0 
   3307 SenateE3T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3308 SenateE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3309 SenateE3T[3,MAD]
                                -5000                          -0 
   3310 SenateE3T[3,LAD]
@@ -6633,9 +6633,9 @@ Objective:  z = 97 (MAXimum)
   3313 SenateE3T[4,TEL]
                                -5000                          -0 
   3314 SenateE3T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3315 SenateE3T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3316 SenateE3T[4,MAD]
                                -5000                          -0 
   3317 SenateE3T[4,LAD]
@@ -6647,9 +6647,9 @@ Objective:  z = 97 (MAXimum)
   3320 SenateE3T[5,TEL]
                                -5000                          -0 
   3321 SenateE3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3322 SenateE3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3323 SenateE3T[5,MAD]
                                -5000                          -0 
   3324 SenateE3T[5,LAD]
@@ -6661,9 +6661,9 @@ Objective:  z = 97 (MAXimum)
   3327 SenateE3T[6,TEL]
                                -5000                          -0 
   3328 SenateE3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3329 SenateE3T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3330 SenateE3T[6,MAD]
                                -5000                          -0 
   3331 SenateE3T[6,LAD]
@@ -6675,9 +6675,9 @@ Objective:  z = 97 (MAXimum)
   3334 PantheonE3T[1,TEL]
                                    0                          -0 
   3335 PantheonE3T[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3336 PantheonE3T[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3337 PantheonE3T[1,MAD]
                                    0                          -0 
   3338 PantheonE3T[1,LAD]
@@ -6689,9 +6689,9 @@ Objective:  z = 97 (MAXimum)
   3341 PantheonE3T[2,TEL]
                                    0                          -0 
   3342 PantheonE3T[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3343 PantheonE3T[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3344 PantheonE3T[2,MAD]
                                    0                          -0 
   3345 PantheonE3T[2,LAD]
@@ -6703,9 +6703,9 @@ Objective:  z = 97 (MAXimum)
   3348 PantheonE3T[3,TEL]
                                    0                          -0 
   3349 PantheonE3T[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3350 PantheonE3T[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3351 PantheonE3T[3,MAD]
                                    0                          -0 
   3352 PantheonE3T[3,LAD]
@@ -6717,9 +6717,9 @@ Objective:  z = 97 (MAXimum)
   3355 PantheonE3T[4,TEL]
                                    0                          -0 
   3356 PantheonE3T[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3357 PantheonE3T[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3358 PantheonE3T[4,MAD]
                                    0                          -0 
   3359 PantheonE3T[4,LAD]
@@ -6731,9 +6731,9 @@ Objective:  z = 97 (MAXimum)
   3362 PantheonE3T[5,TEL]
                                    0                          -0 
   3363 PantheonE3T[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3364 PantheonE3T[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3365 PantheonE3T[5,MAD]
                                    0                          -0 
   3366 PantheonE3T[5,LAD]
@@ -6745,9 +6745,9 @@ Objective:  z = 97 (MAXimum)
   3369 PantheonE3T[6,TEL]
                                    0                          -0 
   3370 PantheonE3T[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3371 PantheonE3T[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3372 PantheonE3T[6,MAD]
                                    0                          -0 
   3373 PantheonE3T[6,LAD]
@@ -6759,9 +6759,9 @@ Objective:  z = 97 (MAXimum)
   3376 GardensE3T[1,TEL]
                                    0                          -0 
   3377 GardensE3T[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3378 GardensE3T[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3379 GardensE3T[1,MAD]
                                    0                          -0 
   3380 GardensE3T[1,LAD]
@@ -6773,9 +6773,9 @@ Objective:  z = 97 (MAXimum)
   3383 GardensE3T[2,TEL]
                                    0                          -0 
   3384 GardensE3T[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3385 GardensE3T[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3386 GardensE3T[2,MAD]
                                    0                          -0 
   3387 GardensE3T[2,LAD]
@@ -6787,9 +6787,9 @@ Objective:  z = 97 (MAXimum)
   3390 GardensE3T[3,TEL]
                                    0                          -0 
   3391 GardensE3T[3,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3392 GardensE3T[3,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3393 GardensE3T[3,MAD]
                                    0                          -0 
   3394 GardensE3T[3,LAD]
@@ -6801,9 +6801,9 @@ Objective:  z = 97 (MAXimum)
   3397 GardensE3T[4,TEL]
                                    0                          -0 
   3398 GardensE3T[4,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3399 GardensE3T[4,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3400 GardensE3T[4,MAD]
                                    0                          -0 
   3401 GardensE3T[4,LAD]
@@ -6815,9 +6815,9 @@ Objective:  z = 97 (MAXimum)
   3404 GardensE3T[5,TEL]
                                    0                          -0 
   3405 GardensE3T[5,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3406 GardensE3T[5,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3407 GardensE3T[5,MAD]
                                    0                          -0 
   3408 GardensE3T[5,LAD]
@@ -6829,9 +6829,9 @@ Objective:  z = 97 (MAXimum)
   3411 GardensE3T[6,TEL]
                                    0                          -0 
   3412 GardensE3T[6,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3413 GardensE3T[6,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3414 GardensE3T[6,MAD]
                                    0                          -0 
   3415 GardensE3T[6,LAD]
@@ -6843,11 +6843,11 @@ Objective:  z = 97 (MAXimum)
   3418 UniversityE3T[1,TEL]
                                -5000                          -0 
   3419 UniversityE3T[1,CER]
-                               -4999                          -0 
+                               -5001                          -0 
   3420 UniversityE3T[1,PAP]
-                               -4999                          -0 
+                               -5001                          -0 
   3421 UniversityE3T[1,MAD]
-                               -4998                          -0 
+                               -5000                          -0 
   3422 UniversityE3T[1,LAD]
                                -5000                          -0 
   3423 UniversityE3T[1,ORO]
@@ -6857,9 +6857,9 @@ Objective:  z = 97 (MAXimum)
   3425 UniversityE3T[2,TEL]
                                -5000                          -0 
   3426 UniversityE3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3427 UniversityE3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3428 UniversityE3T[2,MAD]
                                -5000                          -0 
   3429 UniversityE3T[2,LAD]
@@ -6871,9 +6871,9 @@ Objective:  z = 97 (MAXimum)
   3432 UniversityE3T[3,TEL]
                                -5000                          -0 
   3433 UniversityE3T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3434 UniversityE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3435 UniversityE3T[3,MAD]
                                -5000                          -0 
   3436 UniversityE3T[3,LAD]
@@ -6889,7 +6889,7 @@ Objective:  z = 97 (MAXimum)
   3441 UniversityE3T[4,PAP]
                                -5000                          -0 
   3442 UniversityE3T[4,MAD]
-                               -5000                          -0 
+                               -4998                          -0 
   3443 UniversityE3T[4,LAD]
                                -5000                          -0 
   3444 UniversityE3T[4,ORO]
@@ -6899,9 +6899,9 @@ Objective:  z = 97 (MAXimum)
   3446 UniversityE3T[5,TEL]
                                -5000                          -0 
   3447 UniversityE3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3448 UniversityE3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3449 UniversityE3T[5,MAD]
                                -5000                          -0 
   3450 UniversityE3T[5,LAD]
@@ -6913,9 +6913,9 @@ Objective:  z = 97 (MAXimum)
   3453 UniversityE3T[6,TEL]
                                -5000                          -0 
   3454 UniversityE3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3455 UniversityE3T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3456 UniversityE3T[6,MAD]
                                -5000                          -0 
   3457 UniversityE3T[6,LAD]
@@ -6927,9 +6927,9 @@ Objective:  z = 97 (MAXimum)
   3460 ObserbatoryE3T[1,TEL]
                                -5000                          -0 
   3461 ObserbatoryE3T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3462 ObserbatoryE3T[1,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3463 ObserbatoryE3T[1,MAD]
                                -5000                          -0 
   3464 ObserbatoryE3T[1,LAD]
@@ -6941,9 +6941,9 @@ Objective:  z = 97 (MAXimum)
   3467 ObserbatoryE3T[2,TEL]
                                -5000                          -0 
   3468 ObserbatoryE3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3469 ObserbatoryE3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3470 ObserbatoryE3T[2,MAD]
                                -5000                          -0 
   3471 ObserbatoryE3T[2,LAD]
@@ -6953,25 +6953,25 @@ Objective:  z = 97 (MAXimum)
   3473 ObserbatoryE3T[3,CEM]
                                -5001                          -0 
   3474 ObserbatoryE3T[3,TEL]
-                               -5000                          -0 
+                               -4999                          -0 
   3475 ObserbatoryE3T[3,CER]
                                -5000                          -0 
   3476 ObserbatoryE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3477 ObserbatoryE3T[3,MAD]
                                -5000                          -0 
   3478 ObserbatoryE3T[3,LAD]
                                -5000                          -0 
   3479 ObserbatoryE3T[3,ORO]
-                               -5000                          -0 
+                               -4998                          -0 
   3480 ObserbatoryE3T[4,CEM]
                                -5001                          -0 
   3481 ObserbatoryE3T[4,TEL]
                                -5000                          -0 
   3482 ObserbatoryE3T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3483 ObserbatoryE3T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3484 ObserbatoryE3T[4,MAD]
                                -5000                          -0 
   3485 ObserbatoryE3T[4,LAD]
@@ -6983,9 +6983,9 @@ Objective:  z = 97 (MAXimum)
   3488 ObserbatoryE3T[5,TEL]
                                -5000                          -0 
   3489 ObserbatoryE3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3490 ObserbatoryE3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3491 ObserbatoryE3T[5,MAD]
                                -5000                          -0 
   3492 ObserbatoryE3T[5,LAD]
@@ -6995,25 +6995,25 @@ Objective:  z = 97 (MAXimum)
   3494 ObserbatoryE3T[6,CEM]
                                -5001                          -0 
   3495 ObserbatoryE3T[6,TEL]
-                               -4999                          -0 
-  3496 ObserbatoryE3T[6,CER]
-                               -4999                          -0 
-  3497 ObserbatoryE3T[6,PAP]
                                -5000                          -0 
+  3496 ObserbatoryE3T[6,CER]
+                               -5001                          -0 
+  3497 ObserbatoryE3T[6,PAP]
+                               -5001                          -0 
   3498 ObserbatoryE3T[6,MAD]
                                -5000                          -0 
   3499 ObserbatoryE3T[6,LAD]
                                -5000                          -0 
   3500 ObserbatoryE3T[6,ORO]
-                               -4998                          -0 
+                               -5000                          -0 
   3501 StudyE3T[1,CEM]
                                -5001                          -0 
   3502 StudyE3T[1,TEL]
                                -5000                          -0 
   3503 StudyE3T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3504 StudyE3T[1,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3505 StudyE3T[1,MAD]
                                -5000                          -0 
   3506 StudyE3T[1,LAD]
@@ -7025,9 +7025,9 @@ Objective:  z = 97 (MAXimum)
   3509 StudyE3T[2,TEL]
                                -5000                          -0 
   3510 StudyE3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3511 StudyE3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3512 StudyE3T[2,MAD]
                                -5000                          -0 
   3513 StudyE3T[2,LAD]
@@ -7039,9 +7039,9 @@ Objective:  z = 97 (MAXimum)
   3516 StudyE3T[3,TEL]
                                -5000                          -0 
   3517 StudyE3T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3518 StudyE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3519 StudyE3T[3,MAD]
                                -5000                          -0 
   3520 StudyE3T[3,LAD]
@@ -7051,13 +7051,13 @@ Objective:  z = 97 (MAXimum)
   3522 StudyE3T[4,CEM]
                                -5001                          -0 
   3523 StudyE3T[4,TEL]
-                               -4999                          -0 
-  3524 StudyE3T[4,CER]
                                -5000                          -0 
+  3524 StudyE3T[4,CER]
+                               -5001                          -0 
   3525 StudyE3T[4,PAP]
-                               -4999                          -0 
+                               -5001                          -0 
   3526 StudyE3T[4,MAD]
-                               -4999                          -0 
+                               -5000                          -0 
   3527 StudyE3T[4,LAD]
                                -5000                          -0 
   3528 StudyE3T[4,ORO]
@@ -7067,9 +7067,9 @@ Objective:  z = 97 (MAXimum)
   3530 StudyE3T[5,TEL]
                                -5000                          -0 
   3531 StudyE3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3532 StudyE3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3533 StudyE3T[5,MAD]
                                -5000                          -0 
   3534 StudyE3T[5,LAD]
@@ -7079,13 +7079,13 @@ Objective:  z = 97 (MAXimum)
   3536 StudyE3T[6,CEM]
                                -5001                          -0 
   3537 StudyE3T[6,TEL]
-                               -5000                          -0 
+                               -4999                          -0 
   3538 StudyE3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3539 StudyE3T[6,PAP]
                                -5000                          -0 
   3540 StudyE3T[6,MAD]
-                               -5000                          -0 
+                               -4999                          -0 
   3541 StudyE3T[6,LAD]
                                -5000                          -0 
   3542 StudyE3T[6,ORO]
@@ -7095,9 +7095,9 @@ Objective:  z = 97 (MAXimum)
   3544 AcademyE3T[1,TEL]
                                -5000                          -0 
   3545 AcademyE3T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3546 AcademyE3T[1,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3547 AcademyE3T[1,MAD]
                                -5000                          -0 
   3548 AcademyE3T[1,LAD]
@@ -7109,9 +7109,9 @@ Objective:  z = 97 (MAXimum)
   3551 AcademyE3T[2,TEL]
                                -5000                          -0 
   3552 AcademyE3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3553 AcademyE3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3554 AcademyE3T[2,MAD]
                                -5000                          -0 
   3555 AcademyE3T[2,LAD]
@@ -7123,9 +7123,9 @@ Objective:  z = 97 (MAXimum)
   3558 AcademyE3T[3,TEL]
                                -5000                          -0 
   3559 AcademyE3T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3560 AcademyE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3561 AcademyE3T[3,MAD]
                                -5000                          -0 
   3562 AcademyE3T[3,LAD]
@@ -7137,9 +7137,9 @@ Objective:  z = 97 (MAXimum)
   3565 AcademyE3T[4,TEL]
                                -5000                          -0 
   3566 AcademyE3T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3567 AcademyE3T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3568 AcademyE3T[4,MAD]
                                -5000                          -0 
   3569 AcademyE3T[4,LAD]
@@ -7151,9 +7151,9 @@ Objective:  z = 97 (MAXimum)
   3572 AcademyE3T[5,TEL]
                                -5000                          -0 
   3573 AcademyE3T[5,CER]
-                               -4999                          -0 
-  3574 AcademyE3T[5,PAP]
                                -5000                          -0 
+  3574 AcademyE3T[5,PAP]
+                               -5001                          -0 
   3575 AcademyE3T[5,MAD]
                                -5000                          -0 
   3576 AcademyE3T[5,LAD]
@@ -7165,9 +7165,9 @@ Objective:  z = 97 (MAXimum)
   3579 AcademyE3T[6,TEL]
                                -5000                          -0 
   3580 AcademyE3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3581 AcademyE3T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3582 AcademyE3T[6,MAD]
                                -5000                          -0 
   3583 AcademyE3T[6,LAD]
@@ -7179,9 +7179,9 @@ Objective:  z = 97 (MAXimum)
   3586 LodgeE3T[1,TEL]
                                -5000                          -0 
   3587 LodgeE3T[1,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3588 LodgeE3T[1,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3589 LodgeE3T[1,MAD]
                                -5000                          -0 
   3590 LodgeE3T[1,LAD]
@@ -7193,9 +7193,9 @@ Objective:  z = 97 (MAXimum)
   3593 LodgeE3T[2,TEL]
                                -5000                          -0 
   3594 LodgeE3T[2,CER]
-                               -4999                          -0 
+                               -5000                          -0 
   3595 LodgeE3T[2,PAP]
-                               -4999                          -0 
+                               -5000                          -0 
   3596 LodgeE3T[2,MAD]
                                -5000                          -0 
   3597 LodgeE3T[2,LAD]
@@ -7207,9 +7207,9 @@ Objective:  z = 97 (MAXimum)
   3600 LodgeE3T[3,TEL]
                                -5000                          -0 
   3601 LodgeE3T[3,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3602 LodgeE3T[3,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3603 LodgeE3T[3,MAD]
                                -5000                          -0 
   3604 LodgeE3T[3,LAD]
@@ -7221,9 +7221,9 @@ Objective:  z = 97 (MAXimum)
   3607 LodgeE3T[4,TEL]
                                -5000                          -0 
   3608 LodgeE3T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3609 LodgeE3T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3610 LodgeE3T[4,MAD]
                                -5000                          -0 
   3611 LodgeE3T[4,LAD]
@@ -7235,9 +7235,9 @@ Objective:  z = 97 (MAXimum)
   3614 LodgeE3T[5,TEL]
                                -5000                          -0 
   3615 LodgeE3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3616 LodgeE3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3617 LodgeE3T[5,MAD]
                                -5000                          -0 
   3618 LodgeE3T[5,LAD]
@@ -7249,9 +7249,9 @@ Objective:  z = 97 (MAXimum)
   3621 LodgeE3T[6,TEL]
                                -5000                          -0 
   3622 LodgeE3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3623 LodgeE3T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3624 LodgeE3T[6,MAD]
                                -5000                          -0 
   3625 LodgeE3T[6,LAD]
@@ -7267,7 +7267,7 @@ Objective:  z = 97 (MAXimum)
   3630 University2E3T[1,PAP]
                                -5000                          -0 
   3631 University2E3T[1,MAD]
-                               -5000                          -0 
+                               -4998                          -0 
   3632 University2E3T[1,LAD]
                                -5000                          -0 
   3633 University2E3T[1,ORO]
@@ -7277,9 +7277,9 @@ Objective:  z = 97 (MAXimum)
   3635 University2E3T[2,TEL]
                                -5000                          -0 
   3636 University2E3T[2,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3637 University2E3T[2,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3638 University2E3T[2,MAD]
                                -5000                          -0 
   3639 University2E3T[2,LAD]
@@ -7291,11 +7291,11 @@ Objective:  z = 97 (MAXimum)
   3642 University2E3T[3,TEL]
                                -5000                          -0 
   3643 University2E3T[3,CER]
-                               -4999                          -0 
+                               -5001                          -0 
   3644 University2E3T[3,PAP]
-                               -4999                          -0 
+                               -5001                          -0 
   3645 University2E3T[3,MAD]
-                               -4998                          -0 
+                               -5000                          -0 
   3646 University2E3T[3,LAD]
                                -5000                          -0 
   3647 University2E3T[3,ORO]
@@ -7305,9 +7305,9 @@ Objective:  z = 97 (MAXimum)
   3649 University2E3T[4,TEL]
                                -5000                          -0 
   3650 University2E3T[4,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3651 University2E3T[4,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3652 University2E3T[4,MAD]
                                -5000                          -0 
   3653 University2E3T[4,LAD]
@@ -7319,9 +7319,9 @@ Objective:  z = 97 (MAXimum)
   3656 University2E3T[5,TEL]
                                -5000                          -0 
   3657 University2E3T[5,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3658 University2E3T[5,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3659 University2E3T[5,MAD]
                                -5000                          -0 
   3660 University2E3T[5,LAD]
@@ -7333,9 +7333,9 @@ Objective:  z = 97 (MAXimum)
   3663 University2E3T[6,TEL]
                                -5000                          -0 
   3664 University2E3T[6,CER]
-                               -5000                          -0 
+                               -5001                          -0 
   3665 University2E3T[6,PAP]
-                               -5000                          -0 
+                               -5001                          -0 
   3666 University2E3T[6,MAD]
                                -5000                          -0 
   3667 University2E3T[6,LAD]
@@ -7361,9 +7361,9 @@ Objective:  z = 97 (MAXimum)
   3677 utilizRecE3T1[1,TEL]
                                    0                          -0 
   3678 utilizRecE3T1[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3679 utilizRecE3T1[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3680 utilizRecE3T1[1,MAD]
                                    0                          -0 
   3681 utilizRecE3T1[1,LAD]
@@ -7375,9 +7375,9 @@ Objective:  z = 97 (MAXimum)
   3684 utilizRecE3T1[2,TEL]
                                    0                          -0 
   3685 utilizRecE3T1[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3686 utilizRecE3T1[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3687 utilizRecE3T1[2,MAD]
                                    0                          -0 
   3688 utilizRecE3T1[2,LAD]
@@ -7541,9 +7541,9 @@ Objective:  z = 97 (MAXimum)
   3767 utilizRecE3T2[1,TEL]
                                    0                          -0 
   3768 utilizRecE3T2[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3769 utilizRecE3T2[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3770 utilizRecE3T2[1,MAD]
                                    0                          -0 
   3771 utilizRecE3T2[1,LAD]
@@ -7555,9 +7555,9 @@ Objective:  z = 97 (MAXimum)
   3774 utilizRecE3T2[2,TEL]
                                    0                          -0 
   3775 utilizRecE3T2[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3776 utilizRecE3T2[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3777 utilizRecE3T2[2,MAD]
                                    0                          -0 
   3778 utilizRecE3T2[2,LAD]
@@ -7721,9 +7721,9 @@ Objective:  z = 97 (MAXimum)
   3857 utilizRecE3T3[1,TEL]
                                    0                          -0 
   3858 utilizRecE3T3[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3859 utilizRecE3T3[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3860 utilizRecE3T3[1,MAD]
                                    0                          -0 
   3861 utilizRecE3T3[1,LAD]
@@ -7735,9 +7735,9 @@ Objective:  z = 97 (MAXimum)
   3864 utilizRecE3T3[2,TEL]
                                    0                          -0 
   3865 utilizRecE3T3[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3866 utilizRecE3T3[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3867 utilizRecE3T3[2,MAD]
                                    0                          -0 
   3868 utilizRecE3T3[2,LAD]
@@ -7901,9 +7901,9 @@ Objective:  z = 97 (MAXimum)
   3947 utilizRecE3T4[1,TEL]
                                    0                          -0 
   3948 utilizRecE3T4[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3949 utilizRecE3T4[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3950 utilizRecE3T4[1,MAD]
                                    0                          -0 
   3951 utilizRecE3T4[1,LAD]
@@ -7915,9 +7915,9 @@ Objective:  z = 97 (MAXimum)
   3954 utilizRecE3T4[2,TEL]
                                    0                          -0 
   3955 utilizRecE3T4[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   3956 utilizRecE3T4[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   3957 utilizRecE3T4[2,MAD]
                                    0                          -0 
   3958 utilizRecE3T4[2,LAD]
@@ -8081,9 +8081,9 @@ Objective:  z = 97 (MAXimum)
   4037 utilizRecE3T5[1,TEL]
                                    0                          -0 
   4038 utilizRecE3T5[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   4039 utilizRecE3T5[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   4040 utilizRecE3T5[1,MAD]
                                    0                          -0 
   4041 utilizRecE3T5[1,LAD]
@@ -8095,9 +8095,9 @@ Objective:  z = 97 (MAXimum)
   4044 utilizRecE3T5[2,TEL]
                                    0                          -0 
   4045 utilizRecE3T5[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   4046 utilizRecE3T5[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   4047 utilizRecE3T5[2,MAD]
                                    0                          -0 
   4048 utilizRecE3T5[2,LAD]
@@ -8261,9 +8261,9 @@ Objective:  z = 97 (MAXimum)
   4127 utilizRecE3T6[1,TEL]
                                    0                          -0 
   4128 utilizRecE3T6[1,CER]
-                                   0                          -0 
+                                  -1                          -0 
   4129 utilizRecE3T6[1,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   4130 utilizRecE3T6[1,MAD]
                                    0                          -0 
   4131 utilizRecE3T6[1,LAD]
@@ -8275,9 +8275,9 @@ Objective:  z = 97 (MAXimum)
   4134 utilizRecE3T6[2,TEL]
                                    0                          -0 
   4135 utilizRecE3T6[2,CER]
-                                   0                          -0 
+                                  -1                          -0 
   4136 utilizRecE3T6[2,PAP]
-                                   0                          -0 
+                                  -1                          -0 
   4137 utilizRecE3T6[2,MAD]
                                    0                          -0 
   4138 utilizRecE3T6[2,LAD]
@@ -8499,13 +8499,13 @@ Objective:  z = 97 (MAXimum)
     47 Ype[8,5,NOR] *              0             0             1 
     48 Ype[8,6,NOR] *              0             0             1 
     49 Ype[9,1,NOR] *              0             0             1 
-    50 Ype[9,2,NOR] *              0             0             1 
+    50 Ype[9,2,NOR] *              1             0             1 
     51 Ype[9,3,NOR] *              0             0             1 
     52 Ype[9,4,NOR] *              0             0             1 
     53 Ype[9,5,NOR] *              0             0             1 
     54 Ype[9,6,NOR] *              0             0             1 
     55 Ype[10,1,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
     56 Ype[10,2,NOR]
                     *              0             0             1 
     57 Ype[10,3,NOR]
@@ -8545,11 +8545,11 @@ Objective:  z = 97 (MAXimum)
     74 Ype[13,2,NOR]
                     *              0             0             1 
     75 Ype[13,3,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
     76 Ype[13,4,NOR]
                     *              0             0             1 
     77 Ype[13,5,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
     78 Ype[13,6,NOR]
                     *              0             0             1 
     79 Ype[14,1,NOR]
@@ -8581,21 +8581,21 @@ Objective:  z = 97 (MAXimum)
     92 Ype[16,2,NOR]
                     *              0             0             1 
     93 Ype[16,3,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
     94 Ype[16,4,NOR]
                     *              0             0             1 
     95 Ype[16,5,NOR]
                     *              0             0             1 
     96 Ype[16,6,NOR]
-                    *              0             0             1 
-    97 Ype[17,1,NOR]
                     *              1             0             1 
+    97 Ype[17,1,NOR]
+                    *              0             0             1 
     98 Ype[17,2,NOR]
                     *              0             0             1 
     99 Ype[17,3,NOR]
                     *              0             0             1 
    100 Ype[17,4,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
    101 Ype[17,5,NOR]
                     *              0             0             1 
    102 Ype[17,6,NOR]
@@ -8607,9 +8607,9 @@ Objective:  z = 97 (MAXimum)
    105 Ype[18,3,NOR]
                     *              0             0             1 
    106 Ype[18,4,NOR]
-                    *              1             0             1 
-   107 Ype[18,5,NOR]
                     *              0             0             1 
+   107 Ype[18,5,NOR]
+                    *              1             0             1 
    108 Ype[18,6,NOR]
                     *              0             0             1 
    109 Ype[19,1,NOR]
@@ -8623,11 +8623,11 @@ Objective:  z = 97 (MAXimum)
    113 Ype[19,5,NOR]
                     *              0             0             1 
    114 Ype[19,6,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    115 Ype[20,1,NOR]
                     *              0             0             1 
    116 Ype[20,2,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    117 Ype[20,3,NOR]
                     *              0             0             1 
    118 Ype[20,4,NOR]
@@ -8962,9 +8962,9 @@ Objective:  z = 97 (MAXimum)
    330 Yse[7,6,NOR] *              0             0             1 
    331 Yse[8,1,NOR] *              0             0             1 
    332 Yse[8,2,NOR] *              0             0             1 
-   333 Yse[8,3,NOR] *              1             0             1 
+   333 Yse[8,3,NOR] *              0             0             1 
    334 Yse[8,4,NOR] *              0             0             1 
-   335 Yse[8,5,NOR] *              0             0             1 
+   335 Yse[8,5,NOR] *              1             0             1 
    336 Yse[8,6,NOR] *              0             0             1 
    337 Yse[9,1,NOR] *              0             0             1 
    338 Yse[9,2,NOR] *              0             0             1 
@@ -8987,11 +8987,11 @@ Objective:  z = 97 (MAXimum)
    349 Yse[11,1,NOR]
                     *              0             0             1 
    350 Yse[11,2,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    351 Yse[11,3,NOR]
                     *              0             0             1 
    352 Yse[11,4,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
    353 Yse[11,5,NOR]
                     *              0             0             1 
    354 Yse[11,6,NOR]
@@ -9005,13 +9005,13 @@ Objective:  z = 97 (MAXimum)
    358 Yse[12,4,NOR]
                     *              0             0             1 
    359 Yse[12,5,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    360 Yse[12,6,NOR]
-                    *              0             0             1 
-   361 Yse[13,1,NOR]
                     *              1             0             1 
-   362 Yse[13,2,NOR]
+   361 Yse[13,1,NOR]
                     *              0             0             1 
+   362 Yse[13,2,NOR]
+                    *              1             0             1 
    363 Yse[13,3,NOR]
                     *              0             0             1 
    364 Yse[13,4,NOR]
@@ -9025,21 +9025,21 @@ Objective:  z = 97 (MAXimum)
    368 Yse[14,2,NOR]
                     *              0             0             1 
    369 Yse[14,3,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
    370 Yse[14,4,NOR]
                     *              0             0             1 
    371 Yse[14,5,NOR]
                     *              0             0             1 
    372 Yse[14,6,NOR]
-                    *              1             0             1 
-   373 Yse[15,1,NOR]
                     *              0             0             1 
+   373 Yse[15,1,NOR]
+                    *              1             0             1 
    374 Yse[15,2,NOR]
                     *              0             0             1 
    375 Yse[15,3,NOR]
                     *              0             0             1 
    376 Yse[15,4,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    377 Yse[15,5,NOR]
                     *              0             0             1 
    378 Yse[15,6,NOR]
@@ -9344,24 +9344,24 @@ Objective:  z = 97 (MAXimum)
    568 Yte[5,4,NOR] *              0             0             1 
    569 Yte[5,5,NOR] *              0             0             1 
    570 Yte[5,6,NOR] *              0             0             1 
-   571 Yte[6,1,NOR] *              1             0             1 
+   571 Yte[6,1,NOR] *              0             0             1 
    572 Yte[6,2,NOR] *              0             0             1 
    573 Yte[6,3,NOR] *              0             0             1 
-   574 Yte[6,4,NOR] *              0             0             1 
+   574 Yte[6,4,NOR] *              1             0             1 
    575 Yte[6,5,NOR] *              0             0             1 
    576 Yte[6,6,NOR] *              0             0             1 
    577 Yte[7,1,NOR] *              0             0             1 
    578 Yte[7,2,NOR] *              0             0             1 
-   579 Yte[7,3,NOR] *              0             0             1 
+   579 Yte[7,3,NOR] *              1             0             1 
    580 Yte[7,4,NOR] *              0             0             1 
    581 Yte[7,5,NOR] *              0             0             1 
-   582 Yte[7,6,NOR] *              1             0             1 
+   582 Yte[7,6,NOR] *              0             0             1 
    583 Yte[8,1,NOR] *              0             0             1 
    584 Yte[8,2,NOR] *              0             0             1 
    585 Yte[8,3,NOR] *              0             0             1 
-   586 Yte[8,4,NOR] *              1             0             1 
+   586 Yte[8,4,NOR] *              0             0             1 
    587 Yte[8,5,NOR] *              0             0             1 
-   588 Yte[8,6,NOR] *              0             0             1 
+   588 Yte[8,6,NOR] *              1             0             1 
    589 Yte[9,1,NOR] *              0             0             1 
    590 Yte[9,2,NOR] *              0             0             1 
    591 Yte[9,3,NOR] *              0             0             1 
@@ -9381,11 +9381,11 @@ Objective:  z = 97 (MAXimum)
    600 Yte[10,6,NOR]
                     *              0             0             1 
    601 Yte[11,1,NOR]
-                    *              0             0             1 
+                    *              1             0             1 
    602 Yte[11,2,NOR]
                     *              0             0             1 
    603 Yte[11,3,NOR]
-                    *              1             0             1 
+                    *              0             0             1 
    604 Yte[11,4,NOR]
                     *              0             0             1 
    605 Yte[11,5,NOR]
@@ -9617,19 +9617,19 @@ Objective:  z = 97 (MAXimum)
    745 monedasDisponibles[1,1]
                     *              3             0               
    746 monedasDisponibles[1,2]
-                    *              1             0               
-   747 monedasDisponibles[1,3]
-                    *              4             0               
-   748 monedasDisponibles[1,4]
-                    *              2             0               
-   749 monedasDisponibles[1,5]
-                    *              0             0               
-   750 monedasDisponibles[1,6]
-                    *              0             0               
-   751 monedasDisponibles[2,1]
                     *              3             0               
+   747 monedasDisponibles[1,3]
+                    *              3             0               
+   748 monedasDisponibles[1,4]
+                    *              3             0               
+   749 monedasDisponibles[1,5]
+                    *              3             0               
+   750 monedasDisponibles[1,6]
+                    *              3             0               
+   751 monedasDisponibles[2,1]
+                    *              1             0               
    752 monedasDisponibles[2,2]
-                    *              0             0               
+                    *              1             0               
    753 monedasDisponibles[2,3]
                     *              0             0               
    754 monedasDisponibles[2,4]
@@ -9651,21 +9651,21 @@ Objective:  z = 97 (MAXimum)
    762 monedasDisponibles[3,6]
                     *              0             0               
    763 gastoMonedas[1,1]
-                    *              2             0               
+                    *              0             0               
    764 gastoMonedas[1,2]
                     *              0             0               
    765 gastoMonedas[1,3]
-                    *              2             0               
+                    *              0             0               
    766 gastoMonedas[1,4]
-                    *              2             0               
+                    *              0             0               
    767 gastoMonedas[1,5]
                     *              0             0               
    768 gastoMonedas[1,6]
-                    *              0             0               
+                    *              2             0               
    769 gastoMonedas[2,1]
-                    *              3             0               
-   770 gastoMonedas[2,2]
                     *              0             0               
+   770 gastoMonedas[2,2]
+                    *              1             0               
    771 gastoMonedas[2,3]
                     *              0             0               
    772 gastoMonedas[2,4]
@@ -9709,7 +9709,7 @@ Objective:  z = 97 (MAXimum)
    791 recursosDisponibles[1,2,CER]
                     *              0             0               
    792 recursosDisponibles[1,2,PAP]
-                    *              0             0               
+                    *              1             0               
    793 recursosDisponibles[1,2,MAD]
                     *              0             0               
    794 recursosDisponibles[1,2,LAD]
@@ -9721,9 +9721,9 @@ Objective:  z = 97 (MAXimum)
    797 recursosDisponibles[1,3,TEL]
                     *              0             0               
    798 recursosDisponibles[1,3,CER]
-                    *              0             0               
+                    *              1             0               
    799 recursosDisponibles[1,3,PAP]
-                    *              0             0               
+                    *              1             0               
    800 recursosDisponibles[1,3,MAD]
                     *              0             0               
    801 recursosDisponibles[1,3,LAD]
@@ -9735,9 +9735,9 @@ Objective:  z = 97 (MAXimum)
    804 recursosDisponibles[1,4,TEL]
                     *              0             0               
    805 recursosDisponibles[1,4,CER]
-                    *              0             0               
+                    *              1             0               
    806 recursosDisponibles[1,4,PAP]
-                    *              0             0               
+                    *              1             0               
    807 recursosDisponibles[1,4,MAD]
                     *              0             0               
    808 recursosDisponibles[1,4,LAD]
@@ -9749,9 +9749,9 @@ Objective:  z = 97 (MAXimum)
    811 recursosDisponibles[1,5,TEL]
                     *              0             0               
    812 recursosDisponibles[1,5,CER]
-                    *              0             0               
+                    *              1             0               
    813 recursosDisponibles[1,5,PAP]
-                    *              0             0               
+                    *              1             0               
    814 recursosDisponibles[1,5,MAD]
                     *              0             0               
    815 recursosDisponibles[1,5,LAD]
@@ -9763,9 +9763,9 @@ Objective:  z = 97 (MAXimum)
    818 recursosDisponibles[1,6,TEL]
                     *              0             0               
    819 recursosDisponibles[1,6,CER]
-                    *              0             0               
+                    *              1             0               
    820 recursosDisponibles[1,6,PAP]
-                    *              0             0               
+                    *              1             0               
    821 recursosDisponibles[1,6,MAD]
                     *              0             0               
    822 recursosDisponibles[1,6,LAD]
@@ -9777,9 +9777,9 @@ Objective:  z = 97 (MAXimum)
    825 recursosDisponibles[2,1,TEL]
                     *              0             0               
    826 recursosDisponibles[2,1,CER]
-                    *              0             0               
+                    *              1             0               
    827 recursosDisponibles[2,1,PAP]
-                    *              0             0               
+                    *              1             0               
    828 recursosDisponibles[2,1,MAD]
                     *              0             0               
    829 recursosDisponibles[2,1,LAD]
@@ -9791,9 +9791,9 @@ Objective:  z = 97 (MAXimum)
    832 recursosDisponibles[2,2,TEL]
                     *              0             0               
    833 recursosDisponibles[2,2,CER]
-                    *              0             0               
+                    *              1             0               
    834 recursosDisponibles[2,2,PAP]
-                    *              0             0               
+                    *              1             0               
    835 recursosDisponibles[2,2,MAD]
                     *              0             0               
    836 recursosDisponibles[2,2,LAD]
@@ -9805,9 +9805,9 @@ Objective:  z = 97 (MAXimum)
    839 recursosDisponibles[2,3,TEL]
                     *              0             0               
    840 recursosDisponibles[2,3,CER]
-                    *              0             0               
+                    *              1             0               
    841 recursosDisponibles[2,3,PAP]
-                    *              0             0               
+                    *              1             0               
    842 recursosDisponibles[2,3,MAD]
                     *              0             0               
    843 recursosDisponibles[2,3,LAD]
@@ -9819,9 +9819,9 @@ Objective:  z = 97 (MAXimum)
    846 recursosDisponibles[2,4,TEL]
                     *              0             0               
    847 recursosDisponibles[2,4,CER]
-                    *              0             0               
+                    *              1             0               
    848 recursosDisponibles[2,4,PAP]
-                    *              0             0               
+                    *              1             0               
    849 recursosDisponibles[2,4,MAD]
                     *              0             0               
    850 recursosDisponibles[2,4,LAD]
@@ -9833,9 +9833,9 @@ Objective:  z = 97 (MAXimum)
    853 recursosDisponibles[2,5,TEL]
                     *              0             0               
    854 recursosDisponibles[2,5,CER]
-                    *              0             0               
+                    *              1             0               
    855 recursosDisponibles[2,5,PAP]
-                    *              0             0               
+                    *              1             0               
    856 recursosDisponibles[2,5,MAD]
                     *              0             0               
    857 recursosDisponibles[2,5,LAD]
@@ -9847,9 +9847,9 @@ Objective:  z = 97 (MAXimum)
    860 recursosDisponibles[2,6,TEL]
                     *              0             0               
    861 recursosDisponibles[2,6,CER]
-                    *              0             0               
+                    *              1             0               
    862 recursosDisponibles[2,6,PAP]
-                    *              0             0               
+                    *              1             0               
    863 recursosDisponibles[2,6,MAD]
                     *              0             0               
    864 recursosDisponibles[2,6,LAD]
@@ -9861,9 +9861,9 @@ Objective:  z = 97 (MAXimum)
    867 recursosDisponibles[3,1,TEL]
                     *              0             0               
    868 recursosDisponibles[3,1,CER]
-                    *              0             0               
+                    *              1             0               
    869 recursosDisponibles[3,1,PAP]
-                    *              0             0               
+                    *              1             0               
    870 recursosDisponibles[3,1,MAD]
                     *              0             0               
    871 recursosDisponibles[3,1,LAD]
@@ -9875,9 +9875,9 @@ Objective:  z = 97 (MAXimum)
    874 recursosDisponibles[3,2,TEL]
                     *              0             0               
    875 recursosDisponibles[3,2,CER]
-                    *              0             0               
+                    *              1             0               
    876 recursosDisponibles[3,2,PAP]
-                    *              0             0               
+                    *              1             0               
    877 recursosDisponibles[3,2,MAD]
                     *              0             0               
    878 recursosDisponibles[3,2,LAD]
@@ -9889,9 +9889,9 @@ Objective:  z = 97 (MAXimum)
    881 recursosDisponibles[3,3,TEL]
                     *              0             0               
    882 recursosDisponibles[3,3,CER]
-                    *              0             0               
+                    *              1             0               
    883 recursosDisponibles[3,3,PAP]
-                    *              0             0               
+                    *              1             0               
    884 recursosDisponibles[3,3,MAD]
                     *              0             0               
    885 recursosDisponibles[3,3,LAD]
@@ -9903,9 +9903,9 @@ Objective:  z = 97 (MAXimum)
    888 recursosDisponibles[3,4,TEL]
                     *              0             0               
    889 recursosDisponibles[3,4,CER]
-                    *              0             0               
+                    *              1             0               
    890 recursosDisponibles[3,4,PAP]
-                    *              0             0               
+                    *              1             0               
    891 recursosDisponibles[3,4,MAD]
                     *              0             0               
    892 recursosDisponibles[3,4,LAD]
@@ -9917,9 +9917,9 @@ Objective:  z = 97 (MAXimum)
    895 recursosDisponibles[3,5,TEL]
                     *              0             0               
    896 recursosDisponibles[3,5,CER]
-                    *              0             0               
+                    *              1             0               
    897 recursosDisponibles[3,5,PAP]
-                    *              0             0               
+                    *              1             0               
    898 recursosDisponibles[3,5,MAD]
                     *              0             0               
    899 recursosDisponibles[3,5,LAD]
@@ -9931,9 +9931,9 @@ Objective:  z = 97 (MAXimum)
    902 recursosDisponibles[3,6,TEL]
                     *              0             0               
    903 recursosDisponibles[3,6,CER]
-                    *              0             0               
+                    *              1             0               
    904 recursosDisponibles[3,6,PAP]
-                    *              0             0               
+                    *              1             0               
    905 recursosDisponibles[3,6,MAD]
                     *              0             0               
    906 recursosDisponibles[3,6,LAD]
@@ -9943,7 +9943,7 @@ Objective:  z = 97 (MAXimum)
    908 recursosComprados[1,1,TEL]
                     *              0             0               
    909 recursosComprados[1,1,CER]
-                    *              1             0               
+                    *              0             0               
    910 recursosComprados[1,1,PAP]
                     *              0             0               
    911 recursosComprados[1,1,CEM]
@@ -9969,7 +9969,7 @@ Objective:  z = 97 (MAXimum)
    921 recursosComprados[1,2,ORO]
                     *              0             0               
    922 recursosComprados[1,3,TEL]
-                    *              1             0               
+                    *              0             0               
    923 recursosComprados[1,3,CER]
                     *              0             0               
    924 recursosComprados[1,3,PAP]
@@ -9987,7 +9987,7 @@ Objective:  z = 97 (MAXimum)
    930 recursosComprados[1,4,CER]
                     *              0             0               
    931 recursosComprados[1,4,PAP]
-                    *              1             0               
+                    *              0             0               
    932 recursosComprados[1,4,CEM]
                     *              0             0               
    933 recursosComprados[1,4,MAD]
@@ -10011,7 +10011,7 @@ Objective:  z = 97 (MAXimum)
    942 recursosComprados[1,5,ORO]
                     *              0             0               
    943 recursosComprados[1,6,TEL]
-                    *              0             0               
+                    *              1             0               
    944 recursosComprados[1,6,CER]
                     *              0             0               
    945 recursosComprados[1,6,PAP]
@@ -10029,11 +10029,11 @@ Objective:  z = 97 (MAXimum)
    951 recursosComprados[2,1,CER]
                     *              0             0               
    952 recursosComprados[2,1,PAP]
-                    *              1             0               
+                    *              0             0               
    953 recursosComprados[2,1,CEM]
                     *              0             0               
    954 recursosComprados[2,1,MAD]
-                    *              1             0               
+                    *              0             0               
    955 recursosComprados[2,1,LAD]
                     *              0             0               
    956 recursosComprados[2,1,ORO]
@@ -10047,7 +10047,7 @@ Objective:  z = 97 (MAXimum)
    960 recursosComprados[2,2,CEM]
                     *              0             0               
    961 recursosComprados[2,2,MAD]
-                    *              0             0               
+                    *              1             0               
    962 recursosComprados[2,2,LAD]
                     *              0             0               
    963 recursosComprados[2,2,ORO]

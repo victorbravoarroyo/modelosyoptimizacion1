@@ -110,35 +110,35 @@ s.t. utiliRecMarE1T1{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesa
 
 
 #TURNO 2:
-s.t. dispRecE1T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,2,k] = recursosDisponibles[1,1,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,1,'NOR']);
+s.t. dispRecE1T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,2,k] = recursosDisponibles[1,1,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,1,'NOR']);# + recursosComprados[1,1,k];
 s.t. utilizRecE1T2{i in CartasEraI, k in TiposDeCosto: k<>'MON'}: CostosEraI[i,k]*Ype[i,2,'NOR'] <= recursosDisponibles[1,2,k] + recursosComprados[1,2,k]; 
 s.t. monedasDisponiblesE1T2: monedasDisponibles[1,2] = monedasDisponibles[1,1] - gastoMonedas[1,1] + sum{i in CartasEraI: i >= 19}3*Ype[i,1,'NOR'];
 
 s.t. utiliRecMarE1T2{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Ype[i,2,'MAR'] <= recursosDisponibles[1,2,k] + recursosComprados[1,2,k];
 
 #TURNO 3:
-s.t. dispRecE1T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,3,k] = recursosDisponibles[1,2,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,2,'NOR']);
+s.t. dispRecE1T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,3,k] = recursosDisponibles[1,2,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,2,'NOR']);# + recursosComprados[1,2,k];
 s.t. utilizRecE1T3{i in CartasEraI, k in TiposDeCosto: k<>'MON'}: CostosEraI[i,k]*Ype[i,3,'NOR'] <= recursosDisponibles[1,3,k] + recursosComprados[1,3,k];
 s.t. monedasDisponiblesE1T3: monedasDisponibles[1,3] = monedasDisponibles[1,2] - gastoMonedas[1,2] + sum{i in CartasEraI: i >= 19}3*Ype[i,2,'NOR'];
 
 s.t. utiliRecMarE1T3{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Ype[i,3,'MAR'] <= recursosDisponibles[1,3,k] + recursosComprados[1,3,k];
 
 #TURNO 4:
-s.t. dispRecE1T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,4,k] = recursosDisponibles[1,3,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,3,'NOR']);
+s.t. dispRecE1T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,4,k] = recursosDisponibles[1,3,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,3,'NOR']);# + recursosComprados[1,3,k];
 s.t. utilizRecE1T4{i in CartasEraI, k in TiposDeCosto: k<>'MON'}: CostosEraI[i,k]*Ype[i,4,'NOR'] <= recursosDisponibles[1,4,k] + recursosComprados[1,4,k];
 s.t. monedasDisponiblesE1T4: monedasDisponibles[1,4] = monedasDisponibles[1,3] - gastoMonedas[1,3] + sum{i in CartasEraI: i >= 19}3*Ype[i,3,'NOR'];
 
 s.t. utiliRecMarE1T4{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Ype[i,4,'MAR'] <= recursosDisponibles[1,4,k] + recursosComprados[1,4,k];
 
 #TURNO 5:
-s.t. dispRecE1T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,5,k] = recursosDisponibles[1,4,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,4,'NOR']);
+s.t. dispRecE1T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,5,k] = recursosDisponibles[1,4,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,4,'NOR']);# + recursosComprados[1,4,k];
 s.t. utilizRecE1T5{i in CartasEraI, k in TiposDeCosto: k<>'MON'}: CostosEraI[i,k]*Ype[i,5,'NOR'] <= recursosDisponibles[1,5,k] + recursosComprados[1,5,k];
 s.t. monedasDisponiblesE1T5: monedasDisponibles[1,5] = monedasDisponibles[1,4] - gastoMonedas[1,4] + sum{i in CartasEraI: i >= 19}3*Ype[i,4,'NOR'];
 
 s.t. utiliRecMarE1T5{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Ype[i,5,'MAR'] <= recursosDisponibles[1,5,k] + recursosComprados[1,5,k];
 
 #TURNO 6:
-s.t. dispRecE1T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,6,k] = recursosDisponibles[1,5,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,5,'NOR']);
+s.t. dispRecE1T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[1,6,k] = recursosDisponibles[1,5,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,5,'NOR']);# + recursosComprados[1,5,k];
 s.t. utilizRecE1T6{i in CartasEraI, k in TiposDeCosto: k<>'MON'}: CostosEraI[i,k]*Ype[i,6,'NOR'] <= recursosDisponibles[1,6,k] + recursosComprados[1,6,k];
 s.t. monedasDisponiblesE1T6: monedasDisponibles[1,6] = monedasDisponibles[1,5] - gastoMonedas[1,5] + sum{i in CartasEraI: i >= 19}3*Ype[i,5,'NOR'];
 
@@ -167,7 +167,7 @@ s.t. LaboratoryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[14,k]*
 s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[15,k]*Yse[15,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[18,i,'NOR']; #GASTO DE LIBRARY
 
 #TURNO 1:
-s.t. dispRecE2T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,1,k] = recursosDisponibles[1,6,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,6,'NOR']);
+s.t. dispRecE2T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,1,k] = recursosDisponibles[1,6,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,6,'NOR']);# + recursosComprados[1,6,k];
 s.t. utilizRecE2T1{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,1,'NOR'] <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k]; 
 s.t. monedasDisponiblesE2T1: monedasDisponibles[2,1] = monedasDisponibles[1,6] - gastoMonedas[1,6] + sum{i in CartasEraI: i >= 19}3*Ype[i,6,'NOR'];
 
@@ -175,28 +175,28 @@ s.t. monedasDisponiblesE2T1: monedasDisponibles[2,1] = monedasDisponibles[1,6] -
 s.t. utiliRecMarE2T1{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,1,'MAR'] <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k];
 
 #TURNO 2:
-s.t. dispRecE2T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,2,k] = recursosDisponibles[2,1,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,1,'NOR']);
+s.t. dispRecE2T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,2,k] = recursosDisponibles[2,1,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,1,'NOR']);# + recursosComprados[2,1,k];
 s.t. utilizRecE2T2{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,2,'NOR'] <= recursosDisponibles[2,2,k] + recursosComprados[2,2,k]; 
 s.t. monedasDisponiblesE2T2: monedasDisponibles[2,2] = monedasDisponibles[2,1] - gastoMonedas[2,1] + sum{i in CartasEraII: i >= 16}3*Yse[i,1,'NOR'];
 
 s.t. utiliRecMarE2T2{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,2,'MAR'] <= recursosDisponibles[2,2,k] + recursosComprados[2,2,k];
 
 #TURNO 3:
-s.t. dispRecE2T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,3,k] = recursosDisponibles[2,2,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,2,'NOR']);
+s.t. dispRecE2T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,3,k] = recursosDisponibles[2,2,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,2,'NOR']);# + recursosComprados[2,2,k];
 s.t. utilizRecE2T3{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,3,'NOR'] <= recursosDisponibles[2,3,k] + recursosComprados[2,3,k];
 s.t. monedasDisponiblesE2T3: monedasDisponibles[2,3] = monedasDisponibles[2,2] - gastoMonedas[2,2] + sum{i in CartasEraII: i >= 16}3*Yse[i,2,'NOR'];
 
 s.t. utiliRecMarE2T3{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,3,'MAR'] <= recursosDisponibles[2,3,k] + recursosComprados[2,3,k];
 
 #TURNO 4:
-s.t. dispRecE2T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,4,k] = recursosDisponibles[2,3,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,3,'NOR']);
+s.t. dispRecE2T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,4,k] = recursosDisponibles[2,3,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,3,'NOR']);# + recursosComprados[2,3,k];
 s.t. utilizRecE2T4{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,4,'NOR'] <= recursosDisponibles[2,4,k] + recursosComprados[2,4,k];
 s.t. monedasDisponiblesE2T4: monedasDisponibles[2,4] = monedasDisponibles[2,3] - gastoMonedas[2,3] + sum{i in CartasEraII: i >= 16}3*Yse[i,3,'NOR'];
 
 s.t. utiliRecMarE2T4{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,4,'MAR'] <= recursosDisponibles[2,4,k] + recursosComprados[2,4,k];
 
 #TURNO 5:
-s.t. dispRecE2T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,5,k] = recursosDisponibles[2,4,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,4,'NOR']);
+s.t. dispRecE2T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,5,k] = recursosDisponibles[2,4,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,4,'NOR']);# + recursosComprados[2,4,k];
 s.t. utilizRecE2T5{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,5,'NOR'] <= recursosDisponibles[2,5,k] + recursosComprados[2,5,k];
 s.t. monedasDisponiblesE2T5: monedasDisponibles[2,5] = monedasDisponibles[2,4] - gastoMonedas[2,4] + sum{i in CartasEraII: i >= 16}3*Yse[i,4,'NOR'];
 
@@ -204,7 +204,7 @@ s.t. utiliRecMarE2T5{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDes
 
 
 #TURNO 6:
-s.t. dispRecE2T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,6,k] = recursosDisponibles[2,5,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,5,'NOR']);
+s.t. dispRecE2T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,6,k] = recursosDisponibles[2,5,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,5,'NOR']);# + recursosComprados[2,5,k];
 s.t. utilizRecE2T6{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,6,'NOR'] <= recursosDisponibles[2,6,k] + recursosComprados[2,6,k];
 s.t. monedasDisponiblesE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMonedas[2,5] + sum{i in CartasEraII: i >= 16}3*Yse[i,5,'NOR'];
 
@@ -236,7 +236,7 @@ s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[11,k
 
 
 #TURNO 1:
-s.t. dispRecE3T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,1,k] = recursosDisponibles[2,6,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,6,'NOR']);
+s.t. dispRecE3T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,1,k] = recursosDisponibles[2,6,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,6,'NOR']);# + recursosComprados[2,6,k];
 s.t. utilizRecE3T1{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,1,'NOR'] <= recursosDisponibles[3,1,k] + recursosComprados[3,1,k]; 
 s.t. monedasDisponiblesE3T1: monedasDisponibles[3,1] = monedasDisponibles[2,6] - gastoMonedas[2,6] + sum{i in CartasEraII: i >= 16}3*Yse[i,6,'NOR'];
 
@@ -244,14 +244,14 @@ s.t. monedasDisponiblesE3T1: monedasDisponibles[3,1] = monedasDisponibles[2,6] -
 s.t. utiliRecMarE3T1{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,1,'MAR'] <= recursosDisponibles[3,1,k] + recursosComprados[3,1,k];
 
 #TURNO 2:
-s.t. dispRecE3T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,2,k] = recursosDisponibles[3,1,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,1,'NOR']);
+s.t. dispRecE3T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,2,k] = recursosDisponibles[3,1,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,1,'NOR']);# + recursosComprados[3,1,k];
 s.t. utilizRecE3T2{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,2,'NOR'] <= recursosDisponibles[3,2,k] + recursosComprados[3,2,k]; 
 s.t. monedasDisponiblesE3T2: monedasDisponibles[3,2] = monedasDisponibles[3,1] - gastoMonedas[3,1] + sum{i in CartasEraIII: i >= 12}3*Yte[i,1,'NOR'];
 
 s.t. utiliRecMarE3T2{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,2,'MAR'] <= recursosDisponibles[3,2,k] + recursosComprados[3,2,k];
 
 #TURNO 3:
-s.t. dispRecE3T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,3,k] = recursosDisponibles[3,2,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,2,'NOR']);
+s.t. dispRecE3T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,3,k] = recursosDisponibles[3,2,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,2,'NOR']);# + recursosComprados[3,2,k];
 s.t. utilizRecE3T3{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,3,'NOR'] <= recursosDisponibles[3,3,k] + recursosComprados[3,3,k];
 s.t. monedasDisponiblesE3T3: monedasDisponibles[3,3] = monedasDisponibles[3,2] - gastoMonedas[3,2] + sum{i in CartasEraIII: i >= 12}3*Yte[i,2,'NOR'];
 
@@ -259,21 +259,21 @@ s.t. utiliRecMarE3T3{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDe
 
 
 #TURNO 4:
-s.t. dispRecE3T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,4,k] = recursosDisponibles[3,3,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,3,'NOR']);
+s.t. dispRecE3T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,4,k] = recursosDisponibles[3,3,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,3,'NOR']);# + recursosComprados[3,3,k];
 s.t. utilizRecE3T4{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,4,'NOR'] <= recursosDisponibles[3,4,k] + recursosComprados[3,4,k];
 s.t. monedasDisponiblesE3T4: monedasDisponibles[3,4] = monedasDisponibles[3,3] - gastoMonedas[3,3] + sum{i in CartasEraIII: i >= 12}3*Yte[i,3,'NOR'];
 
 s.t. utiliRecMarE3T4{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,4,'MAR'] <= recursosDisponibles[3,4,k] + recursosComprados[3,4,k];
 
 #TURNO 5:
-s.t. dispRecE3T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,5,k] = recursosDisponibles[3,4,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,4,'NOR']);
+s.t. dispRecE3T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,5,k] = recursosDisponibles[3,4,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,4,'NOR']);# + recursosComprados[3,4,k];
 s.t. utilizRecE3T5{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,5,'NOR'] <= recursosDisponibles[3,5,k] + recursosComprados[3,5,k];
 s.t. monedasDisponiblesE3T5: monedasDisponibles[3,5] = monedasDisponibles[3,4] - gastoMonedas[3,4] + sum{i in CartasEraIII: i >= 12}3*Yte[i,4,'NOR'];
 
 s.t. utiliRecMarE3T5{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,5,'MAR'] <= recursosDisponibles[3,5,k] + recursosComprados[3,5,k];
 
 #TURNO 6:
-s.t. dispRecE3T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,6,k] = recursosDisponibles[3,5,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,5,'NOR']);
+s.t. dispRecE3T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,6,k] = recursosDisponibles[3,5,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,5,'NOR']);# + recursosComprados[3,5,k];
 s.t. utilizRecE3T6{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,6,'NOR'] <= recursosDisponibles[3,6,k] + recursosComprados[3,6,k];
 s.t. monedasDisponiblesE3T6: monedasDisponibles[3,6] = monedasDisponibles[3,5] - gastoMonedas[3,5] + sum{i in CartasEraIII: i >= 12}3*Yte[i,5,'NOR'];
 
