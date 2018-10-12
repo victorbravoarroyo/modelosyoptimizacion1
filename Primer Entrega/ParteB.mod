@@ -1,13 +1,13 @@
-# V: Cantidad de ubicaciones VIP en m^2
-# Vc: Cantidad de ubicaciones VIP comunes en m^2
-# Vp: Cantidad de ubicaciones VIP de protocolo en m^2
-# G: Cantidad de ubicaciones generales en m^2
-# Evc: Cantidad de entradas VIP comun en unidad.
-# Evp: Cantidad de entradas VIP de protocolo en unidad.
-# Eg: Cantidad de entradas generales en unidad.
-# P: Cantidad total de paquetes en unidad.
-# Pv: Cantidad de paquetes destinados a ubicaciones VIP.
-# Pg: Cantidad de paquetes destinados a ubicaciones Generales.
+# V: Cantidad de m^2 reservada para ubicaciones VIP. [m^2]
+# Vc: Cantidad de m^2 reservada para ubicaciones VIP comunes. [m^2]
+# Vp: Cantidad de m^2 reservada para ubicaciones VIP de protocolo. [m^2]
+# G: Cantidad de m^2 reservada para ubicaciones generales. [m^2]
+# Evc: Cantidad de entradas VIP comun en unidad. [entradas]
+# Evp: Cantidad de entradas VIP de protocolo en unidad. [entradas]
+# Eg: Cantidad de entradas generales en unidad. [entradas]
+# P: Cantidad total de paquetes en unidad. [paquetes]
+# Pv: Cantidad de paquetes destinados a ubicaciones VIP. [paquetes]
+# Pg: Cantidad de paquetes destinados a ubicaciones Generales. [paquetes]
 
 var V >= 0, integer;
 var Vc >= 0, integer;
