@@ -1,17 +1,19 @@
 data;
 
 set Eras := 1 2 3;
-set CartasEraI := 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24;
+set CartasEraI := 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+                  21 22 23 24;
 set CartasEraII := 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21;
 set CartasEraIII := 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17;
 set Turnos := 1 2 3 4 5 6;
 
-set TiposDeCosto := 'MON' 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO';
-set TiposDeEspecialidad := 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO' 'GEO' 'RUE' 'ESC';
-set MateriaPrima := 'CEM' 'MAD' 'LAD' 'ORO';
+set TiposDeCosto            := 'MON' 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO';
+set TiposDeEspecialidad     := 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO'
+                               'GEO' 'RUE' 'ESC';
+set MateriaPrima            := 'CEM' 'MAD' 'LAD' 'ORO';
 set ProductosManufacturados := 'TEL' 'CER' 'PAP';
 
-set ModoDeCarta := 'NOR' 'MAR'; 
+set ModoDeCarta := 'NOR' 'MAR';
 
 set NivelesDeDesarrollo := 1 2 3;
 
