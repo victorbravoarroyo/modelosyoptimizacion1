@@ -180,6 +180,22 @@ s.t. LaboratoryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[14,k]*
 
 s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[15,k]*Yse[15,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[18,i,'NOR']; #GASTO DE LIBRARY
 
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[16,k]*Yse[16,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[17,i,'NOR']; #GASTO DE ARCHERY RANGE
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[17,k]*Yse[17,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k]; #GASTO DE TRAINING GROUND
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[18,k]*Yse[18,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k]; #GASTO DE WALLS
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[19,k]*Yse[19,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[16,i,'NOR']; #GASTO DE STABLES
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[20,k]*Yse[20,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[23,i,'NOR']; #GASTO DE FORUM
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[21,k]*Yse[21,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k]; #GASTO DE VINEYARD
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[22,k]*Yse[22,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k]; #GASTO DE BAZAR
+
+s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[23,k]*Yse[23,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[24,i,'NOR']; #GASTO DE CARAVANSERY
+
 
 s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR']; 
 s.t. cantMatPrimasE2T{j in Turnos: j > 1}: cantidadMateriasPrima[2,j] = cantidadMateriasPrima[2,j-1] + sum{i in CartasEraII: i <= 4}Yse[i,j,'NOR'];
@@ -259,6 +275,19 @@ s.t. LodgeE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[10,k]*Yte[
 
 s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[11,k]*Yte[11,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[15,i,'NOR']; #GASTO DE UNIVERSITY2
 
+s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[12,k]*Yte[12,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k]; #GASTO DE ARSENAL
+
+s.t. LodgeE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[13,k]*Yte[13,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[17,i,'NOR']; #GASTO DE CIRCUS
+
+s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[14,k]*Yte[14,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[14,i,'NOR']; #GASTO DE SIEGE WORKSHOP
+
+s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[15,k]*Yte[15,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[18,i,'NOR']; #GASTO DE FORTIFICATIONS
+
+s.t. LodgeE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[16,k]*Yte[16,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[20,i,'NOR']; #GASTO DE HAVEN
+
+s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[17,k]*Yte[17,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k]; #GASTO DE CHAMBER OF COMMERCE
+
+s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[18,k]*Yte[18,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[23,i,'NOR']; #GASTO DE LIGHTHOUSE
 
 s.t. cantMatPrimasE3T{j in Turnos}: cantidadMateriasPrima[3,j] = 0;
 
