@@ -12,7 +12,7 @@ set ModoDeCarta;
 set NivelesDeDesarrollo; #1 2 3
 
 #set TiposDeCosto := MON CEM TEL CER PAP MAD LAD ORO;
-#set TiposDeEspecialidad := 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO' 'GEO' 'RUE' 'ESC';
+#set TiposDeEspecialidad := 'MON' 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO' 'MIL';
 
 var Ype{i in CartasEraI, j in Turnos, k in ModoDeCarta} >= 0, binary;
 var Yse{i in CartasEraII, j in Turnos, k in ModoDeCarta} >= 0, binary;
@@ -22,6 +22,11 @@ var Yte{i in CartasEraIII, j in Turnos, k in ModoDeCarta} >= 0, binary;
 var monedasDisponibles{i in Eras, j in Turnos} >= 0, integer;
 var gastoMonedas{i in Eras, j in Turnos} >= 0, integer;
 var monedasSobrantes >= 0, integer;
+
+#Cantidad de Cartas
+var cantidadMateriasPrima{i in Eras, j in Turnos} >= 0, integer;
+var cantidadManufacturas{i in Eras, j in Turnos} >= 0, integer;
+var cantidadComerciales{i in Eras, j in Turnos} >= 0, integer;
 
 #Recursos
 var recursosDisponibles{i in Eras, j in Turnos, k in TiposDeCosto: k<>'MON'} >= 0, integer;
@@ -99,6 +104,14 @@ s.t. monedasUsadasE1T{j in Turnos}: gastoMonedas[1,j] = sum{i in CartasEraI}(Cos
 		sum{m in MateriaPrima}(1*recursosComprados[1,j,m]) +
 		sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]); #CALCULO DE MONEDAS USADAS
 
+s.t. cantMatPrimasE1T1: cantidadMateriasPrima[1,1] = sum{i in CartasEraI: i <= 8}Ype[i,1,'NOR']; 
+s.t. cantMatPrimasE1T{j in Turnos: j > 1}: cantidadMateriasPrima[1,j] = cantidadMateriasPrima[1,j-1] + sum{i in CartasEraI: i <= 8}Ype[i,j,'NOR'];
+
+s.t. cantManufacturasE1T1: cantidadManufacturas[1,1] = Ype[9,1,'NOR'] + Ype[10,1,'NOR'] + Ype[11,1,'NOR'];
+s.t. cantManufacturasE1T{j in Turnos: j > 1}: cantidadManufacturas[1,j] = cantidadManufacturas[1,j-1] + Ype[9,j,'NOR'] + Ype[10,j,'NOR'] + Ype[11,j,'NOR'];
+
+s.t. cantComercialesE1T1: cantidadComerciales[1,1] = Ype[9,1,'NOR'] + Ype[10,1,'NOR'] + Ype[11,1,'NOR'];
+s.t. cantComercialesE1T{j in Turnos: j > 1}: cantidadComerciales[1,j] = cantidadComerciales[1,j-1] + Ype[22,j,'NOR'] + Ype[23,j,'NOR'] + Ype[24,j,'NOR'];
 
 
 #TURNO 1:
@@ -167,6 +180,17 @@ s.t. LaboratoryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[14,k]*
 
 s.t. LibraryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[15,k]*Yse[15,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[18,i,'NOR']; #GASTO DE LIBRARY
 
+
+s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR']; 
+s.t. cantMatPrimasE2T{j in Turnos: j > 1}: cantidadMateriasPrima[2,j] = cantidadMateriasPrima[2,j-1] + sum{i in CartasEraII: i <= 4}Yse[i,j,'NOR'];
+
+s.t. cantManufacturasE2T1: cantidadManufacturas[2,1] = Yse[5,1,'NOR'] + Yse[6,1,'NOR'] + Yse[7,1,'NOR'];
+s.t. cantManufacturasE2T{j in Turnos: j > 1}: cantidadManufacturas[2,j] = cantidadManufacturas[2,j-1] + Yse[5,j,'NOR'] + Yse[6,j,'NOR'] + Yse[7,j,'NOR'];
+
+s.t. cantComercialesE2T1: cantidadComerciales[2,1] = Yse[9,1,'NOR'] + Yse[10,1,'NOR'] + Yse[11,1,'NOR'];
+s.t. cantComercialesE2T{j in Turnos: j > 1}: cantidadComerciales[2,j] = cantidadComerciales[2,j-1] + Yse[20,j,'NOR'] + Yse[21,j,'NOR'] + Yse[22,j,'NOR'] + Yse[23,j,'NOR'];
+
+
 #TURNO 1:
 s.t. dispRecE2T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,1,k] = recursosDisponibles[1,6,k] + sum{i in CartasEraI}(EspecialidadesEraI[i,k]*Ype[i,6,'NOR']);# + recursosComprados[1,6,k];
 s.t. utilizRecE2T1{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,1,'NOR'] <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k];
@@ -234,6 +258,14 @@ s.t. AcademyE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[9,k]*Yte
 s.t. LodgeE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[10,k]*Yte[10,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[12,i,'NOR']; #GASTO DE LODGE
 
 s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[11,k]*Yte[11,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[15,i,'NOR']; #GASTO DE UNIVERSITY2
+
+
+s.t. cantMatPrimasE3T{j in Turnos}: cantidadMateriasPrima[3,j] = 0;
+
+s.t. cantManufacturasE3T{j in Turnos}: cantidadManufacturas[2,j] = 0;
+
+s.t. cantComercialesE3T1: cantidadComerciales[3,1] = Yte[16,1,'NOR'] + Yte[17,1,'NOR'] + Yte[18,1,'NOR'];
+s.t. cantComercialesE3T{j in Turnos: j > 1}: cantidadComerciales[3,j] = cantidadComerciales[3,j-1] + Yte[16,j,'NOR'] + Yte[17,j,'NOR'] + Yte[18,j,'NOR'];
 
 
 #TURNO 1:
