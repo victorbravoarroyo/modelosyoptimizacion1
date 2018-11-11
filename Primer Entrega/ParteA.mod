@@ -120,7 +120,7 @@ s.t. eleccionCartaE1T{j in Turnos}: sum{i in CartasEraI, k in ModoDeCarta}Ype[i,
 s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos,k in ModoDeCarta}Ype[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedas{i in CartasEraI, j in Turnos}: CostosEraI[i,'MON']*Ype[i,j,'NOR'] <= monedasDisponibles[1,j]; #CALCULO POR TURNO DE POSIBIL.
 s.t. monedasUsadasE1T{j in Turnos}: gastoMonedas[1,j] = sum{i in CartasEraI}(CostosEraI[i,'MON']*Ype[i,j,'NOR']) +
-		sum{m in MateriaPrima}(1*recursosComprados[1,j,m]) +
+		sum{m in MateriaPrima}(2*recursosComprados[1,j,m]) +
 		sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]); #CALCULO DE MONEDAS USADAS
 
 s.t. cantMatPrimasE1T1: cantidadMateriasPrima[1,1] = sum{i in CartasEraI: i <= 8}Ype[i,1,'NOR'];
@@ -181,7 +181,7 @@ s.t. utiliRecMarE1T6{i in CartasEraI, k in MateriaPrima}: sum{n in NivelesDeDesa
 s.t. eleccionCartaE2T{j in Turnos}: sum{i in CartasEraII, k in ModoDeCarta}Yse[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos,k in ModoDeCarta}Yse[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedasE2{i in CartasEraII, j in Turnos}: CostosEraII[i,'MON']*Yse[i,j,'NOR'] <= monedasDisponibles[2,j]; #CALCULO POR TURNO DE POSIBIL.
-s.t. monedasUsadasE2T{j in Turnos}: gastoMonedas[2,j] = sum{i in CartasEraII}(CostosEraII[i,'MON']*Yse[i,j,'NOR']) + sum{m in MateriaPrima}(1*recursosComprados[2,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[2,j,p]); #CALCULO DE MONEDAS USADAS
+s.t. monedasUsadasE2T{j in Turnos}: gastoMonedas[2,j] = sum{i in CartasEraII}(CostosEraII[i,'MON']*Yse[i,j,'NOR']) + sum{m in MateriaPrima}(2*recursosComprados[2,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[2,j,p]); #CALCULO DE MONEDAS USADAS
 
 s.t. utilizRecE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[13,k]*Yse[13,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k];
 
@@ -274,7 +274,8 @@ s.t. utiliRecMarE2T6{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDes
 s.t. eleccionCartaE3T{j in Turnos}: sum{i in CartasEraIII, k in ModoDeCarta}Yte[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos,k in ModoDeCarta}Yte[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedasE3{i in CartasEraIII, j in Turnos}: CostosEraIII[i,'MON']*Yte[i,j,'NOR'] <= monedasDisponibles[3,j]; #CALCULO POR TURNO DE POSIBIL.
-s.t. monedasUsadasE3T{j in Turnos}: gastoMonedas[3,j] = sum{i in CartasEraIII}(CostosEraIII[i,'MON']*Yte[i,j,'NOR']) + sum{m in MateriaPrima}(1*recursosComprados[3,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[3,j,p]); #CALCULO DE MONEDAS USADAS
+s.t. monedasUsadasE3T{j in Turnos}: gastoMonedas[3,j] = sum{i in CartasEraIII}(CostosEraIII[i,'MON']*Yte[i,j,'NOR']) + sum{m in MateriaPrima}(2*recursosComprados[3,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[3,j,p]); #CALCULO DE MONEDAS USADAS
+
 
 s.t. SenateE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[3,k]*Yte[3,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[15,i,'NOR']; #GASTO DE SENATE
 
