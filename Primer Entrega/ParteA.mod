@@ -381,9 +381,9 @@ s.t. minEscrituras: TrioDeSimbolos <= Escrituras;
 # Fin ERA 1
 s.t. diferenciaPuntosConflicto1: (sum{i in MilitaresEra1, j in Turnos}EspecialidadesEraI[i,'MIL']*Ype[i, j, 'NOR']) - 1 = Exc[1] - Def[1];
 # Fin ERA 2
-s.t. diferenciaPuntosConflicto2: (sum{i in MilitaresEra2, j in Turnos}EspecialidadesEraII[i,'MIL']*Yse[i, j, 'NOR']) - 1 = Exc[2] - Def[2];
+s.t. diferenciaPuntosConflicto2: (sum{i in MilitaresEra2, j in Turnos}EspecialidadesEraII[i,'MIL']*Yse[i, j, 'NOR']) - 3 = Exc[2] - Def[2];
 # Fin ERA 3
-s.t. diferenciaPuntosConflicto3: (sum{i in MilitaresEra3, j in Turnos}EspecialidadesEraIII[i,'MIL']*Yte[i, j, 'NOR']) - 1 = Exc[3] - Def[3];
+s.t. diferenciaPuntosConflicto3: (sum{i in MilitaresEra3, j in Turnos}EspecialidadesEraIII[i,'MIL']*Yte[i, j, 'NOR']) - 5 = Exc[3] - Def[3];
 
 s.t. minYGano{i in Eras}: 0.001*YGano[i] <= Exc[i];
 s.t. maxYGano{i in Eras}: 1000*YGano[i] >= Exc[i];
