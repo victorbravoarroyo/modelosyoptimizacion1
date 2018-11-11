@@ -73,11 +73,6 @@ param CostosEraI{i in CartasEraI, j in TiposDeCosto};
 param CostosEraII{i in CartasEraII, j in TiposDeCosto};
 param CostosEraIII{i in CartasEraIII, j in TiposDeCosto};
 
-#Costos especiales
-param CostosEraIMP1{i in CartasEraI, j in TiposDeCosto};
-param CostosEraIIMP1{i in CartasEraII, j in TiposDeCosto};
-param CostosEraIIIMP1{i in CartasEraIII, j in TiposDeCosto};
-
 #CostoDeMaravilla:
 param CostosMaravilla{i in NivelesDeDesarrollo, j in MateriaPrima};
 
