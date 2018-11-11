@@ -104,7 +104,7 @@ s.t. monedasUsadasE1T{j in Turnos}: gastoMonedas[1,j] = sum{i in CartasEraI}(Cos
 		sum{m in MateriaPrima}(1*recursosComprados[1,j,m]) +
 		sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]); #CALCULO DE MONEDAS USADAS
 
-s.t. cantMatPrimasE1T1: cantidadMateriasPrima[1,1] = sum{i in CartasEraI: i <= 8}Ype[i,1,'NOR']; 
+s.t. cantMatPrimasE1T1: cantidadMateriasPrima[1,1] = sum{i in CartasEraI: i <= 8}Ype[i,1,'NOR'];
 s.t. cantMatPrimasE1T{j in Turnos: j > 1}: cantidadMateriasPrima[1,j] = cantidadMateriasPrima[1,j-1] + sum{i in CartasEraI: i <= 8}Ype[i,j,'NOR'];
 
 s.t. cantManufacturasE1T1: cantidadManufacturas[1,1] = Ype[9,1,'NOR'] + Ype[10,1,'NOR'] + Ype[11,1,'NOR'];
@@ -197,7 +197,7 @@ s.t. BazarE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[22,k]*Yse[2
 s.t. CaravanseryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[23,k]*Yse[23,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[24,i,'NOR']; #GASTO DE CARAVANSERY
 
 
-s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR']; 
+s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR'];
 s.t. cantMatPrimasE2T{j in Turnos: j > 1}: cantidadMateriasPrima[2,j] = cantidadMateriasPrima[2,j-1] + sum{i in CartasEraII: i <= 4}Yse[i,j,'NOR'];
 
 s.t. cantManufacturasE2T1: cantidadManufacturas[2,1] = Yse[5,1,'NOR'] + Yse[6,1,'NOR'] + Yse[7,1,'NOR'];
@@ -275,7 +275,7 @@ s.t. LodgeE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[10,k]*Yte[
 
 s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[11,k]*Yte[11,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[15,i,'NOR']; #GASTO DE UNIVERSITY2
 
-s.t. University2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[12,k]*Yte[12,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k]; #GASTO DE ARSENAL
+s.t. Arsenal2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[12,k]*Yte[12,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k]; #GASTO DE ARSENAL
 
 s.t. CircusE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[13,k]*Yte[13,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[17,i,'NOR']; #GASTO DE CIRCUS
 
