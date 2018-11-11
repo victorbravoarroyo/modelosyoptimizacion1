@@ -19,6 +19,8 @@ set ModoDeCarta := 'NOR' 'MAR';
 
 set NivelesDeDesarrollo := 1 2 3;
 
+set Tableros := GIZ ART ROD;
+
 param EspecialidadesEraI : MON CEM TEL CER PAP MAD LAD ORO PTO MIL:=
 						1 	0	0	0	0	0	0	1	0	0	0
 						2 	0	1	0	0	0	0	0	0	0	0
