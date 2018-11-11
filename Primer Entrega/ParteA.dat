@@ -11,7 +11,11 @@ set TiposDeEspecialidad := 'MON' 'CEM' 'TEL' 'CER' 'PAP' 'MAD' 'LAD' 'ORO' 'PTO'
 set MateriaPrima := 'CEM' 'MAD' 'LAD' 'ORO';
 set ProductosManufacturados := 'TEL' 'CER' 'PAP';
 
-set ModoDeCarta := 'NOR' 'MAR'; 
+set MilitaresEra1 := 19 20 21;
+set MilitaresEra2 := 16 17 18 19;
+set MilitaresEra3 := 12 13 14 15;
+
+set ModoDeCarta := 'NOR' 'MAR';
 
 set NivelesDeDesarrollo := 1 2 3;
 

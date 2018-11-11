@@ -7,6 +7,9 @@ set TiposDeCosto;
 set TiposDeEspecialidad;
 set MateriaPrima;
 set ProductosManufacturados;
+set MilitaresEra1;
+set MilitaresEra2;
+set MilitaresEra3;
 
 set ModoDeCarta;
 set NivelesDeDesarrollo; #1 2 3
@@ -78,12 +81,19 @@ param EspecialidadesEraI{i in CartasEraI, j in TiposDeEspecialidad};
 param EspecialidadesEraII{i in CartasEraII, j in TiposDeEspecialidad};
 param EspecialidadesEraIII{i in CartasEraIII, j in TiposDeEspecialidad};
 
+#Desarrollo de conflicto
+var YGano{i in Eras} >= 0, binary;
+var YPerdio{i in Eras} >= 0, binary;
+var YEmpate{i in Eras} >= 0, binary;
+var Exc{i in Eras} >= 0;
+var Def{i in Eras} >= 0;
 
 maximize z: sum{i in CartasEraI, j in Turnos}EspecialidadesEraI[i,'PTO']*Ype[i,j,'NOR'] +
 			sum{i in CartasEraII, j in Turnos}EspecialidadesEraII[i,'PTO']*Yse[i,j,'NOR'] +
 			sum{i in CartasEraIII, j in Turnos}EspecialidadesEraIII[i, 'PTO']*Yte[i,j,'NOR'] +
 			1*(Yg1 + Yr1 + Ye1) + 4*(Yg2 + Yr2 + Ye2) + 9*(Yg3 + Yr3 + Ye3) + 16*(Yg4 + Yr4 + Ye4) +
-			25*Ye5 + puntosMonedas + 7*TrioDeSimbolos + 3*nivel[1] + 5*nivel[2] + 7*nivel[3];
+			25*Ye5 + puntosMonedas + 7*TrioDeSimbolos + 3*nivel[1] + 5*nivel[2] + 7*nivel[3] +
+			+ 1*YGano[1] + 3*YGano[2] + 5*YGano[3] - 1*(sum{i in Eras}YPerdio[i]);
 
 
 #Desarrollo de Maravilla:
@@ -364,5 +374,21 @@ s.t. trioDeSimbolos: TrioDeSimbolos <= 4;
 s.t. minGeometricas: TrioDeSimbolos <= Geometricas;
 s.t. minRuedas: TrioDeSimbolos <= Ruedas;
 s.t. minEscrituras: TrioDeSimbolos <= Escrituras;
+
+
+#Desarrollo de conflicto al final de cada era.
+# 1, 3, 5 es el poder militar del oponente.
+# Fin ERA 1
+s.t. diferenciaPuntosConflicto1: (sum{i in MilitaresEra1, j in Turnos}EspecialidadesEraI[i,'MIL']*Ype[i, j, 'NOR']) - 1 = Exc[1] - Def[1];
+# Fin ERA 2
+s.t. diferenciaPuntosConflicto2: (sum{i in MilitaresEra2, j in Turnos}EspecialidadesEraII[i,'MIL']*Yse[i, j, 'NOR']) - 1 = Exc[2] - Def[2];
+# Fin ERA 3
+s.t. diferenciaPuntosConflicto3: (sum{i in MilitaresEra3, j in Turnos}EspecialidadesEraIII[i,'MIL']*Yte[i, j, 'NOR']) - 1 = Exc[3] - Def[3];
+
+s.t. minYGano{i in Eras}: 0.001*YGano[i] <= Exc[i];
+s.t. maxYGano{i in Eras}: 1000*YGano[i] >= Exc[i];
+s.t. minYPerdio{i in Eras}: 0.001*YPerdio[i] <= Def[i];
+s.t. maxYPerdio{i in Eras}: 1000*YPerdio[i] >= Def[i];
+s.t. unicoResultadoConflicto{i in Eras}: YGano[i] + YPerdio[i] + YEmpate[i] = 1;
 
 end;
