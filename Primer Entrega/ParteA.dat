@@ -199,10 +199,10 @@ param CostosEraIII: MON CEM TEL CER PAP MAD LAD ORO :=
 				23 	0 	0 	0 	0 	0 	0 	0 	0
 				24 	0 	0 	0 	0 	0 	0 	0 	0;
 
-param CostosMaravilla: CEM MAD LAD ORO :=
-					1	2	0	0	0
-					2	0	3	0	0
-					3	4	0	0	0;
+#param CostosMaravilla: CEM MAD LAD ORO :=
+#					1	2	0	0	0
+#					2	0	3	0	0
+#					3	4	0	0	0;
 
 #----- PRUEBA DE COSTOS <>Marav -----#
 param CostosMaravillaGiza: CEM MAD LAD ORO TEL CER PAP:=
