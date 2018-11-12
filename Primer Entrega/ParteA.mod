@@ -101,6 +101,10 @@ var YTabmay{i in Tableros} >= 0, binary;
 var YTabmen{i in Tableros} >= 0, binary;
 var YTabNivel2{i in Tableros} >= 0, binary;
 
+#Efectos Edificios Comerciales
+var MonedasRecibidasVineyard{j in Turnos} >= 0, integer;
+var MonedasRecibidasBazar{j in Turnos} >= 0, integer;
+
 maximize z: sum{i in CartasEraI, j in Turnos}EspecialidadesEraI[i,'PTO']*Ype[i,j,'NOR'] +
 			sum{i in CartasEraII, j in Turnos}EspecialidadesEraII[i,'PTO']*Yse[i,j,'NOR'] +
 			sum{i in CartasEraIII, j in Turnos}EspecialidadesEraIII[i, 'PTO']*Yte[i,j,'NOR'] +
@@ -243,6 +247,12 @@ s.t. dispRecE2T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,1,k] = recu
 s.t. utilizRecE2T1{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,1,'NOR'] <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k];
 s.t. monedasDisponiblesE2T1: monedasDisponibles[2,1] = monedasDisponibles[1,6] - gastoMonedas[1,6] + sum{i in CartasEraI: i >= 19}3*Ype[i,6,'NOR'];
 
+s.t. monedasVineyardT1: MonedasRecibidasVineyard[1] <= 20*Yse[21,1,'NOR'];
+s.t. monedasVineyardT1CotaInf: 1*cantidadMateriasPrima[2,1] - 20*(1 - Yse[21,1,'NOR'])<= MonedasRecibidasVineyard[1];
+s.t. monedasVineyardT1CotaSup: MonedasRecibidasVineyard[1] <= 1*cantidadMateriasPrima[2,1];
+s.t. monedasBazarT1: MonedasRecibidasBazar[1] <= 20*Yse[22,1,'NOR'];
+s.t. monedasBazarT1CotaInf: 2*cantidadManufacturas[2,1] - 20*(1 - Yse[22,1,'NOR'])<= MonedasRecibidasBazar[1];
+s.t. monedasBazarT1CotaSup: MonedasRecibidasBazar[1] <= 2*cantidadManufacturas[2,1];
 
 #s.t. utiliRecMarE2T1{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,1,'MAR'] <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k];
 s.t. utiliRecMarE2T1{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,1,'MAR']) <= recursosDisponibles[2,1,k] + recursosComprados[2,1,k];
@@ -251,7 +261,14 @@ s.t. utiliRecMarE2T1{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 #TURNO 2:
 s.t. dispRecE2T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,2,k] = recursosDisponibles[2,1,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,1,'NOR']);# + recursosComprados[2,1,k];
 s.t. utilizRecE2T2{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,2,'NOR'] <= recursosDisponibles[2,2,k] + recursosComprados[2,2,k];
-s.t. monedasDisponiblesE2T2: monedasDisponibles[2,2] = monedasDisponibles[2,1] - gastoMonedas[2,1] + sum{i in CartasEraII: i >= 16}3*Yse[i,1,'NOR'];
+s.t. monedasDisponiblesE2T2: monedasDisponibles[2,2] = monedasDisponibles[2,1] - gastoMonedas[2,1]  + MonedasRecibidasVineyard[1] + MonedasRecibidasBazar[1] + sum{i in CartasEraII: i >= 16}3*Yse[i,1,'NOR'];
+
+s.t. monedasVineyardT2: MonedasRecibidasVineyard[2] <= 20*Yse[21,2,'NOR'];
+s.t. monedasVineyardT2CotaInf: 1*cantidadMateriasPrima[2,2] - 20*(1 - Yse[21,2,'NOR'])<= MonedasRecibidasVineyard[2];
+s.t. monedasVineyardT2CotaSup: MonedasRecibidasVineyard[2] <= 1*cantidadMateriasPrima[2,2];
+s.t. monedasBazarT2: MonedasRecibidasBazar[2] <= 20*Yse[22,2,'NOR'];
+s.t. monedasBazarT2CotaInf: 2*cantidadManufacturas[2,2] - 20*(1 - Yse[22,2,'NOR'])<= MonedasRecibidasBazar[2];
+s.t. monedasBazarT2CotaSup: MonedasRecibidasBazar[2] <= 2*cantidadManufacturas[2,2];
 
 #s.t. utiliRecMarE2T2{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,2,'MAR'] <= recursosDisponibles[2,2,k] + recursosComprados[2,2,k];
 s.t. utiliRecMarE2T2{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,2,'MAR']) <= recursosDisponibles[2,2,k] + recursosComprados[2,2,k];
@@ -260,7 +277,15 @@ s.t. utiliRecMarE2T2{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 #TURNO 3:
 s.t. dispRecE2T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,3,k] = recursosDisponibles[2,2,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,2,'NOR']);# + recursosComprados[2,2,k];
 s.t. utilizRecE2T3{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,3,'NOR'] <= recursosDisponibles[2,3,k] + recursosComprados[2,3,k];
-s.t. monedasDisponiblesE2T3: monedasDisponibles[2,3] = monedasDisponibles[2,2] - gastoMonedas[2,2] + sum{i in CartasEraII: i >= 16}3*Yse[i,2,'NOR'];
+s.t. monedasDisponiblesE2T3: monedasDisponibles[2,3] = monedasDisponibles[2,2] - gastoMonedas[2,2] + MonedasRecibidasVineyard[2] + MonedasRecibidasBazar[2] + sum{i in CartasEraII: i >= 16}3*Yse[i,2,'NOR'];
+
+s.t. monedasVineyardT3: MonedasRecibidasVineyard[3] <= 20*Yse[21,3,'NOR'];
+s.t. monedasVineyardT3CotaInf: 1*cantidadMateriasPrima[2,3] - 20*(1 - Yse[21,3,'NOR'])<= MonedasRecibidasVineyard[3];
+s.t. monedasVineyardT3CotaSup: MonedasRecibidasVineyard[3] <= 1*cantidadMateriasPrima[2,3];
+s.t. monedasBazarT3: MonedasRecibidasBazar[3] <= 20*Yse[22,3,'NOR'];
+s.t. monedasBazarT3CotaInf: 2*cantidadManufacturas[2,3] - 20*(1 - Yse[22,3,'NOR'])<= MonedasRecibidasBazar[3];
+s.t. monedasBazarT3CotaSup: MonedasRecibidasBazar[3] <= 2*cantidadManufacturas[2,3];
+
 
 #s.t. utiliRecMarE2T3{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,3,'MAR'] <= recursosDisponibles[2,3,k] + recursosComprados[2,3,k];
 s.t. utiliRecMarE2T3{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,3,'MAR']) <= recursosDisponibles[2,3,k] + recursosComprados[2,3,k];
@@ -269,7 +294,15 @@ s.t. utiliRecMarE2T3{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 #TURNO 4:
 s.t. dispRecE2T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,4,k] = recursosDisponibles[2,3,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,3,'NOR']);# + recursosComprados[2,3,k];
 s.t. utilizRecE2T4{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,4,'NOR'] <= recursosDisponibles[2,4,k] + recursosComprados[2,4,k];
-s.t. monedasDisponiblesE2T4: monedasDisponibles[2,4] = monedasDisponibles[2,3] - gastoMonedas[2,3] + sum{i in CartasEraII: i >= 16}3*Yse[i,3,'NOR'];
+s.t. monedasDisponiblesE2T4: monedasDisponibles[2,4] = monedasDisponibles[2,3] - gastoMonedas[2,3] + MonedasRecibidasVineyard[3] + MonedasRecibidasBazar[3] + sum{i in CartasEraII: i >= 16}3*Yse[i,3,'NOR'];
+
+
+s.t. monedasVineyardT4: MonedasRecibidasVineyard[4] <= 20*Yse[21,4,'NOR'];
+s.t. monedasVineyardT4CotaInf: 1*cantidadMateriasPrima[2,4] - 20*(1 - Yse[21,4,'NOR'])<= MonedasRecibidasVineyard[4];
+s.t. monedasVineyardT4CotaSup: MonedasRecibidasVineyard[4] <= 1*cantidadMateriasPrima[2,4];
+s.t. monedasBazarT4: MonedasRecibidasBazar[4] <= 20*Yse[22,4,'NOR'];
+s.t. monedasBazarT4CotaInf: 2*cantidadManufacturas[2,4] - 20*(1 - Yse[22,4,'NOR'])<= MonedasRecibidasBazar[4];
+s.t. monedasBazarT4CotaSup: MonedasRecibidasBazar[4] <= 2*cantidadManufacturas[2,4];
 
 #s.t. utiliRecMarE2T4{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,4,'MAR'] <= recursosDisponibles[2,4,k] + recursosComprados[2,4,k];
 s.t. utiliRecMarE2T4{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,4,'MAR']) <= recursosDisponibles[2,4,k] + recursosComprados[2,4,k];
@@ -278,7 +311,16 @@ s.t. utiliRecMarE2T4{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 #TURNO 5:
 s.t. dispRecE2T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,5,k] = recursosDisponibles[2,4,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,4,'NOR']);# + recursosComprados[2,4,k];
 s.t. utilizRecE2T5{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,5,'NOR'] <= recursosDisponibles[2,5,k] + recursosComprados[2,5,k];
-s.t. monedasDisponiblesE2T5: monedasDisponibles[2,5] = monedasDisponibles[2,4] - gastoMonedas[2,4] + sum{i in CartasEraII: i >= 16}3*Yse[i,4,'NOR'];
+s.t. monedasDisponiblesE2T5: monedasDisponibles[2,5] = monedasDisponibles[2,4] - gastoMonedas[2,4] + MonedasRecibidasVineyard[4] + MonedasRecibidasBazar[4] + sum{i in CartasEraII: i >= 16}3*Yse[i,4,'NOR'];
+
+
+s.t. monedasVineyardT5: MonedasRecibidasVineyard[5] <= 20*Yse[21,5,'NOR'];
+s.t. monedasVineyardT5CotaInf: 1*cantidadMateriasPrima[2,5] - 20*(1 - Yse[21,5,'NOR'])<= MonedasRecibidasVineyard[5];
+s.t. monedasVineyardT5CotaSup: MonedasRecibidasVineyard[5] <= 1*cantidadMateriasPrima[2,5];
+s.t. monedasBazarT5: MonedasRecibidasBazar[5] <= 20*Yse[22,5,'NOR'];
+s.t. monedasBazarT5CotaInf: 2*cantidadManufacturas[2,5] - 20*(1 - Yse[22,5,'NOR'])<= MonedasRecibidasBazar[5];
+s.t. monedasBazarT5CotaSup: MonedasRecibidasBazar[5] <= 2*cantidadManufacturas[2,5];
+
 
 #s.t. utiliRecMarE2T5{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,5,'MAR'] <= recursosDisponibles[2,5,k] + recursosComprados[2,5,k];
 s.t. utiliRecMarE2T5{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,5,'MAR']) <= recursosDisponibles[2,5,k] + recursosComprados[2,5,k];
@@ -287,7 +329,15 @@ s.t. utiliRecMarE2T5{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 #TURNO 6:
 s.t. dispRecE2T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[2,6,k] = recursosDisponibles[2,5,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,5,'NOR']);# + recursosComprados[2,5,k];
 s.t. utilizRecE2T6{i in CartasEraII, k in TiposDeCosto: i<=7 and k<>'MON'}: CostosEraII[i,k]*Yse[i,6,'NOR'] <= recursosDisponibles[2,6,k] + recursosComprados[2,6,k];
-s.t. monedasDisponiblesE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMonedas[2,5] + sum{i in CartasEraII: i >= 16}3*Yse[i,5,'NOR'];
+s.t. monedasDisponiblesE2T6: monedasDisponibles[2,6] = monedasDisponibles[2,5] - gastoMonedas[2,5] + MonedasRecibidasVineyard[5] + MonedasRecibidasBazar[5] + sum{i in CartasEraII: i >= 16}3*Yse[i,5,'NOR'];
+
+
+s.t. monedasVineyardT6: MonedasRecibidasVineyard[6] <= 20*Yse[21,6,'NOR'];
+s.t. monedasVineyardT6CotaInf: 1*cantidadMateriasPrima[2,6] - 20*(1 - Yse[21,6,'NOR'])<= MonedasRecibidasVineyard[6];
+s.t. monedasVineyardT6CotaSup: MonedasRecibidasVineyard[6] <= 1*cantidadMateriasPrima[2,6];
+s.t. monedasBazarT6: MonedasRecibidasBazar[6] <= 20*Yse[22,6,'NOR'];
+s.t. monedasBazarT6CotaInf: 2*cantidadManufacturas[2,6] - 20*(1 - Yse[22,6,'NOR'])<= MonedasRecibidasBazar[6];
+s.t. monedasBazarT6CotaSup: MonedasRecibidasBazar[6] <= 2*cantidadManufacturas[2,6];
 
 #s.t. utiliRecMarE2T6{i in CartasEraII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yse[i,6,'MAR'] <= recursosDisponibles[2,6,k] + recursosComprados[2,6,k];
 s.t. utiliRecMarE2T6{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yse[i,6,'MAR']) <= recursosDisponibles[2,6,k] + recursosComprados[2,6,k];
@@ -343,7 +393,7 @@ s.t. cantComercialesE3T{j in Turnos: j > 1}: cantidadComerciales[3,j] = cantidad
 #TURNO 1:
 s.t. dispRecE3T1{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,1,k] = recursosDisponibles[2,6,k] + sum{i in CartasEraII}(EspecialidadesEraII[i,k]*Yse[i,6,'NOR']);# + recursosComprados[2,6,k];
 s.t. utilizRecE3T1{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,1,'NOR'] <= recursosDisponibles[3,1,k] + recursosComprados[3,1,k];
-s.t. monedasDisponiblesE3T1: monedasDisponibles[3,1] = monedasDisponibles[2,6] - gastoMonedas[2,6] + sum{i in CartasEraII: i >= 16}3*Yse[i,6,'NOR'];
+s.t. monedasDisponiblesE3T1: monedasDisponibles[3,1] = monedasDisponibles[2,6] - gastoMonedas[2,6] + MonedasRecibidasVineyard[6] + MonedasRecibidasBazar[6] + sum{i in CartasEraII: i >= 16}3*Yse[i,6,'NOR'];
 
 
 #s.t. utiliRecMarE3T1{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,1,'MAR'] <= recursosDisponibles[3,1,k] + recursosComprados[3,1,k];
