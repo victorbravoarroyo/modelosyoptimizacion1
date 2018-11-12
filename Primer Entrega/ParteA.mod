@@ -75,6 +75,10 @@ param CostosEraIII{i in CartasEraIII, j in TiposDeCosto};
 
 #CostoDeMaravilla:
 param CostosMaravilla{i in NivelesDeDesarrollo, j in MateriaPrima};
+#----- PRUEBA DE COSTOS <>Marav -----#
+param CostosMaravillaGiza{i in NivelesDeDesarrollo, j in TiposDeCosto: j <> 'MON'};
+param CostosMaravillaArtemisa{i in NivelesDeDesarrollo, j in TiposDeCosto: j <> 'MON'};
+param CostosMaravillaRodas{i in NivelesDeDesarrollo, j in TiposDeCosto: j <> 'MON'};
 
 #Especialidades por Era:
 param EspecialidadesEraI{i in CartasEraI, j in TiposDeEspecialidad};
