@@ -106,23 +106,22 @@ var MonedasRecibidasVineyard{j in Turnos} >= 0, integer; #Carta 21 Era 2
 var MonedasRecibidasBazar{j in Turnos} >= 0, integer; #Carta 22 Era 2
 var MonedasRecibidasHaven{j in Turnos} >= 0, integer; #Carta 16 Era 3
 var MonedasRecibidasChamber{j in Turnos} >= 0, integer; #Carta 17 Era 3
-var MonedasRecibidasLightouse{j in Turnos} >= 0, integer; #Carta 18 Era 3
+var MonedasRecibidasLighthouse{j in Turnos} >= 0, integer; #Carta 18 Era 3
 
 var PuntosRecibidosHaven >= 0, integer; #Carta 16 Era 3
 var PuntosRecibidosChamber >= 0, integer; #Carta 17 Era 3
-var PuntosRecibidosLightouse >= 0, integer; #Carta 18 Era 3
+var PuntosRecibidosLighthouse >= 0, integer; #Carta 18 Era 3
 
-var Haven >= 0, binary;
-var Chamber >= 0, binary;
-var Lightouse >= 0, binary;
+var Haven >= 0, binary; #1 si al final del juego se utilizo la carta Haven
+var Chamber >= 0, binary; #1 idem pero Chamber of Commerce
+var Lighthouse >= 0, binary; #1 idem pero Lighthouse
 
 maximize z: sum{i in CartasEraI, j in Turnos}EspecialidadesEraI[i,'PTO']*Ype[i,j,'NOR'] +
 			sum{i in CartasEraII, j in Turnos}EspecialidadesEraII[i,'PTO']*Yse[i,j,'NOR'] +
 			sum{i in CartasEraIII, j in Turnos}EspecialidadesEraIII[i, 'PTO']*Yte[i,j,'NOR'] +
 			1*(Yg1 + Yr1 + Ye1) + 4*(Yg2 + Yr2 + Ye2) + 9*(Yg3 + Yr3 + Ye3) + 16*(Yg4 + Yr4 + Ye4) +
 			25*Ye5 + puntosMonedas + 7*TrioDeSimbolos + 3*nivel[1] + 5*YTabNivel2['GIZ'] + 7*nivel[3] +
-			+ 1*YGano[1] + 3*YGano[2] + 5*YGano[3] - 1*(sum{i in Eras}YPerdio[i]);
-			#+ PuntosRecibidosHaven + PuntosRecibidosChamber + PuntosRecibidosLightouse;
+			+ 1*YGano[1] + 3*YGano[2] + 5*YGano[3] - 1*(sum{i in Eras}YPerdio[i])+ PuntosRecibidosHaven + PuntosRecibidosChamber + PuntosRecibidosLighthouse;
 
 
 #Desarrollo de Maravilla:
@@ -244,13 +243,13 @@ s.t. BazarE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[22,k]*Yse[2
 s.t. CaravanseryE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[23,k]*Yse[23,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k] + 5000*sum{i in Turnos}Ype[24,i,'NOR']; #GASTO DE CARAVANSERY
 
 
-s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR'];
+s.t. cantMatPrimasE2T1: cantidadMateriasPrima[2,1] = cantidadMateriasPrima[1,6] + sum{i in CartasEraII: i <= 4}Yse[i,1,'NOR'];
 s.t. cantMatPrimasE2T{j in Turnos: j > 1}: cantidadMateriasPrima[2,j] = cantidadMateriasPrima[2,j-1] + sum{i in CartasEraII: i <= 4}Yse[i,j,'NOR'];
 
-s.t. cantManufacturasE2T1: cantidadManufacturas[2,1] = Yse[5,1,'NOR'] + Yse[6,1,'NOR'] + Yse[7,1,'NOR'];
+s.t. cantManufacturasE2T1: cantidadManufacturas[2,1] = cantidadManufacturas[1,6] + Yse[5,1,'NOR'] + Yse[6,1,'NOR'] + Yse[7,1,'NOR'];
 s.t. cantManufacturasE2T{j in Turnos: j > 1}: cantidadManufacturas[2,j] = cantidadManufacturas[2,j-1] + Yse[5,j,'NOR'] + Yse[6,j,'NOR'] + Yse[7,j,'NOR'];
 
-s.t. cantComercialesE2T1: cantidadComerciales[2,1] = Yse[9,1,'NOR'] + Yse[10,1,'NOR'] + Yse[11,1,'NOR'];
+s.t. cantComercialesE2T1: cantidadComerciales[2,1] = cantidadComerciales[1,6] + Yse[9,1,'NOR'] + Yse[10,1,'NOR'] + Yse[11,1,'NOR'];
 s.t. cantComercialesE2T{j in Turnos: j > 1}: cantidadComerciales[2,j] = cantidadComerciales[2,j-1] + Yse[20,j,'NOR'] + Yse[21,j,'NOR'] + Yse[22,j,'NOR'] + Yse[23,j,'NOR'];
 
 
@@ -394,11 +393,11 @@ s.t. ChamberOfCommerce2E3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraI
 
 s.t. LighthouseE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[18,k]*Yte[18,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[23,i,'NOR']; #GASTO DE LIGHTHOUSE
 
-s.t. cantMatPrimasE3T{j in Turnos}: cantidadMateriasPrima[3,j] = 0;
+s.t. cantMatPrimasE3T{j in Turnos}: cantidadMateriasPrima[3,j] = cantidadMateriasPrima[2,6];
 
-s.t. cantManufacturasE3T{j in Turnos}: cantidadManufacturas[2,j] = 0;
+s.t. cantManufacturasE3T{j in Turnos}: cantidadManufacturas[3,j] = cantidadManufacturas[2,6];
 
-s.t. cantComercialesE3T1: cantidadComerciales[3,1] = Yte[16,1,'NOR'] + Yte[17,1,'NOR'] + Yte[18,1,'NOR'];
+s.t. cantComercialesE3T1: cantidadComerciales[3,1] = cantidadComerciales[2,6] + Yte[16,1,'NOR'] + Yte[17,1,'NOR'] + Yte[18,1,'NOR'];
 s.t. cantComercialesE3T{j in Turnos: j > 1}: cantidadComerciales[3,j] = cantidadComerciales[3,j-1] + Yte[16,j,'NOR'] + Yte[17,j,'NOR'] + Yte[18,j,'NOR'];
 
 
@@ -415,9 +414,9 @@ s.t. monedasChamberT1: MonedasRecibidasChamber[1] <= 20*Yte[17,1,'NOR'];
 s.t. monedasChamberT1CotaInf: 2*cantidadManufacturas[3,1] - 20*(1 - Yte[17,1,'NOR'])<= MonedasRecibidasChamber[1];
 s.t. monedasChamberT1CotaSup: MonedasRecibidasChamber[1] <= 2*cantidadManufacturas[3,1];
 
-s.t. monedasLightouseT1: MonedasRecibidasLightouse[1] <= 20*Yte[18,1,'NOR'];
-s.t. monedasLightouseT1CotaInf: 1*cantidadComerciales[3,1] - 20*(1 - Yte[18,1,'NOR'])<= MonedasRecibidasLightouse[1];
-s.t. monedasLightouseT1CotaSup: MonedasRecibidasLightouse[1] <= 1*cantidadComerciales[3,1];
+s.t. monedasLighthouseT1: MonedasRecibidasLighthouse[1] <= 20*Yte[18,1,'NOR'];
+s.t. monedasLighthouseT1CotaInf: 1*cantidadComerciales[3,1] - 20*(1 - Yte[18,1,'NOR'])<= MonedasRecibidasLighthouse[1];
+s.t. monedasLighthouseT1CotaSup: MonedasRecibidasLighthouse[1] <= 1*cantidadComerciales[3,1];
 
 
 #s.t. utiliRecMarE3T1{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,1,'MAR'] <= recursosDisponibles[3,1,k] + recursosComprados[3,1,k];
@@ -426,7 +425,7 @@ s.t. utiliRecMarE3T1{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in
 #TURNO 2:
 s.t. dispRecE3T2{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,2,k] = recursosDisponibles[3,1,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,1,'NOR']);# + recursosComprados[3,1,k];
 s.t. utilizRecE3T2{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,2,'NOR'] <= recursosDisponibles[3,2,k] + recursosComprados[3,2,k];
-s.t. monedasDisponiblesE3T2: monedasDisponibles[3,2] = monedasDisponibles[3,1] - gastoMonedas[3,1] + MonedasRecibidasHaven[1] + MonedasRecibidasChamber[1] + MonedasRecibidasLightouse[1] + sum{i in CartasEraIII: i >= 12}3*Yte[i,1,'NOR'];
+s.t. monedasDisponiblesE3T2: monedasDisponibles[3,2] = monedasDisponibles[3,1] - gastoMonedas[3,1] + MonedasRecibidasHaven[1] + MonedasRecibidasChamber[1] + MonedasRecibidasLighthouse[1] + sum{i in CartasEraIII: i >= 12}3*Yte[i,1,'NOR'];
 
 s.t. monedasHavenT2: MonedasRecibidasHaven[2] <= 20*Yte[16,2,'NOR'];
 s.t. monedasHavenT2CotaInf: 1*cantidadMateriasPrima[3,2] - 20*(1 - Yte[16,2,'NOR'])<= MonedasRecibidasHaven[2];
@@ -436,9 +435,9 @@ s.t. monedasChamberT2: MonedasRecibidasChamber[2] <= 20*Yte[17,2,'NOR'];
 s.t. monedasChamberT2CotaInf: 2*cantidadManufacturas[3,2] - 20*(1 - Yte[17,2,'NOR'])<= MonedasRecibidasChamber[2];
 s.t. monedasChamberT2CotaSup: MonedasRecibidasChamber[2] <= 2*cantidadManufacturas[3,2];
 
-s.t. monedasLightouseT2: MonedasRecibidasLightouse[2] <= 20*Yte[18,2,'NOR'];
-s.t. monedasLightouseT2CotaInf: 1*cantidadComerciales[3,2] - 20*(1 - Yte[18,2,'NOR'])<= MonedasRecibidasLightouse[2];
-s.t. monedasLightouseT2CotaSup: MonedasRecibidasLightouse[2] <= 1*cantidadComerciales[3,2];
+s.t. monedasLighthouseT2: MonedasRecibidasLighthouse[2] <= 20*Yte[18,2,'NOR'];
+s.t. monedasLighthouseT2CotaInf: 1*cantidadComerciales[3,2] - 20*(1 - Yte[18,2,'NOR'])<= MonedasRecibidasLighthouse[2];
+s.t. monedasLighthouseT2CotaSup: MonedasRecibidasLighthouse[2] <= 1*cantidadComerciales[3,2];
 
 #s.t. utiliRecMarE3T2{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,2,'MAR'] <= recursosDisponibles[3,2,k] + recursosComprados[3,2,k];
 s.t. utiliRecMarE3T2{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yte[i,2,'MAR']) <= recursosDisponibles[3,2,k] + recursosComprados[3,2,k];
@@ -446,7 +445,7 @@ s.t. utiliRecMarE3T2{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in
 #TURNO 3:
 s.t. dispRecE3T3{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,3,k] = recursosDisponibles[3,2,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,2,'NOR']);# + recursosComprados[3,2,k];
 s.t. utilizRecE3T3{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,3,'NOR'] <= recursosDisponibles[3,3,k] + recursosComprados[3,3,k];
-s.t. monedasDisponiblesE3T3: monedasDisponibles[3,3] = monedasDisponibles[3,2] - gastoMonedas[3,2] + MonedasRecibidasHaven[2] + MonedasRecibidasChamber[2] + MonedasRecibidasLightouse[2] + sum{i in CartasEraIII: i >= 12}3*Yte[i,2,'NOR'];
+s.t. monedasDisponiblesE3T3: monedasDisponibles[3,3] = monedasDisponibles[3,2] - gastoMonedas[3,2] + MonedasRecibidasHaven[2] + MonedasRecibidasChamber[2] + MonedasRecibidasLighthouse[2] + sum{i in CartasEraIII: i >= 12}3*Yte[i,2,'NOR'];
 
 s.t. monedasHavenT3: MonedasRecibidasHaven[3] <= 20*Yte[16,3,'NOR'];
 s.t. monedasHavenT3CotaInf: 1*cantidadMateriasPrima[3,3] - 20*(1 - Yte[16,3,'NOR'])<= MonedasRecibidasHaven[3];
@@ -456,9 +455,9 @@ s.t. monedasChamberT3: MonedasRecibidasChamber[3] <= 20*Yte[17,3,'NOR'];
 s.t. monedasChamberT3CotaInf: 2*cantidadManufacturas[3,3] - 20*(1 - Yte[17,3,'NOR'])<= MonedasRecibidasChamber[3];
 s.t. monedasChamberT3CotaSup: MonedasRecibidasChamber[3] <= 2*cantidadManufacturas[3,3];
 
-s.t. monedasLightouseT3: MonedasRecibidasLightouse[3] <= 20*Yte[18,3,'NOR'];
-s.t. monedasLightouseT3CotaInf: 1*cantidadComerciales[3,3] - 20*(1 - Yte[18,3,'NOR'])<= MonedasRecibidasLightouse[3];
-s.t. monedasLightouseT3CotaSup: MonedasRecibidasLightouse[3] <= 1*cantidadComerciales[3,3];
+s.t. monedasLighthouseT3: MonedasRecibidasLighthouse[3] <= 20*Yte[18,3,'NOR'];
+s.t. monedasLighthouseT3CotaInf: 1*cantidadComerciales[3,3] - 20*(1 - Yte[18,3,'NOR'])<= MonedasRecibidasLighthouse[3];
+s.t. monedasLighthouseT3CotaSup: MonedasRecibidasLighthouse[3] <= 1*cantidadComerciales[3,3];
 
 #s.t. utiliRecMarE3T3{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,3,'MAR'] <= recursosDisponibles[3,3,k] + recursosComprados[3,3,k];
 s.t. utiliRecMarE3T3{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yte[i,3,'MAR']) <= recursosDisponibles[3,3,k] + recursosComprados[3,3,k];
@@ -466,7 +465,7 @@ s.t. utiliRecMarE3T3{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in
 #TURNO 4:
 s.t. dispRecE3T4{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,4,k] = recursosDisponibles[3,3,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,3,'NOR']);# + recursosComprados[3,3,k];
 s.t. utilizRecE3T4{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,4,'NOR'] <= recursosDisponibles[3,4,k] + recursosComprados[3,4,k];
-s.t. monedasDisponiblesE3T4: monedasDisponibles[3,4] = monedasDisponibles[3,3] - gastoMonedas[3,3] + MonedasRecibidasHaven[3] + MonedasRecibidasChamber[3] + MonedasRecibidasLightouse[3] + sum{i in CartasEraIII: i >= 12}3*Yte[i,3,'NOR'];
+s.t. monedasDisponiblesE3T4: monedasDisponibles[3,4] = monedasDisponibles[3,3] - gastoMonedas[3,3] + MonedasRecibidasHaven[3] + MonedasRecibidasChamber[3] + MonedasRecibidasLighthouse[3] + sum{i in CartasEraIII: i >= 12}3*Yte[i,3,'NOR'];
 
 s.t. monedasHavenT4: MonedasRecibidasHaven[4] <= 20*Yte[16,4,'NOR'];
 s.t. monedasHavenT4CotaInf: 1*cantidadMateriasPrima[3,4] - 20*(1 - Yte[16,4,'NOR'])<= MonedasRecibidasHaven[4];
@@ -476,9 +475,9 @@ s.t. monedasChamberT4: MonedasRecibidasChamber[4] <= 20*Yte[17,4,'NOR'];
 s.t. monedasChamberT4CotaInf: 2*cantidadManufacturas[3,4] - 20*(1 - Yte[17,4,'NOR'])<= MonedasRecibidasChamber[4];
 s.t. monedasChamberT4CotaSup: MonedasRecibidasChamber[4] <= 2*cantidadManufacturas[3,4];
 
-s.t. monedasLightouseT4: MonedasRecibidasLightouse[4] <= 20*Yte[18,4,'NOR'];
-s.t. monedasLightouseT4CotaInf: 1*cantidadComerciales[3,4] - 20*(1 - Yte[18,4,'NOR'])<= MonedasRecibidasLightouse[4];
-s.t. monedasLightouseT4CotaSup: MonedasRecibidasLightouse[4] <= 1*cantidadComerciales[3,4];
+s.t. monedasLighthouseT4: MonedasRecibidasLighthouse[4] <= 20*Yte[18,4,'NOR'];
+s.t. monedasLighthouseT4CotaInf: 1*cantidadComerciales[3,4] - 20*(1 - Yte[18,4,'NOR'])<= MonedasRecibidasLighthouse[4];
+s.t. monedasLighthouseT4CotaSup: MonedasRecibidasLighthouse[4] <= 1*cantidadComerciales[3,4];
 
 #s.t. utiliRecMarE3T4{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,4,'MAR'] <= recursosDisponibles[3,4,k] + recursosComprados[3,4,k];
 s.t. utiliRecMarE3T4{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yte[i,4,'MAR']) <= recursosDisponibles[3,4,k] + recursosComprados[3,4,k];
@@ -486,7 +485,7 @@ s.t. utiliRecMarE3T4{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in
 #TURNO 5:
 s.t. dispRecE3T5{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,5,k] = recursosDisponibles[3,4,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,4,'NOR']);# + recursosComprados[3,4,k];
 s.t. utilizRecE3T5{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,5,'NOR'] <= recursosDisponibles[3,5,k] + recursosComprados[3,5,k];
-s.t. monedasDisponiblesE3T5: monedasDisponibles[3,5] = monedasDisponibles[3,4] - gastoMonedas[3,4] + MonedasRecibidasHaven[4] + MonedasRecibidasChamber[4] + MonedasRecibidasLightouse[4] + sum{i in CartasEraIII: i >= 12}3*Yte[i,4,'NOR'];
+s.t. monedasDisponiblesE3T5: monedasDisponibles[3,5] = monedasDisponibles[3,4] - gastoMonedas[3,4] + MonedasRecibidasHaven[4] + MonedasRecibidasChamber[4] + MonedasRecibidasLighthouse[4] + sum{i in CartasEraIII: i >= 12}3*Yte[i,4,'NOR'];
 
 s.t. monedasHavenT5: MonedasRecibidasHaven[5] <= 20*Yte[16,5,'NOR'];
 s.t. monedasHavenT5CotaInf: 1*cantidadMateriasPrima[3,5] - 20*(1 - Yte[16,5,'NOR'])<= MonedasRecibidasHaven[5];
@@ -496,9 +495,9 @@ s.t. monedasChamberT5: MonedasRecibidasChamber[5] <= 20*Yte[17,5,'NOR'];
 s.t. monedasChamberT5CotaInf: 2*cantidadManufacturas[3,5] - 20*(1 - Yte[17,5,'NOR'])<= MonedasRecibidasChamber[5];
 s.t. monedasChamberT5CotaSup: MonedasRecibidasChamber[5] <= 2*cantidadManufacturas[3,5];
 
-s.t. monedasLightouseT5: MonedasRecibidasLightouse[5] <= 20*Yte[18,5,'NOR'];
-s.t. monedasLightouseT5CotaInf: 1*cantidadComerciales[3,5] - 20*(1 - Yte[18,5,'NOR'])<= MonedasRecibidasLightouse[5];
-s.t. monedasLightouseT5CotaSup: MonedasRecibidasLightouse[5] <= 1*cantidadComerciales[3,5];
+s.t. monedasLighthouseT5: MonedasRecibidasLighthouse[5] <= 20*Yte[18,5,'NOR'];
+s.t. monedasLighthouseT5CotaInf: 1*cantidadComerciales[3,5] - 20*(1 - Yte[18,5,'NOR'])<= MonedasRecibidasLighthouse[5];
+s.t. monedasLighthouseT5CotaSup: MonedasRecibidasLighthouse[5] <= 1*cantidadComerciales[3,5];
 
 #s.t. utiliRecMarE3T5{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,5,'MAR'] <= recursosDisponibles[3,5,k] + recursosComprados[3,5,k];
 s.t. utiliRecMarE3T5{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yte[i,5,'MAR']) <= recursosDisponibles[3,5,k] + recursosComprados[3,5,k];
@@ -506,7 +505,7 @@ s.t. utiliRecMarE3T5{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in
 #TURNO 6:
 s.t. dispRecE3T6{k in TiposDeCosto: k<>'MON'}: recursosDisponibles[3,6,k] = recursosDisponibles[3,5,k] + sum{i in CartasEraIII}(EspecialidadesEraIII[i,k]*Yte[i,5,'NOR']);# + recursosComprados[3,5,k];
 s.t. utilizRecE3T6{i in CartasEraIII, k in TiposDeCosto: i<=2 and k<>'MON'}: CostosEraIII[i,k]*Yte[i,6,'NOR'] <= recursosDisponibles[3,6,k] + recursosComprados[3,6,k];
-s.t. monedasDisponiblesE3T6: monedasDisponibles[3,6] = monedasDisponibles[3,5] - gastoMonedas[3,5] + MonedasRecibidasHaven[5] + MonedasRecibidasChamber[5] + MonedasRecibidasLightouse[5] + sum{i in CartasEraIII: i >= 12}3*Yte[i,5,'NOR'];
+s.t. monedasDisponiblesE3T6: monedasDisponibles[3,6] = monedasDisponibles[3,5] - gastoMonedas[3,5] + MonedasRecibidasHaven[5] + MonedasRecibidasChamber[5] + MonedasRecibidasLighthouse[5] + sum{i in CartasEraIII: i >= 12}3*Yte[i,5,'NOR'];
 
 s.t. monedasHavenT6: MonedasRecibidasHaven[6] <= 20*Yte[16,6,'NOR'];
 s.t. monedasHavenT6CotaInf: 1*cantidadMateriasPrima[3,6] - 20*(1 - Yte[16,6,'NOR'])<= MonedasRecibidasHaven[6];
@@ -516,14 +515,14 @@ s.t. monedasChamberT6: MonedasRecibidasChamber[6] <= 20*Yte[17,6,'NOR'];
 s.t. monedasChamberT6CotaInf: 2*cantidadManufacturas[3,6] - 20*(1 - Yte[17,6,'NOR'])<= MonedasRecibidasChamber[6];
 s.t. monedasChamberT6CotaSup: MonedasRecibidasChamber[6] <= 2*cantidadManufacturas[3,6];
 
-s.t. monedasLightouseT6: MonedasRecibidasLightouse[6] <= 20*Yte[18,6,'NOR'];
-s.t. monedasLightouseT6CotaInf: 1*cantidadComerciales[3,6] - 20*(1 - Yte[18,6,'NOR'])<= MonedasRecibidasLightouse[6];
-s.t. monedasLightouseT6CotaSup: MonedasRecibidasLightouse[6] <= 1*cantidadComerciales[3,6];
+s.t. monedasLighthouseT6: MonedasRecibidasLighthouse[6] <= 20*Yte[18,6,'NOR'];
+s.t. monedasLighthouseT6CotaInf: 1*cantidadComerciales[3,6] - 20*(1 - Yte[18,6,'NOR'])<= MonedasRecibidasLighthouse[6];
+s.t. monedasLighthouseT6CotaSup: MonedasRecibidasLighthouse[6] <= 1*cantidadComerciales[3,6];
 
 #s.t. utiliRecMarE3T6{i in CartasEraIII, k in MateriaPrima}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]*Yte[i,6,'MAR'] <= recursosDisponibles[3,6,k] + recursosComprados[3,6,k];
 s.t. utiliRecMarE3T6{i in CartasEraIII, k in TiposDeCosto: k <> 'MON'}: sum{n in NivelesDeDesarrollo}CostosMaravilla[n,k]- 7*(1 - Yte[i,6,'MAR']) <= recursosDisponibles[3,6,k] + recursosComprados[3,6,k];
 
-s.t. monedasSob: monedasSobrantes = monedasDisponibles[3,6] - gastoMonedas[3,6] + MonedasRecibidasHaven[6] + MonedasRecibidasChamber[6] + MonedasRecibidasLightouse[6] + sum{i in CartasEraIII: i >= 12}3*Yte[i,6,'NOR'];
+s.t. monedasSob: monedasSobrantes = monedasDisponibles[3,6] - gastoMonedas[3,6] + MonedasRecibidasHaven[6] + MonedasRecibidasChamber[6] + MonedasRecibidasLighthouse[6] + sum{i in CartasEraIII: i >= 12}3*Yte[i,6,'NOR'];
 
 #RECOLECCION DE PUNTOS:
 s.t. cantidadGeometricas: Geometricas = sum{j in Turnos}(Yte[9,j,'NOR'] + Yte[10,j,'NOR'] + Yse[12,j,'NOR'] + Ype[16,j,'NOR']);
@@ -545,21 +544,21 @@ s.t. minGeometricas: TrioDeSimbolos <= Geometricas;
 s.t. minRuedas: TrioDeSimbolos <= Ruedas;
 s.t. minEscrituras: TrioDeSimbolos <= Escrituras;
 
-#s.t. seUsoHaven: sum{j in Turnos}Yte[16,j,'NOR'] = Haven; 
-#s.t. seUsoChamber: sum{j in Turnos}Yte[17,j,'NOR'] = Chamber; 
-#s.t. seUsoLightouse: sum{j in Turnos}Yte[18,j,'NOR'] = Lightouse; 
+s.t. seUsoHaven: sum{j in Turnos}Yte[16,j,'NOR'] = Haven; 
+s.t. seUsoChamber: sum{j in Turnos}Yte[17,j,'NOR'] = Chamber; 
+s.t. seUsoLighthouse: sum{j in Turnos}Yte[18,j,'NOR'] = Lighthouse; 
 
-#s.t. puntosHavenT6: PuntosRecibidosHaven <= 20*Haven;
-#s.t. puntosHavenT6CotaInf: 1*cantidadMateriasPrima[3,6] - 20*(1 - Haven)<= PuntosRecibidosHaven;
-#s.t. puntosHavenT6CotaSup: PuntosRecibidosHaven <= 1*cantidadMateriasPrima[3,6];
+s.t. puntosHavenT6: PuntosRecibidosHaven <= 20*Haven;
+s.t. puntosHavenT6CotaInf: 1*cantidadMateriasPrima[3,6] - 20*(1 - Haven)<= PuntosRecibidosHaven;
+s.t. puntosHavenT6CotaSup: PuntosRecibidosHaven <= 1*cantidadMateriasPrima[3,6];
 
-#s.t. puntosChamberT6: PuntosRecibidosChamber <= 20*Chamber;
-#s.t. puntosChamberT6CotaInf: 2*cantidadManufacturas[3,6] - 20*(1 - Chamber)<= PuntosRecibidosChamber;
-#s.t. puntosChamberT6CotaSup: PuntosRecibidosChamber <= 2*cantidadManufacturas[3,6];
+s.t. puntosChamberT6: PuntosRecibidosChamber <= 20*Chamber;
+s.t. puntosChamberT6CotaInf: 2*cantidadManufacturas[3,6] - 20*(1 - Chamber)<= PuntosRecibidosChamber;
+s.t. puntosChamberT6CotaSup: PuntosRecibidosChamber <= 2*cantidadManufacturas[3,6];
 
-#s.t. puntosLightouseT6: PuntosRecibidosLightouse <= 20*Lightouse;
-#s.t. puntosLightouseT6CotaInf: 1*cantidadComerciales[3,6] - 20*(1 - Lightouse)<= PuntosRecibidosLightouse;
-#s.t. puntosLightouseT6CotaSup: PuntosRecibidosLightouse <= 1*cantidadComerciales[3,6];
+s.t. puntosLighthouseT6: PuntosRecibidosLighthouse <= 20*Lighthouse;
+s.t. puntosLighthouseT6CotaInf: 1*cantidadComerciales[3,6] - 20*(1 - Lighthouse)<= PuntosRecibidosLighthouse;
+s.t. puntosLighthouseT6CotaSup: PuntosRecibidosLighthouse <= 1*cantidadComerciales[3,6];
 
 
 #Desarrollo de conflicto al final de cada era.
