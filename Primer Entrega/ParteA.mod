@@ -25,6 +25,8 @@ var Yte{i in CartasEraIII, j in Turnos, k in ModoDeCarta} >= 0, binary;
 var monedasDisponibles{i in Eras, j in Turnos} >= 0, integer;
 var gastoMonedas{i in Eras, j in Turnos} >= 0, integer;
 var monedasSobrantes >= 0, integer;
+var gastoMonedasMateriaPrima{i in Eras, j in Turnos} >= 0, integer;
+var gastoMonedasManufactura{i in Eras, j in Turnos} >= 0, integer;
 
 #Cantidad de Cartas
 var cantidadMateriasPrima{i in Eras, j in Turnos} >= 0, integer;
@@ -132,15 +134,47 @@ s.t. desarrolloMaravillas: sum{i in CartasEraI, j in Turnos}Ype[i,j,'MAR']
 	+ sum{m in CartasEraIII, n in Turnos}Yte[m,n,'MAR'] = desarrollo;
 s.t. ordenDesarrollo1: nivel[2] <= nivel[1];
 s.t. ordenDesarrollo2: nivel[3] <= nivel[2];
-s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: CostosMaravilla[n,k] = CostosMaravillaGiza[n,k]*YTablero['GIZ'] + CostosMaravillaArtemisa[n,k]*YTablero['ART'] + CostosMaravillaRodas[n,k]*YTablero['ROD']; 
+s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: CostosMaravilla[n,k] = CostosMaravillaGiza[n,k]*YTablero['GIZ'] + CostosMaravillaArtemisa[n,k]*YTablero['ART'] + CostosMaravillaRodas[n,k]*YTablero['ROD'];
 
 #ERA I:
 s.t. eleccionCartaE1T{j in Turnos}: sum{i in CartasEraI, k in ModoDeCarta}Ype[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos,k in ModoDeCarta}Ype[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedas{i in CartasEraI, j in Turnos}: CostosEraI[i,'MON']*Ype[i,j,'NOR'] <= monedasDisponibles[1,j]; #CALCULO POR TURNO DE POSIBIL.
-s.t. monedasUsadasE1T{j in Turnos}: gastoMonedas[1,j] = sum{i in CartasEraI}(CostosEraI[i,'MON']*Ype[i,j,'NOR']) +
-		sum{m in MateriaPrima}(2*recursosComprados[1,j,m]) +
-		sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]); #CALCULO DE MONEDAS USADAS
+
+#		sum{m in MateriaPrima}(2*recursosComprados[1,j,m]) +
+
+s.t. monedasUsadasE1T{j in Turnos}: gastoMonedas[1,j] = sum{i in CartasEraI}(CostosEraI[i,'MON']*Ype[i,j,'NOR']) + gastoMonedasMateriaPrima[1, j] + gastoMonedasManufactura[1, j]; #CALCULO DE MONEDAS USADAS
+
+
+# Si se use West Trading Post en turnos anteriores, el costo de la materia prima es 1, si no 2.
+# Con ese valor se calcula el gastoMonedasMateriaPrima.
+# En vez de X = 2*C o X = 1*C se divide en 4 desigualdades del tipo
+# 1*C - 100*Y < X < 1*C + 100*Y
+# 2*C - 100(1-Y) < X < 2*C + 100(1-Y)
+# mas un valor Y*100 que
+# rompe una desigualdad al activarse (si se activo West Trading Post, el par de
+# desigualdades que tomaria a 2 como precio deja de "servir")
+
+# Precio a 2.
+s.t. maxPreciMPrimaA2EnE1T{j in Turnos}: gastoMonedasMateriaPrima[1, j] <= sum{m in MateriaPrima}(2*recursosComprados[1,j,m]) + 1000*sum{u in Turnos: u < j}(Ype[23, u, 'NOR']);
+s.t. minPrecioMPrimaA2EnE1T{j in Turnos}: gastoMonedasMateriaPrima[1, j] >= sum{m in MateriaPrima}(2*recursosComprados[1,j,m]) - 1000*sum{u in Turnos: u < j}(Ype[23, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioMPrimaA1EnE1T{j in Turnos}: gastoMonedasMateriaPrima[1, j] <= sum{m in MateriaPrima}(1*recursosComprados[1,j,m]) + 1000*(1 - sum{u in Turnos: u < j}(Ype[23, u, 'NOR']));
+s.t. minPrecioMPrimaA1EnE1T{j in Turnos}: gastoMonedasMateriaPrima[1, j] >= sum{m in MateriaPrima}(1*recursosComprados[1,j,m]) - 1000*(1 - sum{u in Turnos: u < j}(Ype[23, u, 'NOR']));
+
+# Siguiendo el mismo esquema.
+# Si se activo MarketPlace el precio por producto manufacturado es 1 en vez de 2.
+
+# Precio a 2
+s.t. maxPrecioProdManufacturadoA2EnE1T{j in Turnos}: gastoMonedasManufactura[1, j] <= sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]) + 1000*sum{u in Turnos: u < j}(Ype[24, u, 'NOR']);
+s.t. minPrecioProdManufacturadoA2EnE1T{j in Turnos}: gastoMonedasManufactura[1, j] >= sum{p in ProductosManufacturados}(2*recursosComprados[1,j,p]) - 1000*sum{u in Turnos: u < j}(Ype[24, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioProdManufacturadoA1EnE1T{j in Turnos}: gastoMonedasManufactura[1, j] <= sum{p in ProductosManufacturados}(1*recursosComprados[1,j,p]) + 1000*(1 - sum{u in Turnos: u < j}(Ype[24, u, 'NOR']));
+s.t. minPrecioProdManufacturadoA1EnE1T{j in Turnos}: gastoMonedasManufactura[1, j] >= sum{p in ProductosManufacturados}(1*recursosComprados[1,j,p]) - 1000*(1 - sum{u in Turnos: u < j}(Ype[24, u, 'NOR']));
+
+
 
 s.t. cantMatPrimasE1T1: cantidadMateriasPrima[1,1] = sum{i in CartasEraI: i <= 8}Ype[i,1,'NOR'];
 s.t. cantMatPrimasE1T{j in Turnos: j > 1}: cantidadMateriasPrima[1,j] = cantidadMateriasPrima[1,j-1] + sum{i in CartasEraI: i <= 8}Ype[i,j,'NOR'];
@@ -208,7 +242,30 @@ s.t. utiliRecMarE1T6{i in CartasEraI, k in TiposDeCosto: k <> 'MON'}: sum{n in N
 s.t. eleccionCartaE2T{j in Turnos}: sum{i in CartasEraII, k in ModoDeCarta}Yse[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra2{i in CartasEraII}: sum{j in Turnos,k in ModoDeCarta}Yse[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedasE2{i in CartasEraII, j in Turnos}: CostosEraII[i,'MON']*Yse[i,j,'NOR'] <= monedasDisponibles[2,j]; #CALCULO POR TURNO DE POSIBIL.
-s.t. monedasUsadasE2T{j in Turnos}: gastoMonedas[2,j] = sum{i in CartasEraII}(CostosEraII[i,'MON']*Yse[i,j,'NOR']) + sum{m in MateriaPrima}(2*recursosComprados[2,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[2,j,p]); #CALCULO DE MONEDAS USADAS
+s.t. monedasUsadasE2T{j in Turnos}: gastoMonedas[2,j] = sum{i in CartasEraII}(CostosEraII[i,'MON']*Yse[i,j,'NOR']) + gastoMonedasMateriaPrima[2, j] + gastoMonedasManufactura[2, j]; #CALCULO DE MONEDAS USADAS
+
+
+# Si se use West Trading Post en turnos anteriores, el costo de la materia prima es 1, si no 2.
+
+# Precio a 2.
+s.t. maxPreciMPrimaA2EnE2T{j in Turnos}: gastoMonedasMateriaPrima[2, j] <= sum{m in MateriaPrima}(2*recursosComprados[2,j,m]) + 1000*sum{u in Turnos}(Ype[23, u, 'NOR']);
+s.t. minPrecioMPrimaA2EnE2T{j in Turnos}: gastoMonedasMateriaPrima[1, j] >= sum{m in MateriaPrima}(2*recursosComprados[2,j,m]) - 1000*sum{u in Turnos}(Ype[23, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioMPrimaA1EnE2T{j in Turnos}: gastoMonedasMateriaPrima[2, j] <= sum{m in MateriaPrima}(1*recursosComprados[2,j,m]) + 1000*(1 - sum{u in Turnos}(Ype[23, u, 'NOR']));
+s.t. minPrecioMPrimaA1EnE2T{j in Turnos}: gastoMonedasMateriaPrima[2, j] >= sum{m in MateriaPrima}(1*recursosComprados[2,j,m]) - 1000*(1 - sum{u in Turnos}(Ype[23, u, 'NOR']));
+
+# Siguiendo el mismo esquema.
+# Si se activo MarketPlace el precio por producto manufacturado es 1 en vez de 2.
+
+# Precio a 2
+s.t. maxPrecioProdManufacturadoA2EnE2T{j in Turnos}: gastoMonedasManufactura[2, j] <= sum{p in ProductosManufacturados}(2*recursosComprados[2,j,p]) + 1000*sum{u in Turnos}(Ype[24, u, 'NOR']);
+s.t. minPrecioProdManufacturadoA2EnE2T{j in Turnos}: gastoMonedasManufactura[2, j] >= sum{p in ProductosManufacturados}(2*recursosComprados[2,j,p]) - 1000*sum{u in Turnos}(Ype[24, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioProdManufacturadoA1EnE2T{j in Turnos}: gastoMonedasManufactura[2, j] <= sum{p in ProductosManufacturados}(1*recursosComprados[2,j,p]) + 1000*(1 - sum{u in Turnos}(Ype[24, u, 'NOR']));
+s.t. minPrecioProdManufacturadoA1EnE2T{j in Turnos}: gastoMonedasManufactura[2, j] >= sum{p in ProductosManufacturados}(1*recursosComprados[2,j,p]) - 1000*(1 - sum{u in Turnos}(Ype[24, u, 'NOR']));
+
 
 s.t. utilizRecE2T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraII[13,k]*Yse[13,j,'NOR'] <= recursosDisponibles[2,j,k] + recursosComprados[2,j,k];
 
@@ -358,7 +415,29 @@ s.t. utiliRecMarE2T6{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 s.t. eleccionCartaE3T{j in Turnos}: sum{i in CartasEraIII, k in ModoDeCarta}Yte[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra3{i in CartasEraIII}: sum{j in Turnos,k in ModoDeCarta}Yte[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
 s.t. utilizMonedasE3{i in CartasEraIII, j in Turnos}: CostosEraIII[i,'MON']*Yte[i,j,'NOR'] <= monedasDisponibles[3,j]; #CALCULO POR TURNO DE POSIBIL.
-s.t. monedasUsadasE3T{j in Turnos}: gastoMonedas[3,j] = sum{i in CartasEraIII}(CostosEraIII[i,'MON']*Yte[i,j,'NOR']) + sum{m in MateriaPrima}(2*recursosComprados[3,j,m]) + sum{p in ProductosManufacturados}(2*recursosComprados[3,j,p]); #CALCULO DE MONEDAS USADAS
+s.t. monedasUsadasE3T{j in Turnos}: gastoMonedas[3,j] = sum{i in CartasEraIII}(CostosEraIII[i,'MON']*Yte[i,j,'NOR']) + gastoMonedasMateriaPrima[3, j] + gastoMonedasManufactura[3, j]; #CALCULO DE MONEDAS USADAS
+
+
+# Si se use West Trading Post en turnos anteriores, el costo de la materia prima es 1, si no 2.
+
+# Precio a 2.
+s.t. maxPreciMPrimaA2EnE3T{j in Turnos}: gastoMonedasMateriaPrima[3, j] <= sum{m in MateriaPrima}(2*recursosComprados[3,j,m]) + 1000*sum{u in Turnos}(Ype[23, u, 'NOR']);
+s.t. minPrecioMPrimaA2EnE3T{j in Turnos}: gastoMonedasMateriaPrima[3, j] >= sum{m in MateriaPrima}(2*recursosComprados[3,j,m]) - 1000*sum{u in Turnos}(Ype[23, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioMPrimaA1EnE3T{j in Turnos}: gastoMonedasMateriaPrima[3, j] <= sum{m in MateriaPrima}(1*recursosComprados[3,j,m]) + 1000*(1 - sum{u in Turnos}(Ype[23, u, 'NOR']));
+s.t. minPrecioMPrimaA1EnE3T{j in Turnos}: gastoMonedasMateriaPrima[3, j] >= sum{m in MateriaPrima}(1*recursosComprados[3,j,m]) - 1000*(1 - sum{u in Turnos}(Ype[23, u, 'NOR']));
+
+# Siguiendo el mismo esquema.
+# Si se activo MarketPlace el precio por producto manufacturado es 1 en vez de 2.
+
+# Precio a 2
+s.t. maxPrecioProdManufacturadoA2EnE3T{j in Turnos}: gastoMonedasManufactura[3, j] <= sum{p in ProductosManufacturados}(2*recursosComprados[3,j,p]) + 1000*sum{u in Turnos}(Ype[24, u, 'NOR']);
+s.t. minPrecioProdManufacturadoA2EnE3T{j in Turnos}: gastoMonedasManufactura[3, j] >= sum{p in ProductosManufacturados}(2*recursosComprados[3,j,p]) - 1000*sum{u in Turnos}(Ype[24, u, 'NOR']);
+
+# Precio a 1
+s.t. maxPrecioProdManufacturadoA1EnE3T{j in Turnos}: gastoMonedasManufactura[3, j] <= sum{p in ProductosManufacturados}(1*recursosComprados[3,j,p]) + 1000*(1 - sum{u in Turnos}(Ype[24, u, 'NOR']));
+s.t. minPrecioProdManufacturadoA1EnE3T{j in Turnos}: gastoMonedasManufactura[3, j] >= sum{p in ProductosManufacturados}(1*recursosComprados[3,j,p]) - 1000*(1 - sum{u in Turnos}(Ype[24, u, 'NOR']));
 
 
 s.t. SenateE3T{j in Turnos, k in TiposDeCosto: k<>'MON'}: CostosEraIII[3,k]*Yte[3,j,'NOR'] <= recursosDisponibles[3,j,k] + recursosComprados[3,j,k] + 5000*sum{i in Turnos}Yse[15,i,'NOR']; #GASTO DE SENATE
@@ -544,9 +623,9 @@ s.t. minGeometricas: TrioDeSimbolos <= Geometricas;
 s.t. minRuedas: TrioDeSimbolos <= Ruedas;
 s.t. minEscrituras: TrioDeSimbolos <= Escrituras;
 
-s.t. seUsoHaven: sum{j in Turnos}Yte[16,j,'NOR'] = Haven; 
-s.t. seUsoChamber: sum{j in Turnos}Yte[17,j,'NOR'] = Chamber; 
-s.t. seUsoLighthouse: sum{j in Turnos}Yte[18,j,'NOR'] = Lighthouse; 
+s.t. seUsoHaven: sum{j in Turnos}Yte[16,j,'NOR'] = Haven;
+s.t. seUsoChamber: sum{j in Turnos}Yte[17,j,'NOR'] = Chamber;
+s.t. seUsoLighthouse: sum{j in Turnos}Yte[18,j,'NOR'] = Lighthouse;
 
 s.t. puntosHavenT6: PuntosRecibidosHaven <= 20*Haven;
 s.t. puntosHavenT6CotaInf: 1*cantidadMateriasPrima[3,6] - 20*(1 - Haven)<= PuntosRecibidosHaven;
