@@ -144,6 +144,8 @@ s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: Co
 
 s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabARTNivel2EnTurno[i,j] <= YTabNivel2ET['ART',i,j] - YTabNivel2ET['ART',i,j-1];
 
+s.t. nivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabNivel2ET['ART',i,j] = 0;
+
 #ERA I:
 s.t. eleccionCartaE1T{j in Turnos}: sum{i in CartasEraI, k in ModoDeCarta}Ype[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
 s.t. soloUnaCartaEra1{i in CartasEraI}: sum{j in Turnos,k in ModoDeCarta}Ype[i,j,k] <= 1; #SOLO UNA CARTA DE ESE TIPO POR ERA o NINGUNA
