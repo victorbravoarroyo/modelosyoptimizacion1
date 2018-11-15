@@ -142,10 +142,12 @@ s.t. ordenDesarrollo1: nivel[2] <= nivel[1];
 s.t. ordenDesarrollo2: nivel[3] <= nivel[2];
 s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: CostosMaravilla[n,k] = CostosMaravillaGiza[n,k]*YTablero['GIZ'] + CostosMaravillaArtemisa[n,k]*YTablero['ART'] + CostosMaravillaRodas[n,k]*YTablero['ROD'];
 
-s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabARTNivel2EnTurno[i,j] <= YTabNivel2ET['ART',i,j] - YTabNivel2ET['ART',i,j-1];
+s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabARTNivel2EnTurno[i,j] = YTabNivel2ET['ART',i,j] - YTabNivel2ET['ART',i,j-1];
 
-s.t. nivel2Artemisa: sum{i in Eras, j in Turnos}YTabNivel2ET['ART',i,j] <= nivel[2];
-s.t. nivel2ArtemisaTablero: sum{i in Eras, j in Turnos}YTabNivel2ET['ART',i,j] <= YTablero['ART'];
+s.t. nivel2Artemisa: sum{i in Eras, j in Turnos}YTabARTNivel2EnTurno[i,j] <= YTabNivel2['ART'];
+s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabNivel2ET['ART',i,j] >= YTabNivel2ET['ART',i,j-1];
+s.t. calculoNivel2ArtemisaE2T1: YTabNivel2ET['ART',2,1] >= YTabNivel2ET['ART',1,6];
+s.t. calculoNivel2ArtemisaE3T1: YTabNivel2ET['ART',3,1] >= YTabNivel2ET['ART',2,6];
 
 #ERA I:
 s.t. eleccionCartaE1T{j in Turnos}: sum{i in CartasEraI, k in ModoDeCarta}Ype[i,j,k] = 1; #SOLO UNA CARTA POR TURNO
