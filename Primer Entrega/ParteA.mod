@@ -69,6 +69,11 @@ var TrioDeSimbolos >= 0, integer;
 #Desarrollo de Maravilla:
 var desarrollo >= 0, integer;
 var nivel{i in NivelesDeDesarrollo} >= 0 binary;
+var ExcDesa{i in NivelesDeDesarrollo} >= 0, integer;
+var DefDesa{i in NivelesDeDesarrollo} >= 0, integer;
+var YExcDesa{i in NivelesDeDesarrollo} >= 0, binary;
+var YDefDesa{i in NivelesDeDesarrollo} >= 0, binary;
+
 
 #Costos por Era:
 param CostosEraI{i in CartasEraI, j in TiposDeCosto};
@@ -141,6 +146,16 @@ s.t. desarrolloMaravillas: sum{i in CartasEraI, j in Turnos}Ype[i,j,'MAR']
 s.t. ordenDesarrollo1: nivel[2] <= nivel[1];
 s.t. ordenDesarrollo2: nivel[3] <= nivel[2];
 s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: CostosMaravilla[n,k] = CostosMaravillaGiza[n,k]*YTablero['GIZ'] + CostosMaravillaArtemisa[n,k]*YTablero['ART'] + CostosMaravillaRodas[n,k]*YTablero['ROD'];
+
+#Uno la definicion de desarrollo y nivel[i].
+#Si desarollo == i entonces nivel[i] = 1
+#ejemplo, si desarrollo = 2 entonces nivel[2] = 1.
+s.t. nivelYdesarrollo{i in NivelesDeDesarrollo}: desarrollo - i <= ExcDesa[i] - DefDesa[i];
+s.t. nivelYDesExceso1{i in NivelesDeDesarrollo}: 0.01*YExcDesa[i] <= ExcDesa[i];
+s.t. nivelYDesExceso2{i in NivelesDeDesarrollo}: 1000*YExcDesa[i] >= ExcDesa[i];
+s.t. nivelYDesDefecto1{i in NivelesDeDesarrollo}: 0.01*YDefDesa[i] <= DefDesa[i];
+s.t. nivelYDesDefecto2{i in NivelesDeDesarrollo}: 1000*YDefDesa[i] >= DefDesa[i];
+s.t. desarrolloIgualAlNivel{i in NivelesDeDesarrollo}: YDefDesa[i] + YExcDesa[i] + nivel[i] = 1;
 
 s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabARTNivel2EnTurno[i,j] = YTabNivel2ET['ART',i,j] - YTabNivel2ET['ART',i,j-1];
 
@@ -339,7 +354,7 @@ s.t. utiliRecMarE2T1{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 
 
 #Bazar da 1 manufatura por turno (si se jugo antes). El tipo de Manufactura puede ir cambiando por turno, pero solo puede dar una
-#Si en algún turno anterior se uso (sum Yse[20] = 1), vamos a tener algun producto manufactura para poder usar (alguna  bivalente de ManufacturasBazar va a ser =1).
+#Si en algï¿½n turno anterior se uso (sum Yse[20] = 1), vamos a tener algun producto manufactura para poder usar (alguna  bivalente de ManufacturasBazar va a ser =1).
 s.t. bazarDaManufacturaE2T{j in Turnos: j > 1}: sum{p in ProductosManufacturados}ManufacturasBazar[2,j,p] = sum{u in Turnos: u < j}Yse[20,u,'NOR'];
 
 #Idem pero para Caravanesy que da 1 Materia Prima
