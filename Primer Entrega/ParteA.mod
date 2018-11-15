@@ -145,7 +145,7 @@ s.t. costoMaravilla{n in NivelesDeDesarrollo, k in TiposDeCosto: k <> 'MON'}: Co
 s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabARTNivel2EnTurno[i,j] = YTabNivel2ET['ART',i,j] - YTabNivel2ET['ART',i,j-1];
 
 s.t. nivel2Artemisa: sum{i in Eras, j in Turnos}YTabARTNivel2EnTurno[i,j] <= YTabNivel2['ART'];
-s.t. calculoNivel2Artemisa{i in Eras, j in Turnos: j > 1}: YTabNivel2ET['ART',i,j] >= YTabNivel2ET['ART',i,j-1];
+s.t. calculoNivel2ArtemisaET{i in Eras, j in Turnos: j > 1}: YTabNivel2ET['ART',i,j] >= YTabNivel2ET['ART',i,j-1];
 s.t. calculoNivel2ArtemisaE2T1: YTabNivel2ET['ART',2,1] >= YTabNivel2ET['ART',1,6];
 s.t. calculoNivel2ArtemisaE3T1: YTabNivel2ET['ART',3,1] >= YTabNivel2ET['ART',2,6];
 
