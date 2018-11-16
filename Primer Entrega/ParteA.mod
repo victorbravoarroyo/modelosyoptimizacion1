@@ -340,7 +340,7 @@ s.t. utiliRecMarE2T1{i in CartasEraII, k in TiposDeCosto: k <> 'MON'}: sum{n in 
 
 
 #Bazar da 1 manufatura por turno (si se jugo antes). El tipo de Manufactura puede ir cambiando por turno, pero solo puede dar una
-#Si en algÃºn turno anterior se uso (sum Yse[20] = 1), vamos a tener algun producto manufactura para poder usar (alguna  bivalente de ManufacturasBazar va a ser =1).
+#Si en algún turno anterior se uso (sum Yse[20] = 1), vamos a tener algun producto manufactura para poder usar (alguna  bivalente de ManufacturasBazar va a ser =1).
 s.t. bazarDaManufacturaE2T{j in Turnos: j > 1}: sum{p in ProductosManufacturados}ManufacturasBazar[2,j,p] = sum{u in Turnos: u < j}Yse[20,u,'NOR'];
 
 #Idem pero para Caravanesy que da 1 Materia Prima
