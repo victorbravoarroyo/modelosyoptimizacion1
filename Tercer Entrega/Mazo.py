@@ -116,6 +116,8 @@ class Carta:
         else:
             return False
 
+nula = Carta('CartaNula', 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
 #----- Materias Primas Era 1 -------#
 Clay = Carta('ClayPool', 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 Stone = Carta('StonePit', 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -153,16 +155,8 @@ WTPost = Carta('WestTradingPost', 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 Market = Carta('Marketplace', 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 mazoEra1 = [Clay, Stone, ForCa, TimYa, OreVe, Excav, ClPit, LumYa, ClasW, Press, Loom, Altar, Baths, PawnS,
-            Theat, Apoth, Works, Scrip, Barra, GTowe, Stock, Tavern, WTPost, Market]
-#for i in mazoEra1:
-#    print (i.Nombre)
-#print('--------------')
-#mazoEra1 = sorted(mazoEra1)
-#for i in mazoEra1:
-#    print (i.Nombre)
-#print('--------------')
-#print(len(mazoEra1))
-
+            Theat, Apoth, Works, Scrip, Barra, GTowe, Stock, Tavern, WTPost, Market, nula, nula, nula, nula,
+            nula, nula]
 
 
 #----- Materias Primas Era 2 -------#
@@ -202,16 +196,8 @@ Bazar = Carta('Bazar', 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 Carav = Carta('Caravansery', 5, 2, 0, 0, 0, 0, 2, 0, 0, 0, 'Marketplace', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 mazoEra2 = [Quarry, BrickY, Sawmill, Foundary, Press2, ClassW2, Loom2, Aqued, Temple, Statue, Courth, Dispen,
-            School, Labor, Library, ArcRange, Training, Walls, Stables, Forum, Viney, Bazar, Carav]
-#for i in mazoEra2:
-#    print (i.Nombre)
-#print('--------------')
-#mazoEra2 = sorted(mazoEra2)
-#for i in mazoEra2:
-#    print (i.Nombre)
-#print('--------------')
-#print(len(mazoEra2))
-
+            School, Labor, Library, ArcRange, Training, Walls, Stables, Forum, Viney, Bazar, Carav, nula, nula,
+            nula, nula, nula, nula]
 
 
 
@@ -243,7 +229,7 @@ Light = Carta('Lighthouse', 5, 2, 0, 0, 1, 0, 0, 1, 0, 0, 'Caravansery', 0, 0, 0
 
 
 mazoEra3 = [Palace, Townha, Senate, Panth, Gardens, Univ, Obse, Study, Acad, Lod, Univ2, Arse, Circus, SiegW, Fort,
-            Haven, COC, Light]
+            Haven, COC, Light, nula, nula, nula, nula, nula, nula]
 
 cartasJugadasEra1 = []
 cartasJugadasEra2 = []
