@@ -72,7 +72,10 @@ class Partida:
 
     def recargar_manufactura(self):
         for (recurso, cantidad) in self.incremento_de_recursos['manufactura'].items():
-            self.incrementar_recursos('manufactura', recurso, cantidad)
+            if self.recursos['manufactura'].has_key(recurso):
+                self.recursos['manufactura'][recurso] += cantidad
+            else:
+                self.recursos['manufactura'][recurso] = cantidad
 
     def incrementar_cientificas(self, tipo):
         self.cantidad_cientificas[tipo] += 1
@@ -84,3 +87,14 @@ class Partida:
 
         puntos += min(self.cantidad_cientificas.values()) * 7
         return puntos
+
+    def gastar_en(self, costos):
+        for recurso, precio in costos.items():
+            if self.recursos['manufactura'].has_key(recurso):
+                self.recursos['manufactura'][recurso] -= precio
+            elif self.recursos['materia_prima'].has_key(recurso):
+                self.recursos['materia_prima'][recurso] -= precio
+            elif recurso == 'MON':
+                self.cantidad_de_monedas -= precio
+            else:
+                raise ValueError("Costo invalido en gastar_en")

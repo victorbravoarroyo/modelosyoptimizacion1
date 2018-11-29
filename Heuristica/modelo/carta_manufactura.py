@@ -6,8 +6,7 @@ class CartaManufactura(Carta):
         self.especialidad = especialidad
         self.cantidad = cantidad
 
-    def activar(self, partida):
-        partida.incrementar_recursos('manufactura', self.especialidad, self.cantidad)
 
     def construir_sobre(self, partida):
+        partida.gastar_en(self.costo)
         partida.incrementar_recursos('manufactura', self.especialidad, self.cantidad)

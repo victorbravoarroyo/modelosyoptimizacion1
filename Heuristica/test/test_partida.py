@@ -46,7 +46,7 @@ class PartidaTest(unittest.TestCase):
         press = CartaManufactura('press', 'PAP', 1)
         loom = CartaManufactura('loom', 'TEL', 1)
         stone_pit = CartaMateriaPrima('stone pit', 'CEM', 1)
-        apothecary = CartaCientifica('apothecary', 'geometrica')
+        apothecary = CartaCientifica('apothecary', 'geometrica', costo={'TEL':1})
 
         partida.agregar_carta_en_era(press, 1)
         partida.agregar_carta_en_era(loom, 1)
