@@ -2,6 +2,38 @@ def setearRecursosNecesarios(recNeces):
     for recurso in recNeces:
         recNeces[recurso] = 0
 
+# Idea Militares
+ESCUDOS_OPONENTE_ERA_1 = 1
+ESCUDOS_OPONENTE_ERA_2 = 3
+ESCUDOS_OPONENTE_ERA_3 = 5
+
+def calcularEscudos(cartasJugadas):
+    escudos = 0
+    for carta in cartasJugadas:
+        escudos += carta.Especialidad['Mil']
+    return escudos
+
+def resolverConflicto(cartasJugadasEra1, cartasJugadasEra2, cartasJugadasEra3):
+    puntos = 0
+    misEscudos = calcularEscudos(cartasJugadasEra1)
+    if (ESCUDOS_OPONENTE_ERA_1 < misEscudos):
+        puntos += 1
+    elif (ESCUDOS_OPONENTE_ERA_1 > misEscudos):
+        puntos -= 1
+
+    misEscudos += calcularEscudos(cartasJugadasEra2)
+    if (ESCUDOS_OPONENTE_ERA_2 < misEscudos):
+        puntos += 3
+    elif (ESCUDOS_OPONENTE_ERA_2 > misEscudos):
+        puntos -= 1
+
+    misEscudos += calcularEscudos(cartasJugadasEra3)
+    if (ESCUDOS_OPONENTE_ERA_3 < misEscudos):
+        puntos += 5
+    elif (ESCUDOS_OPONENTE_ERA_3 > misEscudos):
+        puntos -= 1
+    return puntos
+
 class Carta:
     def __init__(self, nombre, Tipo, CostosTot, CMon, CLad, CCem, COro, CMad, CCer, CPap, CTel, Gratis, EMon, ELad, ECem, EOro, EMad, ECer, EPap, ETel, EGeo, ERue, EEsc, EMil, EPto):
         self.Nombre = nombre
@@ -19,11 +51,11 @@ class Carta:
     def sePuedeJugar(self, recDisponibles, cartasAnteriores):
         if self.esGratis(cartasAnteriores):
             return True
-        
+
         for i in recDisponibles:
             if (self.Costos[i] > recDisponibles[i]):
                 return False
-            
+
         return True
 
     def esGratis(self, cartasAnteriores):
@@ -38,7 +70,7 @@ class Carta:
     def obetnerRecursosNecesarios(self, recNeces):
         for i in recNeces:
             recNeces[i] += self.Costos[i]
-        
+
     def __lt__(self, other):
         if self.Tipo < other.Tipo:
             return True
@@ -60,8 +92,8 @@ class Carta:
             recNeces[recurso] -= self.Especialidad[recurso]
             if recNeces[recurso] < 0:
                 recNeces[recurso] = 0
-        recDisponibles['Mon'] -= self.Costos['Mon']    
-            
+        recDisponibles['Mon'] -= self.Costos['Mon']
+
     def ordenarSegunGratis(self, other):
         if (self.Gratis != 0) and (other.Gratis == 0):
             return True
@@ -77,13 +109,13 @@ class Carta:
             return False
         else:
             return self.ordenarPorNombre(other)
-        
+
     def ordenarPorNombre(self, other):
         if self.Nombre < other.Nombre:
             return True
         else:
-            return False  
-      
+            return False
+
 #----- Materias Primas Era 1 -------#
 Clay = Carta('ClayPool', 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 Stone = Carta('StonePit', 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -229,7 +261,7 @@ for i in cartasJugadasEra1:
     i.realizarEspecilidad(recNeces, recursos)
 
 mazoEra1 = sorted(mazoEra1)
-        
+
 while len(cartasJugadasEra1) < 6:
     setearRecursosNecesarios(recNeces)
     for unaCarta in mazoEra1:
@@ -241,7 +273,7 @@ while len(cartasJugadasEra1) < 6:
                 break
             else:
                 unaCarta.obetnerRecursosNecesarios(recNeces)
-            #break       
+            #break
         elif (unaCarta.Tipo == 1) or (unaCarta.Tipo == 2):
             if unaCarta.entregaNecesario(recNeces):
                 if unaCarta.sePuedeJugar(recursos, cartasJugadasEra2):
@@ -268,7 +300,7 @@ while len(cartasJugadasEra2) < 6:
                 break
             else:
                 unaCarta.obetnerRecursosNecesarios(recNeces)
-            #break       
+            #break
         elif (unaCarta.Tipo == 1) or (unaCarta.Tipo == 2):
             if unaCarta.entregaNecesario(recNeces):
                 if unaCarta.sePuedeJugar(recursos, cartasJugadasEra1):
@@ -303,7 +335,7 @@ while len(cartasJugadasEra3) < 6:
                 break
             else:
                 unaCarta.obetnerRecursosNecesarios(recNeces)
-            #break       
+            #break
         elif (unaCarta.Tipo == 1) or (unaCarta.Tipo == 2):
             if unaCarta.entregaNecesario(recNeces):
                 if unaCarta.sePuedeJugar(recursos, cartasJugadasEra2):
@@ -334,7 +366,7 @@ for unSimbolo in simbolos:
     for unaCarta in cartasJugadasEra2:
         simbolos[unSimbolo] += unaCarta.Especialidad[unSimbolo]
     for unaCarta in cartasJugadasEra3:
-        simbolos[unSimbolo] += unaCarta.Especialidad[unSimbolo]        
+        simbolos[unSimbolo] += unaCarta.Especialidad[unSimbolo]
 
 for unSimbolo in simbolos:
     print (unSimbolo, simbolos[unSimbolo], sep = ' = ')
@@ -345,7 +377,7 @@ for unaCarta in cartasJugadasEra1:
 for unaCarta in cartasJugadasEra2:
     puntosCartas += unaCarta.Especialidad['Pto']
 for unaCarta in cartasJugadasEra3:
-    puntosCartas += unaCarta.Especialidad['Pto']    
+    puntosCartas += unaCarta.Especialidad['Pto']
 
 print ('Puntos por cartas ', puntosCartas, sep = ' = ')
 
@@ -357,19 +389,13 @@ puntosTotales = 0
 for unSim in simbolos:
     puntosTotales +=  simbolos[unSim]**2
 
-puntosTrioDeCartas = 7*min(simbolos['Geo'], simbolos['Rue'], simbolos['Esc']) 
+puntosTrioDeCartas = 7*min(simbolos['Geo'], simbolos['Rue'], simbolos['Esc'])
 print ('Puntos trio simbolos', puntosTrioDeCartas, sep = ' = ')
 
 puntosTotales += puntosCartas + puntosTrioDeCartas
 
+puntosTotales += resolverConflicto(cartasJugadasEra1, \
+                                   cartasJugadasEra2, \
+                                   cartasJugadasEra3)
+
 print ('PUNTOS TOTALES', puntosTotales, sep = ' = ')
-
-
-
-
-
-
-
-
-
-
