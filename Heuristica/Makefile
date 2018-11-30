@@ -1,5 +1,5 @@
 run:
-	python3 ./modelo/seven_wonders.py
+	python3 main.py
 
 test:
 	python3 -m unittest discover
