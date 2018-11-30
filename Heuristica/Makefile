@@ -1,6 +1,9 @@
+run:
+	python3 ./modelo/seven_wonders.py
+
 test:
-	python -m unittest discover
-	
+	python3 -m unittest discover
+
 clean:
 	rm -rf ./modelo/*.pyc ./test/*.pyc
 
