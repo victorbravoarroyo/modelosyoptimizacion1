@@ -17,28 +17,28 @@ class SevenWonders:
             escudos += carta.Especialidad['Mil']
         return escudos
 
+    def resolverConflicto(self, cartasJugadasEra1, cartasJugadasEra2, cartasJugadasEra3):
+        puntos = 0
+        misEscudos = self.calcularEscudos(cartasJugadasEra1)
+        if (ESCUDOS_OPONENTE_ERA_1 < misEscudos):
+            puntos += 1
+        elif (ESCUDOS_OPONENTE_ERA_1 > misEscudos):
+            puntos -= 1
+
+        misEscudos += self.calcularEscudos(cartasJugadasEra2)
+        if (ESCUDOS_OPONENTE_ERA_2 < misEscudos):
+            puntos += 3
+        elif (ESCUDOS_OPONENTE_ERA_2 > misEscudos):
+            puntos -= 1
+
+        misEscudos += self.calcularEscudos(cartasJugadasEra3)
+        if (ESCUDOS_OPONENTE_ERA_3 < misEscudos):
+            puntos += 5
+        elif (ESCUDOS_OPONENTE_ERA_3 > misEscudos):
+            puntos -= 1
+        return puntos
+
     def heuristica(self):
-
-        def resolverConflicto(cartasJugadasEra1, cartasJugadasEra2, cartasJugadasEra3):
-            puntos = 0
-            misEscudos = self.calcularEscudos(cartasJugadasEra1)
-            if (ESCUDOS_OPONENTE_ERA_1 < misEscudos):
-                puntos += 1
-            elif (ESCUDOS_OPONENTE_ERA_1 > misEscudos):
-                puntos -= 1
-
-            misEscudos += self.calcularEscudos(cartasJugadasEra2)
-            if (ESCUDOS_OPONENTE_ERA_2 < misEscudos):
-                puntos += 3
-            elif (ESCUDOS_OPONENTE_ERA_2 > misEscudos):
-                puntos -= 1
-
-            misEscudos += self.calcularEscudos(cartasJugadasEra3)
-            if (ESCUDOS_OPONENTE_ERA_3 < misEscudos):
-                puntos += 5
-            elif (ESCUDOS_OPONENTE_ERA_3 > misEscudos):
-                puntos -= 1
-            return puntos
 
         fabrica = FabricaDeCartas()
         mazoEra1 = fabrica.crear_mazo('./modelo/cartas_era_1.csv')
@@ -195,7 +195,7 @@ class SevenWonders:
 
         puntosTotales += puntosCartas + puntosTrioDeCartas
 
-        puntosTotales += resolverConflicto(cartasJugadasEra1, \
+        puntosTotales += self.resolverConflicto(cartasJugadasEra1, \
                                            cartasJugadasEra2, \
                                            cartasJugadasEra3)
 
