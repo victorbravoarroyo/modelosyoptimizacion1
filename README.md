@@ -5,6 +5,13 @@
 | Bravo Arroyo, Víctor |  98882 |
 |  Romero, Maximiliano |  99118 |
 
+## Heuristica
+Para correr la heuristica, desde un terminal.
+```
+cd Heuristica
+make run
+```
+
 ## Informe TP1
 https://www.overleaf.com/4343349217gffmpkwydhst
 
