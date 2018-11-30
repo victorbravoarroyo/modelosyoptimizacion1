@@ -1,39 +1,39 @@
 from modelo.carta import Carta
 from modelo.fabrica_de_cartas import FabricaDeCartas
 
+ESCUDOS_OPONENTE_ERA_1 = 1
+ESCUDOS_OPONENTE_ERA_2 = 3
+ESCUDOS_OPONENTE_ERA_3 = 5
+
 class SevenWonders:
 
+    def setearRecursosNecesarios(self, recNeces):
+        for recurso in recNeces:
+            recNeces[recurso] = 0
+
+    def calcularEscudos(self, cartasJugadas):
+        escudos = 0
+        for carta in cartasJugadas:
+            escudos += carta.Especialidad['Mil']
+        return escudos
+
     def heuristica(self):
-        def setearRecursosNecesarios(recNeces):
-            for recurso in recNeces:
-                recNeces[recurso] = 0
-
-        # Idea Militares
-        ESCUDOS_OPONENTE_ERA_1 = 1
-        ESCUDOS_OPONENTE_ERA_2 = 3
-        ESCUDOS_OPONENTE_ERA_3 = 5
-
-        def calcularEscudos(cartasJugadas):
-            escudos = 0
-            for carta in cartasJugadas:
-                escudos += carta.Especialidad['Mil']
-            return escudos
 
         def resolverConflicto(cartasJugadasEra1, cartasJugadasEra2, cartasJugadasEra3):
             puntos = 0
-            misEscudos = calcularEscudos(cartasJugadasEra1)
+            misEscudos = self.calcularEscudos(cartasJugadasEra1)
             if (ESCUDOS_OPONENTE_ERA_1 < misEscudos):
                 puntos += 1
             elif (ESCUDOS_OPONENTE_ERA_1 > misEscudos):
                 puntos -= 1
 
-            misEscudos += calcularEscudos(cartasJugadasEra2)
+            misEscudos += self.calcularEscudos(cartasJugadasEra2)
             if (ESCUDOS_OPONENTE_ERA_2 < misEscudos):
                 puntos += 3
             elif (ESCUDOS_OPONENTE_ERA_2 > misEscudos):
                 puntos -= 1
 
-            misEscudos += calcularEscudos(cartasJugadasEra3)
+            misEscudos += self.calcularEscudos(cartasJugadasEra3)
             if (ESCUDOS_OPONENTE_ERA_3 < misEscudos):
                 puntos += 5
             elif (ESCUDOS_OPONENTE_ERA_3 > misEscudos):
@@ -64,7 +64,7 @@ class SevenWonders:
         mazoEra1 = sorted(mazoEra1)
 
         while len(cartasJugadasEra1) < 6:
-            setearRecursosNecesarios(recNeces)
+            self.setearRecursosNecesarios(recNeces)
             for unaCarta in mazoEra1:
                 if (unaCarta.Tipo == 0):
                     if unaCarta.sePuedeJugar(recursos, cartasJugadasEra2):
@@ -91,7 +91,7 @@ class SevenWonders:
 
         mazoEra2 = sorted(mazoEra2)
         while len(cartasJugadasEra2) < 6:
-            setearRecursosNecesarios(recNeces)
+            self.setearRecursosNecesarios(recNeces)
             for unaCarta in mazoEra2:
                 if (unaCarta.Tipo == 0):
                     if unaCarta.sePuedeJugar(recursos, cartasJugadasEra1):
@@ -126,7 +126,7 @@ class SevenWonders:
 
         mazoEra3 = sorted(mazoEra3)
         while len(cartasJugadasEra3) < 6:
-            setearRecursosNecesarios(recNeces)
+            self.setearRecursosNecesarios(recNeces)
             for unaCarta in mazoEra3:
                 if (unaCarta.Tipo == 0):
                     if unaCarta.sePuedeJugar(recursos, cartasJugadasEra2):
