@@ -1,0 +1,10 @@
+var cort_b>=0;
+var av_f>=0;
+var metal>=0;
+maximize z: 400 * cort_b + 500 * av_f-100*metal;
+s.t. disp_metal: 2*cort_b + 3*av_f -metal<= 100;
+s.t. disp_plastico: 3*cort_b + 2*av_f <= 120;
+s.t. disp_trabajo_operario: cort_b + 2*av_f <= 70;
+s.t. demanda_cort: cort_b >= 20;
+s.t. demanda_av: av_f >= 25;
+end;
