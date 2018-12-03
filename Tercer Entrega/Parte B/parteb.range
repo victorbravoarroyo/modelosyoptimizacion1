@@ -1,0 +1,46 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    parteb
+Objective:  z = 19000 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS   19000.00000  -19000.00000          -Inf    19000.00000      -1.00000        .      disp_trabajo_operario
+                                            .               +Inf    19000.00000          +Inf          +Inf
+
+     2 disp_metal   NU     100.00000        .               -Inf           -Inf    -100.00000          -Inf
+                                         100.00000     100.00000      115.00000          +Inf   20500.00000 metal
+
+     3 disp_plastico
+                    BS     110.00000      10.00000          -Inf      110.00000     -50.00000   13500.00000 demanda_av
+                                            .          120.00000      110.00000          +Inf          +Inf
+
+     4 disp_trabajo_operario
+                    NU      70.00000        .               -Inf       70.00000    -200.00000   19000.00000 demanda_cort
+                                         200.00000      70.00000       73.33333          +Inf   19666.66667 disp_plastico
+
+     5 demanda_cort BS      20.00000        .           20.00000         .         -100.00000   17000.00000 demanda_av
+                                            .               +Inf       20.00000          +Inf          +Inf
+
+     6 demanda_av   NL      25.00000        .           25.00000       22.50000          -Inf   19500.00000 disp_plastico
+                                        -200.00000          +Inf       25.00000     200.00000   19000.00000 demanda_cort
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    parteb
+Objective:  z = 19000 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 cort_b       BS      20.00000     400.00000        .            20.00000     300.00000   17000.00000 demanda_av
+                                            .               +Inf       20.00000          +Inf          +Inf
+
+     2 av_f         BS      25.00000     500.00000        .            25.00000          -Inf          -Inf
+                                            .               +Inf       25.00000     700.00000   24000.00000 demanda_av
+
+     3 metal        BS      15.00000    -100.00000        .            15.00000    -200.00000   17500.00000 disp_trabajo_operario
+                                            .               +Inf           +Inf        .        20500.00000 disp_metal
+
+End of report
